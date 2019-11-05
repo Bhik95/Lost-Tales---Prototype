@@ -57,6 +57,8 @@ Material:
     - _AlphaOff: 1
     - _AlphaOn: 1
     - _Cutoff: 0.69328755
-    - _NoiseN: 36
-    - _Offset: 0.1
+    - _DefaultSaturation: 0.15
+    - _Frequency: 0.55
+    - _NoiseN: 1
+    - _Offset: 0.15
     m_Colors: []
