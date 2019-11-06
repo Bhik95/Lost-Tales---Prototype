@@ -4,16 +4,22 @@ using UnityEngine;
 
 public abstract class AbstractPuzzle : MonoBehaviour
 {
-    protected List<AbstractPuzzleCondition> Conditions;
+    protected bool puzzleSolved;
+    [SerializeField]protected List<AbstractPuzzleCondition> Conditions;
     protected virtual void Initialize() { }
     protected virtual void UpdatePuzzle() { }
 
-    protected virtual void SolvePuzzle() { }
+    protected virtual void SolvePuzzle() { puzzleSolved = true; }
+    protected virtual void UnsolvePuzzle() { puzzleSolved = false; }
     public virtual void SolveCondition()
     {
-        if (CheckIfSolved())
+        if (CheckIfSolved() && !puzzleSolved)
         {
             SolvePuzzle();
+        }
+        else if(puzzleSolved)
+        {
+            UnsolvePuzzle();
         }
     }
 

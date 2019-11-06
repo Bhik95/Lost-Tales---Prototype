@@ -5,8 +5,8 @@ using UnityEngine;
 
 public class AbstractPuzzleCondition : MonoBehaviour
 {
-    public AbstractPuzzle Owner;
-    public bool IsSolved { private set; get; }
+    [HideInInspector]public AbstractPuzzle Owner;
+    public bool IsSolved { protected set; get; }
 
     protected virtual void Solve()
     {

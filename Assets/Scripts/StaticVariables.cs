@@ -20,7 +20,7 @@ public class StaticVariables
         public static LayerMask Player => GetLayerMaskFromVar("Player");
         public static LayerMask Lantern => GetLayerMaskFromVar("Lantern");
         public static LayerMask Edge => GetLayerMaskFromVar("Edge");
-        public static LayerMask LanternBarrier => GetLayerMaskFromVar("LanternBarrier");
+        public static LayerMask Ground => GetLayerMaskFromVar("Ground");
     }
 
     public class Tags

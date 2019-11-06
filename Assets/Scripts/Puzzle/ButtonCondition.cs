@@ -8,7 +8,7 @@ using UnityEngine;
 public class ButtonCondition : AbstractPuzzleCondition
 {
     protected bool LanternOnButton;
-
+    protected Lantern Lantern;
     public override void Initialize()
     {
         base.Initialize();
@@ -24,11 +24,31 @@ public class ButtonCondition : AbstractPuzzleCondition
         base.Solve();
     }
 
-    void OnTriggerEnter(Collider2D col)
+    protected virtual void LanternEnter(PointAndClickLantern pLantern)
     {
-        if (col.gameObject.layer == StaticVariables.Layers.Default)
-        {
 
+    }
+
+    protected virtual void LanternExit(PointAndClickLantern pLantern)
+    {
+
+    }
+
+    void OnTriggerEnter2D(Collider2D col)
+    {
+        if (col.gameObject.layer == StaticVariables.Layers.Lantern)
+        {
+            LanternOnButton = true;
+            LanternEnter(col.GetComponent<PointAndClickLantern>());
+        }
+    }
+
+    void OnTriggerExit2D(Collider2D col)
+    {
+        if (col.gameObject.layer == StaticVariables.Layers.Lantern)
+        {
+            LanternOnButton = true;
+            LanternExit(col.GetComponent<PointAndClickLantern>());
         }
     }
 }
