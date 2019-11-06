@@ -78,6 +78,8 @@ MonoBehaviour:
   Plugins: []
   MasterBanks:
   - Master
-  Banks: []
+  Banks:
+  - Music
+  - TempSounds
   BanksToLoad: []
   LiveUpdatePort: 9264
