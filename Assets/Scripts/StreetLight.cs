@@ -29,7 +29,7 @@ public class StreetLight : MonoBehaviour
 
         if (!_lit)
         {
-            float goalProximity = Mathf.Clamp01(Vector2.Distance(_player.transform.position, transform.position) - _sound_distance_min / (_sound_distance_max - _sound_distance_min));
+            float goalProximity = Mathf.Clamp01((Vector2.Distance(_player.transform.position, transform.position) - _sound_distance_min) / (_sound_distance_max - _sound_distance_min));
             _fmod_event_emitter.SetParameter("GoalProximity", 1 - goalProximity);
         }
         

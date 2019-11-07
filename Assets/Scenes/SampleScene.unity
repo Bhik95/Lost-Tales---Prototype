@@ -40627,9 +40627,9 @@ MonoBehaviour:
   _animator: {fileID: 534906756}
   _light_go: {fileID: 707358985}
   _fmod_event_emitter: {fileID: 903202161}
-  _sound_distance_min: 2.5
-  _sound_distance_max: 4
-  _sound_transition_duration: 0.5
+  _sound_distance_min: 1.2
+  _sound_distance_max: 3
+  _sound_transition_duration: 1
   Cooldown: 3
 --- !u!114 &1555548263
 MonoBehaviour:
