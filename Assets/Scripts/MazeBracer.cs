@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
 
-public class MazeTorch : Interactible
+public class MazeBracer : Interactible
 {
 
     [SerializeField] private GameObject[] _objects_to_deactivate;

@@ -1165,7 +1165,7 @@ GameObject:
   - component: {fileID: 301411657}
   - component: {fileID: 301411661}
   m_Layer: 0
-  m_Name: Lantern 1
+  m_Name: Bracer1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11451,7 +11451,7 @@ GameObject:
   - component: {fileID: 715407143}
   - component: {fileID: 715407144}
   m_Layer: 0
-  m_Name: Lantern 3
+  m_Name: Bracer3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11587,7 +11587,7 @@ GameObject:
   - component: {fileID: 727144339}
   - component: {fileID: 727144340}
   m_Layer: 0
-  m_Name: Lantern 4
+  m_Name: Bracer4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11801,7 +11801,7 @@ GameObject:
   - component: {fileID: 874982298}
   - component: {fileID: 874982299}
   m_Layer: 0
-  m_Name: Lantern 2
+  m_Name: Bracer2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
