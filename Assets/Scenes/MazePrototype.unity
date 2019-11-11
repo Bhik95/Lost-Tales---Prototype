@@ -941,7 +941,7 @@ Transform:
   m_LocalScale: {x: 2.0643, y: 2.0643, z: 2.0643}
   m_Children: []
   m_Father: {fileID: 896450036}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &233772999
 SpriteRenderer:
@@ -1162,8 +1162,8 @@ GameObject:
   - component: {fileID: 301411656}
   - component: {fileID: 301411660}
   - component: {fileID: 301411659}
-  - component: {fileID: 301411658}
   - component: {fileID: 301411657}
+  - component: {fileID: 301411661}
   m_Layer: 0
   m_Name: Lantern 1
   m_TagString: Untagged
@@ -1201,21 +1201,6 @@ CircleCollider2D:
   m_Offset: {x: 0.0047520795, y: -0.07680257}
   serializedVersion: 2
   m_Radius: 0.30699053
---- !u!114 &301411658
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 301411655}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b06f0d0f1e51877409db7a2eb3ec2d49, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ObjectsToDeactivate:
-  - {fileID: 694835909}
-  ObjectsToActivate: []
 --- !u!50 &301411659
 Rigidbody2D:
   serializedVersion: 4
@@ -1286,6 +1271,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &301411661
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 301411655}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ee387a60f4ec0e49b918241d2f59dc4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _objects_to_deactivate:
+  - {fileID: 694835909}
 --- !u!4 &335548240 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2850235219126345000, guid: 077d2f7ebc6616a41a854825a0b3b32e,
@@ -6497,7 +6496,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 896450036}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!1 &668660667
 GameObject:
@@ -6529,7 +6528,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 896450036}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!199 &668660669
 ParticleSystemRenderer:
@@ -11449,8 +11448,8 @@ GameObject:
   - component: {fileID: 715407142}
   - component: {fileID: 715407146}
   - component: {fileID: 715407145}
-  - component: {fileID: 715407144}
   - component: {fileID: 715407143}
+  - component: {fileID: 715407144}
   m_Layer: 0
   m_Name: Lantern 3
   m_TagString: Untagged
@@ -11497,14 +11496,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 715407141}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b06f0d0f1e51877409db7a2eb3ec2d49, type: 3}
+  m_Script: {fileID: 11500000, guid: 4ee387a60f4ec0e49b918241d2f59dc4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ObjectsToDeactivate:
+  _objects_to_deactivate:
   - {fileID: 101379840}
   - {fileID: 1121398048}
   - {fileID: 1093141660}
-  ObjectsToActivate: []
 --- !u!50 &715407145
 Rigidbody2D:
   serializedVersion: 4
@@ -11586,8 +11584,8 @@ GameObject:
   - component: {fileID: 727144338}
   - component: {fileID: 727144342}
   - component: {fileID: 727144341}
-  - component: {fileID: 727144340}
   - component: {fileID: 727144339}
+  - component: {fileID: 727144340}
   m_Layer: 0
   m_Name: Lantern 4
   m_TagString: Untagged
@@ -11634,13 +11632,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 727144337}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b06f0d0f1e51877409db7a2eb3ec2d49, type: 3}
+  m_Script: {fileID: 11500000, guid: 4ee387a60f4ec0e49b918241d2f59dc4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ObjectsToDeactivate:
+  _objects_to_deactivate:
   - {fileID: 1730326735}
   - {fileID: 1558192099}
-  ObjectsToActivate: []
 --- !u!50 &727144341
 Rigidbody2D:
   serializedVersion: 4
@@ -11801,8 +11798,8 @@ GameObject:
   - component: {fileID: 874982297}
   - component: {fileID: 874982301}
   - component: {fileID: 874982300}
-  - component: {fileID: 874982299}
   - component: {fileID: 874982298}
+  - component: {fileID: 874982299}
   m_Layer: 0
   m_Name: Lantern 2
   m_TagString: Untagged
@@ -11849,12 +11846,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 874982296}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b06f0d0f1e51877409db7a2eb3ec2d49, type: 3}
+  m_Script: {fileID: 11500000, guid: 4ee387a60f4ec0e49b918241d2f59dc4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ObjectsToDeactivate:
+  _objects_to_deactivate:
   - {fileID: 1196243989}
-  ObjectsToActivate: []
 --- !u!50 &874982300
 Rigidbody2D:
   serializedVersion: 4
@@ -11935,9 +11931,9 @@ GameObject:
   m_Component:
   - component: {fileID: 896450036}
   - component: {fileID: 896450035}
-  - component: {fileID: 896450034}
   - component: {fileID: 896450033}
   - component: {fileID: 896450032}
+  - component: {fileID: 896450034}
   m_Layer: 10
   m_Name: Lantern
   m_TagString: Untagged
@@ -11991,16 +11987,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 896450031}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 73e0ce1222b613246ae237d97b41fb8e, type: 3}
+  m_Script: {fileID: 11500000, guid: b322593e262e5df4f99bad01d4d8eb63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentState: 0
   Player: {fileID: 1112411519}
-  followSpeed: 0.01
-  shootSpeed: 10
-  CursorStandard: {fileID: 2800000, guid: 2e71a8202d3b4a3448ec85ced5a40265, type: 3}
-  CursorAim: {fileID: 2800000, guid: 8859fce41c5d0a148ad0b7eebfca7fe9, type: 3}
-  CursorAim2: {fileID: 2800000, guid: 1e1ecf843f705b34ab304dff88b037c1, type: 3}
+  followSpeed: 10
   ExplodeParticleSystem: {fileID: 642332274}
   AimParticleSystem: {fileID: 1734213358}
   ShootParticleSystem: {fileID: 1555108032}
@@ -12065,13 +12057,13 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1977988099}
+  - {fileID: 1389228017}
   - {fileID: 233772998}
   - {fileID: 642332276}
   - {fileID: 1652379170}
   - {fileID: 1734213360}
   - {fileID: 1555108034}
   - {fileID: 668660668}
-  - {fileID: 1389228017}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -12454,7 +12446,7 @@ GameObject:
   - component: {fileID: 1112411520}
   m_Layer: 9
   m_Name: Keith
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12504,7 +12496,7 @@ Rigidbody2D:
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
-  m_AngularDrag: 0.05
+  m_AngularDrag: 0
   m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
@@ -12908,11 +12900,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1389228016}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: -0.15, z: 0}
+  m_LocalScale: {x: 0.75, y: 0.75, z: 1}
   m_Children: []
   m_Father: {fileID: 896450036}
-  m_RootOrder: 7
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1389228018
 MonoBehaviour:
@@ -17851,7 +17843,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 896450036}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 90.02801, z: 0}
 --- !u!1 &1558192099
 GameObject:
@@ -17990,7 +17982,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 896450036}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!199 &1652379171
 ParticleSystemRenderer:
@@ -27817,7 +27809,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 896450036}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 89.964005, z: 0}
 --- !u!1 &1824809461
 GameObject:
