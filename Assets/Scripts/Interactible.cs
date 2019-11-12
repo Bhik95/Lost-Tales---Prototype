@@ -6,17 +6,10 @@ using UnityEngine;
 public abstract class Interactible : MonoBehaviour
 {
 
-    private Collider2D _collider;
-
     protected bool _player_nearby = false;
     protected abstract void OnPlayerNearby();
     protected abstract void OnPlayerFar();
     protected abstract void OnActivate();
-
-    private void Awake()
-    {
-        _collider = GetComponent<Collider2D>();
-    }
 
     private void Update()
     {

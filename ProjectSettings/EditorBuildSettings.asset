@@ -6,6 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/GhostsPrototype.unity
-    guid: 27836a0199f08b043a7701d3545f08f2
+    path: Assets/Scenes/MazePrototypeArt.unity
+    guid: 69542683a489a234f81fc940755d856f
   m_configObjects: {}

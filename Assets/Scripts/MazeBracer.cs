@@ -8,9 +8,11 @@ public class MazeBracer : Interactible
 {
 
     [SerializeField] private GameObject[] _objects_to_deactivate;
+    [SerializeField] private GameObject _brazier;
 
     protected override void OnActivate()
     {
+        _brazier.SetActive(true);
         foreach(GameObject go in _objects_to_deactivate)
         {
             go.SetActive(false);
