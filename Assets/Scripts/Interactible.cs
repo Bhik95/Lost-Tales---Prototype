@@ -11,7 +11,7 @@ public abstract class Interactible : MonoBehaviour
     protected abstract void OnPlayerFar();
     protected abstract void OnActivate();
 
-    private void Update()
+    protected virtual void Update()
     {
         if (_player_nearby && Input.GetButtonDown("Activate"))
         {

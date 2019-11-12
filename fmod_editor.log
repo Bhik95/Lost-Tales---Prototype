@@ -7,23 +7,59 @@
 [LOG] OutputWASAPI::init                       : Output buffer size: 4096 samples, latency: 0.00ms, period: 10.00ms, DSP buffer: 1024 * 4
 [LOG] Thread::initThread                       : Init FMOD stream thread. Priority: 2, Stack Size: 98304, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Priority: 3, Stack Size: 81920, Semaphore: No, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 0000020FA5DAA4C8 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 000001D12BCA0078 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Priority: 0, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
 [LOG] PlaybackSystem::init                     : done
 [LOG] Thread::initThread                       : Init FMOD Studio bank load thread. Priority: 0, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
 [LOG] Manager::init                            : done.
-[LOG] Manager::readBank                        : fileversion = 120, compatVersion = 119 (oldest = 44, newest = 123)
-[LOG] Manager::readBank                        : fileversion = 120, compatVersion = 119 (oldest = 44, newest = 123)
-[LOG] Manager::readBank                        : fileversion = 120, compatVersion = 119 (oldest = 44, newest = 123)
+[LOG] Manager::readBank                        : fileversion = 123, compatVersion = 119 (oldest = 44, newest = 123)
+[LOG] Manager::readBank                        : fileversion = 123, compatVersion = 119 (oldest = 44, newest = 123)
+[LOG] Manager::readBank                        : fileversion = 123, compatVersion = 119 (oldest = 44, newest = 123)
+[LOG] SoundI::release                          : Track2 Woof (000001D197F4DD28)
+[LOG] SoundI::release                          :     Track2 Woof (000001D130760DD8)
+[LOG] SoundI::release                          :     Track2 Woof (000001D197F4CDF8)
+[LOG] SoundI::release                          : Track2 Celeste (000001D130B8B088)
+[LOG] SoundI::release                          :     Track2 Celeste (000001D130761AD8)
+[LOG] SoundI::release                          :     Track2 Celeste (000001D197F4CA98)
+[LOG] SoundI::release                          : Track2 Piano (000001D130B8A9C8)
+[LOG] SoundI::release                          :     Track2 Piano (000001D130760A98)
+[LOG] SoundI::release                          :     Track2 Piano (000001D197F4C738)
+[LOG] SoundI::release                          : Track2 Fluty (000001D130B8AD28)
+[LOG] SoundI::release                          :     Track2 Fluty (000001D130760C38)
+[LOG] SoundI::release                          :     Track2 Fluty (000001D197F4D668)
+[LOG] SoundI::release                          : Track2 Plucked Dream (000001D130B8A818)
+[LOG] SoundI::release                          :     Track2 Plucked Dream (000001D130761798)
+[LOG] SoundI::release                          :     Track2 Plucked Dream (000001D197F4C3D8)
+[LOG] SoundI::release                          : Track2 Warmth (000001D130B8A668)
+[LOG] SoundI::release                          :     Track2 Warmth (000001D130760758)
+[LOG] SoundI::release                          :     Track2 Warmth (000001D197F4C588)
+[LOG] SoundI::release                          : Track2 Choir (000001D130B8A308)
+[LOG] SoundI::release                          :     Track2 Choir (000001D1307608F8)
+[LOG] SoundI::release                          :     Track2 Choir (000001D197F4C078)
+[LOG] Thread::callback                         : FMOD Studio update thread finished.
+[LOG] Thread::callback                         : FMOD Studio bank load thread finished.
+[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
+[LOG] Thread::callback                         : FMOD Studio sample load thread finished.
+[LOG] LiveUpdate::release                      : 
+[LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
+[LOG] Thread::callback                         : FMOD stream thread finished.
+[LOG] Thread::callback                         : FMOD mixer thread finished.
+[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
+[LOG] SystemI::close                           : Closed.
+[LOG] Manager::readBank                        : fileversion = 123, compatVersion = 119 (oldest = 44, newest = 123)
+[LOG] Manager::readBank                        : fileversion = 123, compatVersion = 119 (oldest = 44, newest = 123)
+[LOG] Manager::readBank                        : fileversion = 123, compatVersion = 119 (oldest = 44, newest = 123)
 [LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
-[LOG] Manager::readBank                        : fileversion = 120, compatVersion = 119 (oldest = 44, newest = 123)
-[LOG] Manager::readBank                        : fileversion = 120, compatVersion = 119 (oldest = 44, newest = 123)
+[LOG] Manager::readBank                        : fileversion = 123, compatVersion = 119 (oldest = 44, newest = 123)
+[LOG] Manager::readBank                        : fileversion = 123, compatVersion = 119 (oldest = 44, newest = 123)
 [LOG] Thread::callback                         : FMOD Studio bank load thread finished.
 [LOG] Thread::callback                         : FMOD Studio sample load thread finished.
 [LOG] LiveUpdate::release                      : 
 [LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
 [LOG] Thread::callback                         : FMOD stream thread finished.
 [LOG] Thread::callback                         : FMOD mixer thread finished.
+[LOG] Thread::callback                         : FMOD nonblocking thread (0) finished.
+[LOG] Thread::callback                         : FMOD file thread finished.
 [LOG] SystemI::close                           : Closed.
