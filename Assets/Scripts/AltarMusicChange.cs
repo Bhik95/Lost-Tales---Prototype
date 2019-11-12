@@ -5,7 +5,8 @@ using UnityEngine;
 
 public class AltarMusicChange : Interactible
 {
-    [SerializeField] private FMODUnity.StudioEventEmitter _fmod_event_emitter;
+    [SerializeField] private FMODUnity.StudioEventEmitter _music_emitter;
+    [SerializeField] private FMODUnity.StudioEventEmitter _interact_sound_emitter;
     [SerializeField] private float _sound_distance_min;
     [SerializeField] private float _sound_distance_max;
     [SerializeField] private float _sound_transition_duration = 1f;
@@ -26,7 +27,7 @@ public class AltarMusicChange : Interactible
         if (!_lit)
         {
             float goalProximity = Mathf.Clamp01((Vector2.Distance(_player.transform.position, transform.position) - _sound_distance_min) / (_sound_distance_max - _sound_distance_min));
-            _fmod_event_emitter.SetParameter("GoalProximity", 1 - goalProximity);
+            _music_emitter.SetParameter("GoalProximity", 1 - goalProximity);
         }
         
         //Debug.Log(goalProximity);
@@ -38,10 +39,10 @@ public class AltarMusicChange : Interactible
         while(timer < duration)
         {
             timer += Time.deltaTime;
-            _fmod_event_emitter.SetParameter(paramName, Mathf.Lerp(startValue, finalValue, timer / duration));
+            _music_emitter.SetParameter(paramName, Mathf.Lerp(startValue, finalValue, timer / duration));
             yield return null;
         }
-        _fmod_event_emitter.SetParameter(paramName, finalValue);
+        _music_emitter.SetParameter(paramName, finalValue);
     }
 
     private void OnDrawGizmos()
@@ -72,6 +73,8 @@ public class AltarMusicChange : Interactible
             StartCoroutine(ChangeMoodValue("GoalProximity", 1 - Mathf.Clamp01((Vector2.Distance(_player.transform.position, transform.position) - _sound_distance_min) / (_sound_distance_max - _sound_distance_min)), 0, _sound_transition_duration));
 
             _maze.SetActive(false);
+
+            _interact_sound_emitter.Play();
         }
     }
 }
