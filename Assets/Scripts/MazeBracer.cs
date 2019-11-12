@@ -17,15 +17,16 @@ public class MazeBracer : Interactible
         {
             go.SetActive(false);
         }
+        this.enabled = false;
     }
 
     protected override void OnPlayerFar()
     {
-        Debug.Log("TODO: Player is faraway (use to add juice)");
+        //Debug.Log("TODO: Player is faraway (use to add juice)");
     }
 
     protected override void OnPlayerNearby()
     {
-        Debug.Log("TODO: Player nearby  (use to add juice)");
+        //Debug.Log("TODO: Player nearby  (use to add juice)");
     }
 }

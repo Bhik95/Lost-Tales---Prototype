@@ -23,6 +23,7 @@ public abstract class Interactible : MonoBehaviour
     {
         if (collision.gameObject.tag == StaticVariables.Tags.Player)
         {
+            TempUI.Instance.ShowInteractText();
             _player_nearby = true;
             OnPlayerNearby();
         }
@@ -30,6 +31,7 @@ public abstract class Interactible : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
+        TempUI.Instance.HideInteractText();
         if (collision.gameObject.tag == StaticVariables.Tags.Player)
         {
             _player_nearby = false;
