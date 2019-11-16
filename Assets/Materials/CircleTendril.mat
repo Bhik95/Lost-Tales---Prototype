@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: CircleTendril
-  m_Shader: {fileID: -6465566751694194690, guid: fe27ed79e241f4d46bd69b6f4a3447e6,
+  m_Shader: {fileID: -6465566751694194690, guid: e73166cfb9d015b4d80f9af58434660f,
     type: 3}
   m_ShaderKeywords: ETC1_EXTERNAL_ALPHA
   m_LightmapFlags: 4
@@ -39,9 +39,11 @@ Material:
     m_Floats:
     - Vector1_1270EC2F: 0
     - _Amplitude: 6
-    - _Falloff: 0.2
+    - _Falloff: 0.3
     - _Frequency: 0.3
     - _InvFade: 1
-    - _Radius: 1.96
+    - _Radius: 0.5
     m_Colors:
+    - _ColorA: {r: 1, g: 1, b: 1, a: 1}
+    - _ColorB: {r: 0, g: 0, b: 0, a: 0}
     - _TintColor: {r: 0.5, g: 0.5, b: 0.5, a: 0.5}
