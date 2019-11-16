@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8532254978871687908}
   - component: {fileID: 3284511799860325807}
+  - component: {fileID: 7492611360136039874}
   m_Layer: 0
   m_Name: Brazier Lit
   m_TagString: Untagged
@@ -80,6 +81,29 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &7492611360136039874
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1560098021657195541}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/SFX_small_fire
+  PlayEvent: 11
+  StopEvent: 12
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &3285186698301014919
 GameObject:
   m_ObjectHideFlags: 0
@@ -91,6 +115,7 @@ GameObject:
   - component: {fileID: 4360112070960489176}
   - component: {fileID: 1226370299289591818}
   - component: {fileID: 1506762382421868327}
+  - component: {fileID: 61498682021829645}
   m_Layer: 0
   m_Name: TriggerArea
   m_TagString: Untagged
@@ -142,6 +167,30 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _objects_to_deactivate: []
   _brazier: {fileID: 1560098021657195541}
+  _on_lit_sound: {fileID: 61498682021829645}
+--- !u!114 &61498682021829645
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3285186698301014919}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/SFX_something_being_lit
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &6757549504201225162
 GameObject:
   m_ObjectHideFlags: 0
