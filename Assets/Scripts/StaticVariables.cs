@@ -33,4 +33,11 @@ public class StaticVariables
         public static string Player = "Player";
         public static string GameController = "GameController";
     }
+
+    public class FMODParameters
+    {
+        public static string Volume = "Volume";
+        public static string Mood = "Mood";
+        public static string GoalProximity = "GoalProximity";
+    }
 }
