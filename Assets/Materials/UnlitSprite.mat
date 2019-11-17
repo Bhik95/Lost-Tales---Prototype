@@ -10,7 +10,7 @@ Material:
   m_Name: UnlitSprite
   m_Shader: {fileID: -6465566751694194690, guid: ce22d6c4e1d2b4d40896c5a8f1098a15,
     type: 3}
-  m_ShaderKeywords: ETC1_EXTERNAL_ALPHA _FLIPBOOKBLENDING_OFF
+  m_ShaderKeywords: ETC1_EXTERNAL_ALPHA
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -37,7 +37,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: bf223692a51ecfb468e55459980662ef, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MaskTex:
@@ -54,7 +54,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - _AlphaClip: 0
-    - _Amplitude: 1
+    - _Amplitude: 0.7
     - _Blend: 0
     - _BlendOp: 0
     - _BumpScale: 1
@@ -70,12 +70,14 @@ Material:
     - _DistortionStrengthScaled: 0.1
     - _DstBlend: 0
     - _EmissionEnabled: 0
+    - _Falloff: 0.7
     - _FlipbookBlending: 0
     - _FlipbookMode: 0
     - _Frequency: 0.1
     - _LightingEnabled: 0
     - _Mode: 0
     - _QueueOffset: 0
+    - _Radius: 3
     - _SampleGI: 0
     - _SoftParticlesEnabled: 0
     - _SoftParticlesFarFadeDistance: 1

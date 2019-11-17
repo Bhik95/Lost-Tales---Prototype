@@ -102,7 +102,7 @@ MonoBehaviour:
   MovementSpeed: 100
   CoordinateScaleFactor: 0.7
   FootstepsEmitter: {fileID: 17948201639532124}
-  FootstepDelay: 0.3
+  FootstepDelay: 0.28
   GetInput: {x: 0, y: 0}
 --- !u!95 &17948201639532123
 Animator:

@@ -168,6 +168,8 @@ MonoBehaviour:
   _objects_to_deactivate: []
   _brazier: {fileID: 1560098021657195541}
   _on_lit_sound: {fileID: 61498682021829645}
+  ParticleSystem: {fileID: 0}
+  ParticleSystemEffector: {fileID: 0}
 --- !u!114 &61498682021829645
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -263,7 +265,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 11
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 77f87cd8a946fca468bc7e75c1549c81, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -274,7 +276,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
+  m_SpriteSortPoint: 1
 --- !u!50 &2982167449146056073
 Rigidbody2D:
   serializedVersion: 4
