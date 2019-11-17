@@ -15,13 +15,13 @@ MonoBehaviour:
   Path: event:/Track2
   guid: 57e0de00fb5c7643b4cd8a8935b31980
   Banks:
-  - {fileID: -7978486221087798403}
+  - {fileID: -1194691955117459671}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: -2151044041957072992}
-  - {fileID: 3255696543071063853}
+  - {fileID: 6407279466890785348}
+  - {fileID: 3084676538821453776}
   MinDistance: 0
   MaxDistance: 0
   Length: 137142
@@ -78,6 +78,24 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 1
+--- !u!114 &-8361546250861868495
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Music.bank
+  m_EditorClassIdentifier: 
+  Path: FModStudioProject/lost_tales/Build/Desktop/Music.bank
+  SubDir: 
+  lastModified: 637096080944942221
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
 --- !u!114 &-8341225032502137819
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -93,7 +111,7 @@ MonoBehaviour:
   Path: event:/SFX_Bonfire
   guid: 6f878ba6446ff344a193817a7927bdba
   Banks:
-  - {fileID: 7329471008853577016}
+  - {fileID: -6889794616046259546}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
@@ -153,6 +171,24 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 1
+--- !u!114 &-7728564877377370917
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/SFX.bank
+  m_EditorClassIdentifier: 
+  Path: FModStudioProject/lost_tales/Build/Desktop/SFX.bank
+  SubDir: 
+  lastModified: 637096080945572202
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
 --- !u!114 &-7347190891504204895
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -207,6 +243,24 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 1
+--- !u!114 &-6889794616046259546
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/SFX.bank
+  m_EditorClassIdentifier: 
+  Path: FModStudioProject/lost_tales/Build/Desktop/SFX.bank
+  SubDir: 
+  lastModified: 637096081182330892
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
 --- !u!114 &-6781139059344156106
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -222,7 +276,7 @@ MonoBehaviour:
   Path: event:/Streetlamp_Hit
   guid: 8fed08e82a70574face6e12e8f0093f8
   Banks:
-  - {fileID: 631126281278036698}
+  - {fileID: 8514283502012439772}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -333,7 +387,7 @@ MonoBehaviour:
   Path: event:/SFX_StartScene_Walla
   guid: 0eba1b1348029f47ad6c6497904e8fa3
   Banks:
-  - {fileID: 7329471008853577016}
+  - {fileID: -6889794616046259546}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -435,6 +489,42 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
+--- !u!114 &-4081488671794198895
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Music.bank
+  m_EditorClassIdentifier: 
+  Path: FModStudioProject/lost_tales/Build/Desktop/Music.bank
+  SubDir: 
+  lastModified: 637096080401288218
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &-4057348214621180665
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FModStudioProject/lost_tales/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637096080399957869
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
 --- !u!114 &-3910358172422169031
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -487,6 +577,23 @@ MonoBehaviour:
   lastModified: 637096037464722758
   LoadResult: 0
   FileSizes: []
+  Exists: 0
+--- !u!114 &-3390381279619470492
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Track2/Mood
+  m_EditorClassIdentifier: 
+  Name: Mood
+  Min: 0
+  Max: 1
+  Default: 0
   Exists: 0
 --- !u!114 &-3389486718971934109
 MonoBehaviour:
@@ -612,7 +719,7 @@ MonoBehaviour:
   Path: event:/TempHollowKnightUIOk
   guid: 578b46d79a547f4fb211a0e776dc4c89
   Banks:
-  - {fileID: 631126281278036698}
+  - {fileID: 8514283502012439772}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -620,6 +727,24 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 2335
+--- !u!114 &-1665026257565354194
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/TempSounds.bank
+  m_EditorClassIdentifier: 
+  Path: FModStudioProject/lost_tales/Build/Desktop/TempSounds.bank
+  SubDir: 
+  lastModified: 637096080402988234
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
 --- !u!114 &-1649644154992505574
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -656,6 +781,41 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 0
+--- !u!114 &-1350513022416075859
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/SFX_night_forest_ambience/Volume
+  m_EditorClassIdentifier: 
+  Name: Volume
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &-1194691955117459671
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Music.bank
+  m_EditorClassIdentifier: 
+  Path: FModStudioProject/lost_tales/Build/Desktop/Music.bank
+  SubDir: 
+  lastModified: 637096081181710909
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
 --- !u!114 &-1122122389646172843
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -689,7 +849,7 @@ MonoBehaviour:
   Path: event:/SFX_Something_being_lit
   guid: aa954f378ffd074d8856a1752431b944
   Banks:
-  - {fileID: 7329471008853577016}
+  - {fileID: -6889794616046259546}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -764,10 +924,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EditorBanks:
   - {fileID: 6628386316868040051}
-  - {fileID: -2838811700216617710}
-  - {fileID: -7978486221087798403}
-  - {fileID: 7329471008853577016}
-  - {fileID: 631126281278036698}
+  - {fileID: 8289291418026418778}
+  - {fileID: -1194691955117459671}
+  - {fileID: -6889794616046259546}
+  - {fileID: 8514283502012439772}
   EditorEvents:
   - {fileID: -8945480641982042815}
   - {fileID: 7010854796051185735}
@@ -781,10 +941,10 @@ MonoBehaviour:
   - {fileID: 6332565903583635637}
   EditorParameters: []
   MasterBanks:
-  - {fileID: -2838811700216617710}
+  - {fileID: 8289291418026418778}
   StringsBanks:
   - {fileID: 6628386316868040051}
-  stringsBankWriteTime: 637096075160607232
+  stringsBankWriteTime: 637096081180743794
   cacheVersion: 3
 --- !u!114 &101962077692080713
 MonoBehaviour:
@@ -873,6 +1033,24 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
+--- !u!114 &1884261120571808310
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FModStudioProject/lost_tales/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637096080943915076
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
 --- !u!114 &2395439161912787457
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -906,7 +1084,7 @@ MonoBehaviour:
   Path: event:/SFX_Small_fire
   guid: c61d1d16be0a08478d43e000208026f2
   Banks:
-  - {fileID: 7329471008853577016}
+  - {fileID: -6889794616046259546}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
@@ -948,6 +1126,23 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
+--- !u!114 &3084676538821453776
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Track2/GoalProximity
+  m_EditorClassIdentifier: 
+  Name: GoalProximity
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
 --- !u!114 &3086905966738803094
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -966,6 +1161,40 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 1
+--- !u!114 &3095106927304553356
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Track2/GoalProximity
+  m_EditorClassIdentifier: 
+  Name: GoalProximity
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &3121704520541597826
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/SFX_night_forest_ambience/Volume
+  m_EditorClassIdentifier: 
+  Name: Volume
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &3248840752897904482
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1087,6 +1316,58 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 1
+--- !u!114 &4180875485766521276
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/TempSounds.bank
+  m_EditorClassIdentifier: 
+  Path: FModStudioProject/lost_tales/Build/Desktop/TempSounds.bank
+  SubDir: 
+  lastModified: 637096080945812182
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &4187838052794724709
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/SFX_night_forest_ambience/Volume
+  m_EditorClassIdentifier: 
+  Name: Volume
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
+--- !u!114 &4196534238781329216
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Track2/GoalProximity
+  m_EditorClassIdentifier: 
+  Name: GoalProximity
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &4348746055708778844
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1158,6 +1439,24 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 0
+--- !u!114 &5310907634163935756
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/SFX.bank
+  m_EditorClassIdentifier: 
+  Path: FModStudioProject/lost_tales/Build/Desktop/SFX.bank
+  SubDir: 
+  lastModified: 637096080402348222
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
 --- !u!114 &5731758414595795511
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1208,7 +1507,7 @@ MonoBehaviour:
   Path: event:/SFX_Drum
   guid: a4d7edafc042204a8780a70fc21d1d2d
   Banks:
-  - {fileID: 7329471008853577016}
+  - {fileID: -6889794616046259546}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1216,6 +1515,23 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 620
+--- !u!114 &6407279466890785348
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Track2/Mood
+  m_EditorClassIdentifier: 
+  Name: Mood
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
 --- !u!114 &6424392842634325575
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1249,12 +1565,12 @@ MonoBehaviour:
   Path: event:/SFX_night_forest_ambience
   guid: 2463d971eb314e45aa0fa735e5b5a8ea
   Banks:
-  - {fileID: 7329471008853577016}
+  - {fileID: -6889794616046259546}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: -2157402408906799607}
+  - {fileID: 4187838052794724709}
   MinDistance: 0
   MaxDistance: 0
   Length: 267761
@@ -1272,7 +1588,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: FModStudioProject/lost_tales/Build/Desktop/Master.strings.bank
   SubDir: 
-  lastModified: 637096075160607232
+  lastModified: 637096081180743794
   LoadResult: 0
   FileSizes:
   - Name: Desktop
@@ -1293,7 +1609,7 @@ MonoBehaviour:
   Path: event:/SFX_Footsteps
   guid: 1671cfd942069c42983ac8e0fce1d133
   Banks:
-  - {fileID: 7329471008853577016}
+  - {fileID: -6889794616046259546}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1354,6 +1670,23 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 1
+--- !u!114 &7363767310563442760
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Track2/Mood
+  m_EditorClassIdentifier: 
+  Name: Mood
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &7448551230067284097
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1421,6 +1754,42 @@ MonoBehaviour:
   Path: FModStudioProject/lost_tales/Build/Desktop/Master.bank
   SubDir: 
   lastModified: 637095274805694333
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
+--- !u!114 &8289291418026418778
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FModStudioProject/lost_tales/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637096081180713902
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
+--- !u!114 &8514283502012439772
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/TempSounds.bank
+  m_EditorClassIdentifier: 
+  Path: FModStudioProject/lost_tales/Build/Desktop/TempSounds.bank
+  SubDir: 
+  lastModified: 637096081182550915
   LoadResult: 0
   FileSizes: []
   Exists: 1
