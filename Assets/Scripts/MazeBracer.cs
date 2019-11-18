@@ -22,7 +22,8 @@ public class MazeBracer : Interactible
             go.SetActive(false);
         }
         _on_lit_sound.Play();
-        ParticleSystem?.Play();
+        if(ParticleSystem)
+            ParticleSystem.Play();
         this.enabled = false;
     }
 
