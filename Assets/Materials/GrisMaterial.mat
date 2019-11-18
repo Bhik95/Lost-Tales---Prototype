@@ -54,7 +54,7 @@ Material:
     - Vector1_6F5D5997: 0
     - Vector1_B7C48AAF: 36
     - Vector1_FEC5E432: 0
-    - _AlphaOff: 1
+    - _AlphaOff: 0.18
     - _AlphaOn: 1
     - _Cutoff: 0.69328755
     - _DefaultSaturation: 0.1
