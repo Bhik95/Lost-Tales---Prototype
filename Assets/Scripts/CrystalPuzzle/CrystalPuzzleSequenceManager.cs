@@ -8,6 +8,8 @@ public class CrystalPuzzleSequenceManager : MonoBehaviour
 
     [SerializeField] private CrystalPuzzleBrazier[] _crystals;
     [SerializeField] private GameObject[] gameobjects_to_disable;
+    [SerializeField] private FMODUnity.StudioEventEmitter _correct_sound;
+    [SerializeField] private FMODUnity.StudioEventEmitter _wrong_sound;
     private int _count = 0;
     private bool _correct = true;
 
@@ -48,6 +50,8 @@ public class CrystalPuzzleSequenceManager : MonoBehaviour
             _crystals[i].SetInteractible(true);
         }
         Debug.Log("WRONG -> RESET");
+
+        _wrong_sound.Play();
     }
 
     private void OnSuccess()
@@ -59,6 +63,8 @@ public class CrystalPuzzleSequenceManager : MonoBehaviour
         }
 
         Debug.Log("PUZZLE SOLVED");
+
+        _correct_sound.Play();
     }
 
 
