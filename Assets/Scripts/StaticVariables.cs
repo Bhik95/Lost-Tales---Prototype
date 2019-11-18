@@ -39,5 +39,6 @@ public class StaticVariables
         public static string Volume = "Volume";
         public static string Mood = "Mood";
         public static string GoalProximity = "GoalProximity";
+        public static string PitchShift = "PitchShift";
     }
 }
