@@ -3074,6 +3074,11 @@ PrefabInstance:
       propertyPath: _objects_to_deactivate.Array.data[0]
       value: 
       objectReference: {fileID: 458489654}
+    - target: {fileID: 3284511799860325807, guid: ac143ea16a5202e41b88d77a5f9349ba,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0c544dd2fcb3b9942b4d4ae6e3d72aa3, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ac143ea16a5202e41b88d77a5f9349ba, type: 3}
 --- !u!1 &904494311
@@ -4540,26 +4545,11 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 1221883347729593860, guid: 148567f030e16694a93db5508b2af90b,
-        type: 3}
-      propertyPath: m_LinearDrag
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1221883347729593861, guid: 148567f030e16694a93db5508b2af90b,
         type: 3}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4807595806957549969, guid: 148567f030e16694a93db5508b2af90b,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4807595806957549969, guid: 148567f030e16694a93db5508b2af90b,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.2
-      objectReference: {fileID: 0}
     - target: {fileID: 1221883347249161220, guid: 148567f030e16694a93db5508b2af90b,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -4569,22 +4559,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 1.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 1221883347249161223, guid: 148567f030e16694a93db5508b2af90b,
-        type: 3}
-      propertyPath: m_Intensity
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1221883347249161223, guid: 148567f030e16694a93db5508b2af90b,
-        type: 3}
-      propertyPath: m_LightCookieSprite
-      value: 
-      objectReference: {fileID: 21300000, guid: e3348898ab7e85b468a00dbaa8c739c9,
-        type: 3}
-    - target: {fileID: 1221883347249161223, guid: 148567f030e16694a93db5508b2af90b,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1221883348140596274, guid: 148567f030e16694a93db5508b2af90b,
         type: 3}

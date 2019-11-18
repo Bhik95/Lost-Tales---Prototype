@@ -16,7 +16,7 @@ public class Movement : MonoBehaviour
     public Vector2 GetInput;
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         GetInput = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
         SetAnimatorData();
@@ -31,10 +31,10 @@ public class Movement : MonoBehaviour
             }
         }
         
-        GetComponent<Rigidbody2D>().velocity = new Vector2(move.x, move.y * CoordinateScaleFactor) * Time.deltaTime * MovementSpeed;
+        GetComponent<Rigidbody2D>().velocity = new Vector2(move.x, move.y * CoordinateScaleFactor) * Time.fixedDeltaTime * MovementSpeed;
         //transform.Translate(GetInput.normalized * Time.deltaTime * 2);
 
-        _footstep_delay_timer -= Time.deltaTime;
+        _footstep_delay_timer -= Time.fixedDeltaTime;
     }
 
     void SetAnimatorData()
