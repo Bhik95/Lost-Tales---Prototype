@@ -10,7 +10,6 @@ public class MazeBracer : Interactible
     [SerializeField] private GameObject[] _objects_to_deactivate;
     [SerializeField] private GameObject _brazier;
     [SerializeField] private FMODUnity.StudioEventEmitter _on_lit_sound;
-    [SerializeField] private ParticleSystem ParticleSystem;
     [SerializeField] private Transform ParticleSystemEffector;
 
 
@@ -20,9 +19,9 @@ public class MazeBracer : Interactible
         foreach(GameObject go in _objects_to_deactivate)
         {
             go.SetActive(false);
+            ParticleSystemEffector.position = go.transform.position;
         }
         _on_lit_sound.Play();
-        ParticleSystem?.Play();
         this.enabled = false;
     }
 

@@ -15,13 +15,13 @@ MonoBehaviour:
   Path: event:/Track2
   guid: 57e0de00fb5c7643b4cd8a8935b31980
   Banks:
-  - {fileID: -981117983548395767}
+  - {fileID: -7778319256694161686}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 393887319279501726}
-  - {fileID: -6892732376355470947}
+  - {fileID: -7310447543099549292}
+  - {fileID: 181570594778531506}
   MinDistance: 0
   MaxDistance: 0
   Length: 137142
@@ -111,7 +111,7 @@ MonoBehaviour:
   Path: event:/SFX_Bonfire
   guid: 6f878ba6446ff344a193817a7927bdba
   Banks:
-  - {fileID: -2348618134251268312}
+  - {fileID: 2323022818205872324}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
@@ -151,6 +151,24 @@ MonoBehaviour:
   Path: FModStudioProject/lost_tales/Build/Desktop/Music.bank
   SubDir: 
   lastModified: 637096075161596894
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
+--- !u!114 &-7778319256694161686
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Music.bank
+  m_EditorClassIdentifier: 
+  Path: FModStudioProject/lost_tales/Build/Desktop/Music.bank
+  SubDir: 
+  lastModified: 637096759046602695
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -207,6 +225,23 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 0
+--- !u!114 &-7310447543099549292
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Track2/Mood
+  m_EditorClassIdentifier: 
+  Name: Mood
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
 --- !u!114 &-7303773633096329962
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -293,7 +328,7 @@ MonoBehaviour:
   Path: event:/Streetlamp_Hit
   guid: 8fed08e82a70574face6e12e8f0093f8
   Banks:
-  - {fileID: 1647137707780253505}
+  - {fileID: 2476379357918825321}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -404,7 +439,7 @@ MonoBehaviour:
   Path: event:/SFX_StartScene_Walla
   guid: 0eba1b1348029f47ad6c6497904e8fa3
   Banks:
-  - {fileID: -2348618134251268312}
+  - {fileID: 2323022818205872324}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -754,7 +789,7 @@ MonoBehaviour:
   Path: event:/TempHollowKnightUIOk
   guid: 578b46d79a547f4fb211a0e776dc4c89
   Banks:
-  - {fileID: 1647137707780253505}
+  - {fileID: 2476379357918825321}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -833,6 +868,23 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
+--- !u!114 &-1227632415961115629
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/SFX_night_forest_ambience/Volume
+  m_EditorClassIdentifier: 
+  Name: Volume
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
 --- !u!114 &-1194691955117459671
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -902,7 +954,7 @@ MonoBehaviour:
   Path: event:/SFX_Something_being_lit
   guid: aa954f378ffd074d8856a1752431b944
   Banks:
-  - {fileID: -2348618134251268312}
+  - {fileID: 2323022818205872324}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -977,10 +1029,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EditorBanks:
   - {fileID: 6628386316868040051}
-  - {fileID: 7298745242634162249}
-  - {fileID: -981117983548395767}
-  - {fileID: -2348618134251268312}
-  - {fileID: 1647137707780253505}
+  - {fileID: 6371021230295089339}
+  - {fileID: -7778319256694161686}
+  - {fileID: 2323022818205872324}
+  - {fileID: 2476379357918825321}
   EditorEvents:
   - {fileID: -8945480641982042815}
   - {fileID: 7010854796051185735}
@@ -994,10 +1046,10 @@ MonoBehaviour:
   - {fileID: 6332565903583635637}
   EditorParameters: []
   MasterBanks:
-  - {fileID: 7298745242634162249}
+  - {fileID: 6371021230295089339}
   StringsBanks:
   - {fileID: 6628386316868040051}
-  stringsBankWriteTime: 637096082123429401
+  stringsBankWriteTime: 637096759046113994
   cacheVersion: 3
 --- !u!114 &101962077692080713
 MonoBehaviour:
@@ -1033,6 +1085,23 @@ MonoBehaviour:
   lastModified: 637095996693799170
   LoadResult: 0
   FileSizes: []
+  Exists: 1
+--- !u!114 &181570594778531506
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Track2/GoalProximity
+  m_EditorClassIdentifier: 
+  Name: GoalProximity
+  Min: 0
+  Max: 1
+  Default: 0
   Exists: 1
 --- !u!114 &393887319279501726
 MonoBehaviour:
@@ -1139,6 +1208,24 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 0
+--- !u!114 &2323022818205872324
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/SFX.bank
+  m_EditorClassIdentifier: 
+  Path: FModStudioProject/lost_tales/Build/Desktop/SFX.bank
+  SubDir: 
+  lastModified: 637096759046802164
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
 --- !u!114 &2395439161912787457
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1172,7 +1259,7 @@ MonoBehaviour:
   Path: event:/SFX_Small_fire
   guid: c61d1d16be0a08478d43e000208026f2
   Banks:
-  - {fileID: -2348618134251268312}
+  - {fileID: 2323022818205872324}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
@@ -1197,6 +1284,24 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
+--- !u!114 &2476379357918825321
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/TempSounds.bank
+  m_EditorClassIdentifier: 
+  Path: FModStudioProject/lost_tales/Build/Desktop/TempSounds.bank
+  SubDir: 
+  lastModified: 637096759046822142
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
 --- !u!114 &2519169317139630364
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1612,7 +1717,7 @@ MonoBehaviour:
   Path: event:/SFX_Drum
   guid: a4d7edafc042204a8780a70fc21d1d2d
   Banks:
-  - {fileID: -2348618134251268312}
+  - {fileID: 2323022818205872324}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1620,6 +1725,24 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 620
+--- !u!114 &6371021230295089339
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FModStudioProject/lost_tales/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637096759046104021
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
 --- !u!114 &6407279466890785348
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1670,12 +1793,12 @@ MonoBehaviour:
   Path: event:/SFX_night_forest_ambience
   guid: 2463d971eb314e45aa0fa735e5b5a8ea
   Banks:
-  - {fileID: -2348618134251268312}
+  - {fileID: 2323022818205872324}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 3849721569055172291}
+  - {fileID: -1227632415961115629}
   MinDistance: 0
   MaxDistance: 0
   Length: 267761
@@ -1693,7 +1816,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: FModStudioProject/lost_tales/Build/Desktop/Master.strings.bank
   SubDir: 
-  lastModified: 637096082123429401
+  lastModified: 637096759046113994
   LoadResult: 0
   FileSizes:
   - Name: Desktop
@@ -1714,7 +1837,7 @@ MonoBehaviour:
   Path: event:/SFX_Footsteps
   guid: 1671cfd942069c42983ac8e0fce1d133
   Banks:
-  - {fileID: -2348618134251268312}
+  - {fileID: 2323022818205872324}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
