@@ -54,7 +54,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - _AlphaClip: 0
-    - _Amplitude: 0.7
+    - _Amplitude: 2
     - _Blend: 0
     - _BlendOp: 0
     - _BumpScale: 1
@@ -70,10 +70,10 @@ Material:
     - _DistortionStrengthScaled: 0.1
     - _DstBlend: 0
     - _EmissionEnabled: 0
-    - _Falloff: 0.7
+    - _Falloff: 0.6
     - _FlipbookBlending: 0
     - _FlipbookMode: 0
-    - _Frequency: 0.1
+    - _Frequency: 0.2
     - _LightingEnabled: 0
     - _Mode: 0
     - _QueueOffset: 0
