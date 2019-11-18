@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -6,16 +7,23 @@ using UnityEngine;
 public abstract class Interactible : MonoBehaviour
 {
 
+    public event Action<Interactible> Activated;
     protected bool _player_nearby = false;
     protected abstract void OnPlayerNearby();
     protected abstract void OnPlayerFar();
     protected abstract void OnActivate();
 
+    private void Interact()
+    {
+        OnActivate();
+        Activated?.Invoke(this);
+    }
+
     protected virtual void Update()
     {
-        if (_player_nearby && Input.GetButtonDown("Activate"))
+        if (_player_nearby && Input.GetButtonDown(StaticVariables.Input.Activate))
         {
-            OnActivate();
+            Interact();
         }
     }
 

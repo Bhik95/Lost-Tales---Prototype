@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
+using System;
 
 public class CrystalPuzzleBrazier : Interactible
 {
@@ -12,14 +13,30 @@ public class CrystalPuzzleBrazier : Interactible
     [SerializeField] private ParticleSystem ParticleSystem;
     [SerializeField] private Transform ParticleSystemEffector;
 
-
     protected override void OnActivate()
     {
-        _brazier.SetActive(true);
         _crystal_sound.Play();
         if (ParticleSystem)
             ParticleSystem.Play();
-        this.enabled = false;
+        SetInteractible(false);
+    }
+
+    public void SetInteractible(bool isInteractible)
+    {
+        StartCoroutine(SetInteractibleCoroutine(isInteractible));
+    }
+
+    private IEnumerator SetInteractibleCoroutine(bool isInteractible)
+    {
+        if (isInteractible)//If you want to make it interactible again you need to wait for the sound to end
+        {
+            while (_crystal_sound.IsPlaying())
+            {
+                yield return null;
+            }
+        }
+        _brazier.SetActive(!isInteractible);
+        this.enabled = isInteractible;
     }
 
     protected override void OnPlayerFar()

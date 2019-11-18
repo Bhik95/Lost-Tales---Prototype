@@ -41,4 +41,9 @@ public class StaticVariables
         public static string GoalProximity = "GoalProximity";
         public static string PitchShift = "PitchShift";
     }
+
+    public class Input
+    {
+        public static string Activate = "Activate";
+    }
 }
