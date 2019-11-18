@@ -4691,6 +4691,8 @@ MonoBehaviour:
   Animator: {fileID: 1112411522}
   MovementSpeed: 100
   CoordinateScaleFactor: 0.7
+  FootstepsEmitter: {fileID: 0}
+  FootstepDelay: 1
   GetInput: {x: 0, y: 0}
 --- !u!212 &1112411524
 SpriteRenderer:
@@ -5580,22 +5582,22 @@ PrefabInstance:
     - target: {fileID: 4807595806957549969, guid: 148567f030e16694a93db5508b2af90b,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 1.5
+      value: 1.2
       objectReference: {fileID: 0}
     - target: {fileID: 4807595806957549969, guid: 148567f030e16694a93db5508b2af90b,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.9
+      value: 1.2
       objectReference: {fileID: 0}
     - target: {fileID: 1221883347249161220, guid: 148567f030e16694a93db5508b2af90b,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 1
+      value: 1.8
       objectReference: {fileID: 0}
     - target: {fileID: 1221883347249161220, guid: 148567f030e16694a93db5508b2af90b,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 1
+      value: 1.8
       objectReference: {fileID: 0}
     - target: {fileID: 1221883347249161223, guid: 148567f030e16694a93db5508b2af90b,
         type: 3}
@@ -5606,7 +5608,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LightCookieSprite
       value: 
-      objectReference: {fileID: 21300000, guid: b1649164d3d4c884788245a6e1004e8d,
+      objectReference: {fileID: 21300000, guid: f1300092b434a854f81fef23f22a1fcd,
         type: 3}
     - target: {fileID: 380471159804499576, guid: 148567f030e16694a93db5508b2af90b,
         type: 3}
@@ -14984,6 +14986,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6929716879218080232, guid: 5c2447d2094cd4ff3a4c1d64e64a0a1a,
+        type: 3}
+      propertyPath: m_BodyType
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5c2447d2094cd4ff3a4c1d64e64a0a1a, type: 3}
