@@ -330,7 +330,7 @@ PrefabInstance:
     - target: {fileID: 6757549504201225160, guid: ac143ea16a5202e41b88d77a5f9349ba,
         type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 6757549504201225160, guid: ac143ea16a5202e41b88d77a5f9349ba,
         type: 3}
@@ -10964,7 +10964,7 @@ PrefabInstance:
     - target: {fileID: 6757549504201225160, guid: ac143ea16a5202e41b88d77a5f9349ba,
         type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 6757549504201225160, guid: ac143ea16a5202e41b88d77a5f9349ba,
         type: 3}
@@ -22935,7 +22935,7 @@ PrefabInstance:
     - target: {fileID: 6757549504201225160, guid: ac143ea16a5202e41b88d77a5f9349ba,
         type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6757549504201225160, guid: ac143ea16a5202e41b88d77a5f9349ba,
         type: 3}
@@ -24460,26 +24460,6 @@ PrefabInstance:
       propertyPath: _objects_to_deactivate.Array.data[0]
       value: 
       objectReference: {fileID: 458489654}
-    - target: {fileID: 1506762382421868327, guid: ac143ea16a5202e41b88d77a5f9349ba,
-        type: 3}
-      propertyPath: _objects_to_deactivate.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1506762382421868327, guid: ac143ea16a5202e41b88d77a5f9349ba,
-        type: 3}
-      propertyPath: _objects_to_deactivate.Array.data[0]
-      value: 
-      objectReference: {fileID: 458489654}
-    - target: {fileID: 1506762382421868327, guid: ac143ea16a5202e41b88d77a5f9349ba,
-        type: 3}
-      propertyPath: ParticleSystem
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 1506762382421868327, guid: ac143ea16a5202e41b88d77a5f9349ba,
-        type: 3}
-      propertyPath: ParticleSystemEffector
-      value: 
-      objectReference: {fileID: 1651546787}
     - target: {fileID: 6757549504201225163, guid: ac143ea16a5202e41b88d77a5f9349ba,
         type: 3}
       propertyPath: m_SortingOrder
@@ -46729,7 +46709,7 @@ ParticleSystemRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_RenderMode: 0
   m_SortMode: 0
   m_MinParticleSize: 0
@@ -52113,7 +52093,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1588040930}
   - component: {fileID: 1588040931}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Particle System Drag Field
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -52942,7 +52922,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1651546787}
   - component: {fileID: 1651546788}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Particle System Force Field
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -73105,8 +73085,8 @@ MonoBehaviour:
   _sound_distance_max: 5.2
   _sound_transition_duration: 1
   _maze: {fileID: 1686857917}
-  _particleSystem: {fileID: 1119660856}
-  _particleSystemEffector: {fileID: 1651546786}
+  _particleSystem: {fileID: 0}
+  _particleSystemEffector: {fileID: 0}
 --- !u!58 &1839496212
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -84204,7 +84184,7 @@ PrefabInstance:
     - target: {fileID: 6757549504201225160, guid: ac143ea16a5202e41b88d77a5f9349ba,
         type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6757549504201225160, guid: ac143ea16a5202e41b88d77a5f9349ba,
         type: 3}
