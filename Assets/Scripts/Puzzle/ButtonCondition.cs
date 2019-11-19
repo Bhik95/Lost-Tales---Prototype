@@ -19,7 +19,7 @@ public class ButtonCondition : AbstractPuzzleCondition
         base.UpdateCondition();
     }
 
-    protected override void Solve()
+    public override void Solve()
     {
         base.Solve();
     }
