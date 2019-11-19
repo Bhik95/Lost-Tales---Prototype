@@ -20,8 +20,13 @@ public class MazeBrazier : Interactible
         foreach(GameObject go in _objects_to_deactivate)
         {
             go.SetActive(false);
+            if (ParticleSystemEffector)
+            {
+                ParticleSystemEffector.position = go.transform.position;
+            }
         }
         _on_lit_sound.Play();
+     
         if(ParticleSystem)
             ParticleSystem.Play();
         this.enabled = false;

@@ -12,6 +12,9 @@ public class AltarMusicChange : Interactible
     [SerializeField] private float _sound_transition_duration = 1f;
 
     [SerializeField] private GameObject _maze;
+    [SerializeField] private GameObject _particleSystem;
+    [SerializeField] private GameObject _particleSystemEffector;
+
 
     private bool _lit = false;
     private GameObject _player;
@@ -29,7 +32,6 @@ public class AltarMusicChange : Interactible
             float goalProximity = Mathf.Clamp01((Vector2.Distance(_player.transform.position, transform.position) - _sound_distance_min) / (_sound_distance_max - _sound_distance_min));
             _music_emitter.SetParameter("GoalProximity", 1 - goalProximity);
         }
-        
         //Debug.Log(goalProximity);
     }
 
@@ -43,6 +45,17 @@ public class AltarMusicChange : Interactible
             yield return null;
         }
         _music_emitter.SetParameter(paramName, finalValue);
+    }
+
+    private IEnumerator TempFollowPlayer()
+    {
+        float timer = 0;
+        while (timer < 3)
+        {
+            timer += Time.deltaTime;
+            _particleSystemEffector.transform.position = _player.transform.position;
+            yield return null;
+        }
     }
 
     private void OnDrawGizmos()
@@ -75,6 +88,12 @@ public class AltarMusicChange : Interactible
             _maze.SetActive(false);
 
             _interact_sound_emitter.Play();
+
+            if (_particleSystem)
+            {
+                _particleSystem.SetActive(true);
+                StartCoroutine(TempFollowPlayer());
+            }
         }
     }
 }
