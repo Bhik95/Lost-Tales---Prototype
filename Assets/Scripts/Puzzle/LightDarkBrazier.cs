@@ -14,8 +14,9 @@ public class LightDarkBrazier : Interactible
     [SerializeField] private Transform ParticleSystemEffector;
 
 
-    private void Start()
+    private IEnumerator Start()
     {
+        yield return new WaitForSeconds(.1f);
         if (!ShouldBeActive)
         {
             Condition.Solve();
