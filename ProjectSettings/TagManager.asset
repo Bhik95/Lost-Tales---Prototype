@@ -41,3 +41,6 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: prop
+    uniqueID: 2567283519
+    locked: 0
