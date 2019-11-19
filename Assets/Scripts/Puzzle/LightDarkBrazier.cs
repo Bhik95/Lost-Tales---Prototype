@@ -16,7 +16,7 @@ public class LightDarkBrazier : Interactible
 
     private IEnumerator Start()
     {
-        yield return new WaitForSeconds(.1f);
+        yield return new WaitForSeconds(1f);
         if (!ShouldBeActive)
         {
             Condition.Solve();

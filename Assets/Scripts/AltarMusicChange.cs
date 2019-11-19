@@ -11,6 +11,7 @@ public class AltarMusicChange : Interactible
     [SerializeField] private float _sound_distance_max;
     [SerializeField] private float _sound_transition_duration = 1f;
 
+    [SerializeField] private GameObject _Light;
     [SerializeField] private GameObject _maze;
     [SerializeField] private GameObject _particleSystem;
     [SerializeField] private GameObject _particleSystemEffector;
@@ -27,11 +28,8 @@ public class AltarMusicChange : Interactible
     protected override void Update()
     {
         base.Update();
-        if (!_lit)
-        {
-            float goalProximity = Mathf.Clamp01((Vector2.Distance(_player.transform.position, transform.position) - _sound_distance_min) / (_sound_distance_max - _sound_distance_min));
-            _music_emitter.SetParameter("GoalProximity", 1 - goalProximity);
-        }
+        float goalProximity = Mathf.Clamp01((Vector2.Distance(_player.transform.position, transform.position) - _sound_distance_min) / (_sound_distance_max - _sound_distance_min));
+        _music_emitter.SetParameter("GoalProximity", 1 - goalProximity);
         //Debug.Log(goalProximity);
     }
 
@@ -52,6 +50,11 @@ public class AltarMusicChange : Interactible
         float timer = 0;
         while (timer < 3)
         {
+            if (_Light)
+            {
+                _Light.transform.localScale = Vector3.MoveTowards(_Light.transform.localScale, new Vector3(1.2f,1.2f,1),Time.deltaTime);
+            }
+
             timer += Time.deltaTime;
             _particleSystemEffector.transform.position = _player.transform.position;
             yield return null;
@@ -85,9 +88,11 @@ public class AltarMusicChange : Interactible
             StartCoroutine(ChangeMoodValue("Mood", _lit ? 0 : 1, _lit ? 1 : 0, _sound_transition_duration));
             StartCoroutine(ChangeMoodValue("GoalProximity", 1 - Mathf.Clamp01((Vector2.Distance(_player.transform.position, transform.position) - _sound_distance_min) / (_sound_distance_max - _sound_distance_min)), 0, _sound_transition_duration));
 
-            _maze.SetActive(false);
+            _maze.SetActive(true);
 
             _interact_sound_emitter.Play();
+
+            
 
             if (_particleSystem)
             {
