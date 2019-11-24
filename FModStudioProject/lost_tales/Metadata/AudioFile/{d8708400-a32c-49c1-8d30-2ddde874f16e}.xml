@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="AudioFile" id="{d8708400-a32c-49c1-8d30-2ddde874f16e}">
+		<property name="assetPath">
+			<value>Moonlit Forest (Loop) Piano Sacred.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>76.799999999999997</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{263c0e0c-a7f8-4112-a81f-b13d693a77d1}</destination>
+		</relationship>
+	</object>
+</objects>

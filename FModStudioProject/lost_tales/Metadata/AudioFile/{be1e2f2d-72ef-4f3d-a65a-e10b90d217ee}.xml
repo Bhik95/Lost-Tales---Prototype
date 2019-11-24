@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="AudioFile" id="{be1e2f2d-72ef-4f3d-a65a-e10b90d217ee}">
+		<property name="assetPath">
+			<value>Moonlit Forest Female Ahs.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>89.599999999999994</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{263c0e0c-a7f8-4112-a81f-b13d693a77d1}</destination>
+		</relationship>
+	</object>
+</objects>
