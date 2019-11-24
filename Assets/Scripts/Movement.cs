@@ -12,6 +12,7 @@ public class Movement : MonoBehaviour
     [SerializeField] private float CoordinateScaleFactor = 0.7f;
     [SerializeField] private FMODUnity.StudioEventEmitter FootstepsEmitter;
     [SerializeField] private float FootstepDelay = 1f;
+    private Vector2 _last_direction;//It´s used to memorize the direction the sprite is facing (for the idle animations)
     private float _footstep_delay_timer = 0f;
     public Vector2 GetInput;
 
@@ -24,6 +25,8 @@ public class Movement : MonoBehaviour
 
         if(move.magnitude > 0.01)
         {
+            _last_direction = move;
+
             if (_footstep_delay_timer <= 0)
             {
                 _footstep_delay_timer = FootstepDelay;
@@ -42,5 +45,7 @@ public class Movement : MonoBehaviour
         Animator?.SetFloat("Horizontal", GetInput.x);
         Animator?.SetFloat("Vertical", GetInput.y);
         Animator?.SetFloat("Magnitude", GetInput.magnitude);
+        Animator?.SetFloat("LastHorizontal", _last_direction.x);
+        Animator?.SetFloat("LastVertical", _last_direction.y);
     }
 }

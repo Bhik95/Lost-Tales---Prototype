@@ -5035,6 +5035,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8511269579657973872, guid: 4bbf0d1e9a033864897382d26fbc105a,
+        type: 3}
+      propertyPath: m_Name
+      value: LabirynthFunctionality
+      objectReference: {fileID: 0}
     - target: {fileID: 4245967569884887046, guid: 4bbf0d1e9a033864897382d26fbc105a,
         type: 3}
       propertyPath: _music_emitter
@@ -5045,11 +5050,6 @@ PrefabInstance:
       propertyPath: _Light
       value: 
       objectReference: {fileID: 171513621}
-    - target: {fileID: 8511269579657973872, guid: 4bbf0d1e9a033864897382d26fbc105a,
-        type: 3}
-      propertyPath: m_Name
-      value: LabirynthFunctionality
-      objectReference: {fileID: 0}
     - target: {fileID: 8511269579657973873, guid: 4bbf0d1e9a033864897382d26fbc105a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6479,6 +6479,49 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57c8118e7f6c9294bb343882a54e1645, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1137437024 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3159761045479466679, guid: 4bbf0d1e9a033864897382d26fbc105a,
+    type: 3}
+  m_PrefabInstance: {fileID: 316018426}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1137437025
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1137437024}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/SFX_PuzzleSolved
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0
+--- !u!114 &1137437026
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1137437024}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79512b63d738c3c41a6d6dc87fa4da78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _emitter: {fileID: 1137437025}
+  _deactivate_after_interaction: 1
 --- !u!1 &1140340457 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3290338394721762272, guid: ca6bb7431e2eaa849a29b47696e6abba,
@@ -11643,6 +11686,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Music
       objectReference: {fileID: 0}
+    - target: {fileID: 922203938000940068, guid: 815b25d50eaa30e43a3551826084e156,
+        type: 3}
+      propertyPath: Params.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 922203938000940068, guid: 815b25d50eaa30e43a3551826084e156,
+        type: 3}
+      propertyPath: Params.Array.data[0].Value
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 922203938000940068, guid: 815b25d50eaa30e43a3551826084e156,
+        type: 3}
+      propertyPath: Params.Array.data[1].Value
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 922203938000940071, guid: 815b25d50eaa30e43a3551826084e156,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -11697,21 +11755,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 922203938000940068, guid: 815b25d50eaa30e43a3551826084e156,
-        type: 3}
-      propertyPath: Params.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 922203938000940068, guid: 815b25d50eaa30e43a3551826084e156,
-        type: 3}
-      propertyPath: Params.Array.data[0].Value
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 922203938000940068, guid: 815b25d50eaa30e43a3551826084e156,
-        type: 3}
-      propertyPath: Params.Array.data[1].Value
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 815b25d50eaa30e43a3551826084e156, type: 3}
