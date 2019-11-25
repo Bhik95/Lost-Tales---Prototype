@@ -36,7 +36,7 @@ public class LightDarkBrazier : Interactible
             }
             else
             {
-                Condition.Solve();
+                Condition.UnSolve();
             }
             _brazier.SetActive(true);
             foreach (GameObject go in _objects_to_activate)
@@ -60,7 +60,7 @@ public class LightDarkBrazier : Interactible
             }
             else
             {
-                Condition.Solve();
+                Condition.UnSolve();
             }
             _brazier.SetActive(false);
             foreach (GameObject go in _objects_to_activate)

@@ -9,6 +9,7 @@ public class LightPuzzle : AbstractPuzzle
     [SerializeField] private GameObject EnterWall;
 
     [SerializeField] private GameObject Effect;
+
     protected override void SolvePuzzle()
     {
         base.SolvePuzzle();
@@ -17,11 +18,12 @@ public class LightPuzzle : AbstractPuzzle
         {
             Effect.SetActive(true);
         }
-        
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
         EnterWall.SetActive(true);
     }
+
+   
 }

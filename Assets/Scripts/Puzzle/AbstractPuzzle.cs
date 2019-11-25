@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public abstract class AbstractPuzzle : MonoBehaviour
@@ -11,7 +12,8 @@ public abstract class AbstractPuzzle : MonoBehaviour
 
     protected virtual void SolvePuzzle() { puzzleSolved = true; }
     protected virtual void UnsolvePuzzle() { puzzleSolved = false; }
-    public virtual void SolveCondition()
+
+    public virtual void SolveCondition(AbstractPuzzleCondition pCondition)
     {
         if (CheckIfSolved() && !puzzleSolved)
         {
@@ -21,6 +23,15 @@ public abstract class AbstractPuzzle : MonoBehaviour
         {
             UnsolvePuzzle();
         }
+
+        //int index = Conditions.IndexOf(pCondition);
+        //for (int i = 0; i < Conditions.Count; i++)
+        //{
+        //    if (i < index+1 && i > index-1)
+        //    {
+
+        //    }
+        //}
     }
 
     protected virtual bool CheckIfSolved()
