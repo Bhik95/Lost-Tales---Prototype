@@ -34,8 +34,14 @@ public class CameraShaker : MonoBehaviour
             _trauma_level = 0;
     }
 
+
+    /// <summary>
+    /// Method used to add the shakiness
+    /// </summary>
+    /// <param name="deltaTrauma"></param>
     public void AddTrauma(float deltaTrauma)
     {
         _trauma_level += deltaTrauma;
+        _trauma_level = Mathf.Clamp01(_trauma_level);
     }
 }
