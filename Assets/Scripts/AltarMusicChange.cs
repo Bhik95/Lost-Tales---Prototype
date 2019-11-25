@@ -15,6 +15,7 @@ public class AltarMusicChange : Interactible
     [SerializeField] private GameObject _maze;
     [SerializeField] private GameObject _particleSystem;
     [SerializeField] private GameObject _particleSystemEffector;
+    [SerializeField] private float _camera_shake_trauma = 0.5f;
 
 
     private bool _lit = false;
@@ -99,6 +100,9 @@ public class AltarMusicChange : Interactible
                 _particleSystem.SetActive(true);
                 StartCoroutine(TempFollowPlayer());
             }
+
+            //Camera Shake:
+            Camera.main.GetComponent<CameraShaker>().AddTrauma(_camera_shake_trauma);
         }
     }
 }
