@@ -22,21 +22,30 @@ public class LightDarkBrazier : Interactible
             Condition.Solve();
         }
     }
-   
 
+    public void Toggle()
+    {
+        ActivateThis(false);
+    }
+
+    
 
     protected override void OnActivate()
     {
+        ActivateThis(true);
+    }
 
+    private void ActivateThis(bool activateOthers)
+    {
         if (!_brazier.activeInHierarchy)
         {
             if (ShouldBeActive)
             {
-                Condition.Solve();
+                Condition.Solve(activateOthers);
             }
             else
             {
-                Condition.UnSolve();
+                Condition.UnSolve(activateOthers);
             }
             _brazier.SetActive(true);
             foreach (GameObject go in _objects_to_activate)
@@ -56,11 +65,11 @@ public class LightDarkBrazier : Interactible
 
             if (!ShouldBeActive)
             {
-                Condition.Solve();
+                Condition.Solve(activateOthers);
             }
             else
             {
-                Condition.UnSolve();
+                Condition.UnSolve(activateOthers);
             }
             _brazier.SetActive(false);
             foreach (GameObject go in _objects_to_activate)
@@ -76,7 +85,7 @@ public class LightDarkBrazier : Interactible
             //this.enabled = false;
         }
 
-        
+
     }
 
     protected override void OnPlayerFar()

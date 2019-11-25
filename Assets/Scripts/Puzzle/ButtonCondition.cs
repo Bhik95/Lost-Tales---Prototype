@@ -19,10 +19,11 @@ public class ButtonCondition : AbstractPuzzleCondition
         base.UpdateCondition();
     }
 
-    public override void Solve()
+    public override void Solve(bool useThis = false)
     {
-        base.Solve();
+        base.Solve(useThis);
     }
+
 
     protected virtual void LanternEnter(PointAndClickLantern pLantern)
     {

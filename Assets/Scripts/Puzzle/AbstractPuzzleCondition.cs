@@ -8,15 +8,33 @@ public class AbstractPuzzleCondition : MonoBehaviour
     [HideInInspector]public AbstractPuzzle Owner;
     public bool IsSolved;// { protected set; get; }
 
-    public virtual void Solve()
+    public virtual void Solve(bool useThis = false)
     {
         IsSolved = true;
-        Owner.SolveCondition();
+        if (useThis)
+        {
+            Owner.SolveCondition(this);
+
+        }
+        else
+        {
+            Owner.SolveCondition();
+
+        }
     }
-    public virtual void UnSolve()
+    public virtual void UnSolve(bool useThis = false)
     {
         IsSolved = false;
-        Owner.SolveCondition();
+        if (useThis)
+        {
+            Owner.SolveCondition(this);
+
+        }
+        else
+        {
+            Owner.SolveCondition();
+
+        }
     }
     public virtual void Initialize()
     {
