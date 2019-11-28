@@ -15,7 +15,8 @@ public class AltarMusicChange : Interactible
     [SerializeField] private GameObject _maze;
     [SerializeField] private GameObject _particleSystem;
     [SerializeField] private GameObject _particleSystemEffector;
-    [SerializeField] private float _camera_shake_trauma = 0.5f;
+    [SerializeField] private float _camera_shake_trauma = 0.2f;
+    [SerializeField] private float _camera_shake_trauma_after = 0.3f;
 
 
     private bool _lit = false;
@@ -49,7 +50,7 @@ public class AltarMusicChange : Interactible
     private IEnumerator TempFollowPlayer()
     {
         float timer = 0;
-        while (timer < 3)
+        while (timer < 1)
         {
             if (_Light)
             {
@@ -60,6 +61,7 @@ public class AltarMusicChange : Interactible
             _particleSystemEffector.transform.position = _player.transform.position;
             yield return null;
         }
+        Camera.main.GetComponent<CameraShaker>().AddTrauma(_camera_shake_trauma_after);
     }
 
     private void OnDrawGizmos()
