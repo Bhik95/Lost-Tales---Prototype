@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 176358309577780378}
   - component: {fileID: 176358309577780377}
-  - component: {fileID: 1172046740594030505}
+  - component: {fileID: 1972340084308593198}
   m_Layer: 0
   m_Name: ForeverAloneTinyRock_Prefab
   m_TagString: Untagged
@@ -81,8 +81,8 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 1
---- !u!58 &1172046740594030505
-CircleCollider2D:
+--- !u!70 &1972340084308593198
+CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -94,6 +94,6 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.1}
-  serializedVersion: 2
-  m_Radius: 0.19
+  m_Offset: {x: 0.0037235147, y: 0.1014148}
+  m_Size: {x: 0.31005308, y: 0.1790028}
+  m_Direction: 1

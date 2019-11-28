@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2688643182648424230}
   - component: {fileID: 4140245820101453127}
-  - component: {fileID: 3992562195721965922}
+  - component: {fileID: 4973097925297657206}
   m_Layer: 0
   m_Name: MiddleFinger_Prefab
   m_TagString: Untagged
@@ -81,8 +81,8 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!70 &3992562195721965922
-CapsuleCollider2D:
+--- !u!68 &4973097925297657206
+EdgeCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -94,6 +94,15 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.09, y: 0.1}
-  m_Size: {x: 0.745, y: 0.48}
-  m_Direction: 1
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -0.3177991, y: 0.36475515}
+  - {x: -0.3737836, y: 0.26597786}
+  - {x: -0.2952199, y: 0.24681711}
+  - {x: -0.23988676, y: 0.08222675}
+  - {x: 0.05934286, y: -0.044211864}
+  - {x: 0.06024885, y: -0.1389482}
+  - {x: 0.13093948, y: 0.17542505}
+  - {x: -0.02865076, y: 0.35265088}
+  - {x: -0.31809807, y: 0.36247563}
