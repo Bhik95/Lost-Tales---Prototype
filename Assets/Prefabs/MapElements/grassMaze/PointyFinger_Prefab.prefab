@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3193951376496984945}
   - component: {fileID: 1573287930202185641}
-  - component: {fileID: 2291590663647295910}
+  - component: {fileID: 2023021009502681913}
   m_Layer: 0
   m_Name: PointyFinger_Prefab
   m_TagString: Untagged
@@ -81,8 +81,8 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 1
---- !u!70 &2291590663647295910
-CapsuleCollider2D:
+--- !u!68 &2023021009502681913
+EdgeCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -94,6 +94,15 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.18, y: 0.09}
-  m_Size: {x: 0.78, y: 0.42}
-  m_Direction: 1
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -0.012226105, y: 0.3457358}
+  - {x: -0.26854897, y: 0.4784745}
+  - {x: -0.61062, y: 0.4579805}
+  - {x: -0.52575874, y: 0.16699934}
+  - {x: -0.38847256, y: 0.1064415}
+  - {x: -0.32778358, y: 0.0070233345}
+  - {x: -0.023635864, y: 0.02815938}
+  - {x: 0.11255312, y: 0.12563038}
+  - {x: -0.015236855, y: 0.33658147}

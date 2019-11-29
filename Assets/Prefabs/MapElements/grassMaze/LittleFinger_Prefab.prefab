@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3580415793542552009}
   - component: {fileID: 1404425361114422406}
-  - component: {fileID: 5872866042689886790}
+  - component: {fileID: 6394226383116410510}
   m_Layer: 0
   m_Name: LittleFinger_Prefab
   m_TagString: Untagged
@@ -81,8 +81,8 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 1
---- !u!70 &5872866042689886790
-CapsuleCollider2D:
+--- !u!68 &6394226383116410510
+EdgeCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -94,6 +94,17 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.06, y: 0.09}
-  m_Size: {x: 0.55, y: 0.39}
-  m_Direction: 1
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: 0.280231, y: 0.5410222}
+  - {x: -0.1603365, y: 0.45807242}
+  - {x: -0.31784964, y: 0.26795256}
+  - {x: -0.24830055, y: 0.21415198}
+  - {x: -0.2323103, y: 0.091356754}
+  - {x: -0.088587284, y: 0.01114893}
+  - {x: 0.029253006, y: 0.028171778}
+  - {x: 0.12379742, y: 0.20653963}
+  - {x: 0.20328522, y: 0.38770485}
+  - {x: 0.31892347, y: 0.4263239}
+  - {x: 0.29269457, y: 0.5277753}

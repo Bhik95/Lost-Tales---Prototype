@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9139256197185503609}
   - component: {fileID: 9139256197185503608}
-  - component: {fileID: 9124130158578182539}
+  - component: {fileID: 8435996343168510147}
   m_Layer: 0
   m_Name: ShroomWithRock_Prefab
   m_TagString: Untagged
@@ -81,8 +81,8 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 1
---- !u!58 &9124130158578182539
-CircleCollider2D:
+--- !u!70 &8435996343168510147
+CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -94,6 +94,6 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.09, y: 0.11}
-  serializedVersion: 2
-  m_Radius: 0.28
+  m_Offset: {x: -0.000000003200931, y: 0.2231487}
+  m_Size: {x: 0.7075001, y: 0.38642424}
+  m_Direction: 1

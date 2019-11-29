@@ -12,6 +12,6 @@ public class ToggleCamera : MonoBehaviour
     void OnTriggerEnter2D(Collider2D col)
     {
       
-            Camera.main.GetComponent<CameraFollow>().TempTarget = Transform;
+            Camera.main.GetComponentInParent<CameraFollow>().TempTarget = Transform;
     }
 }
