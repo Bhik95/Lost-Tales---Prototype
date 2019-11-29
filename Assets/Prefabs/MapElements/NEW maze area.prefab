@@ -331,6 +331,7 @@ Transform:
   - {fileID: 1903874228359171424}
   - {fileID: 1903874229381905224}
   - {fileID: 7545296702194640832}
+  - {fileID: 2804574110948649827}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -351,6 +352,10 @@ GameObject:
   - component: {fileID: 1216785006}
   - component: {fileID: 1216785007}
   - component: {fileID: 1216785008}
+  - component: {fileID: 8998895959161402568}
+  - component: {fileID: 1243615766339200137}
+  - component: {fileID: 4445858898772286294}
+  - component: {fileID: 9131475760752130784}
   m_Layer: 0
   m_Name: maze inside walls
   m_TagString: Untagged
@@ -595,6 +600,105 @@ EdgeCollider2D:
   - {x: 0.8154249, y: -1.4449604}
   - {x: -0.23956847, y: -1.4454598}
   - {x: -0.235327, y: -1.7568693}
+--- !u!68 &8998895959161402568
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1903874228894806118}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: 2.0998917, y: -0.042856097}
+  - {x: 2.101796, y: -0.4017719}
+  - {x: 0.8679583, y: -0.38191795}
+  - {x: 0.85370064, y: -0.08914423}
+  - {x: 2.107146, y: -0.042856097}
+--- !u!68 &1243615766339200137
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1903874228894806118}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: 2.0200543, y: 2.0852098}
+  - {x: 2.0086246, y: 2.4197793}
+  - {x: 1.2617822, y: 2.4287663}
+  - {x: 1.2423179, y: 2.0733614}
+  - {x: 2.0151467, y: 2.0709767}
+--- !u!68 &4445858898772286294
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1903874228894806118}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -2.1334243, y: 1.3522714}
+  - {x: -1.0416212, y: 1.3658396}
+  - {x: -1.0343995, y: 1.0361732}
+  - {x: -0.66397667, y: 1.0464805}
+  - {x: -0.6771083, y: 2.0801888}
+  - {x: 0.47494483, y: 2.0649104}
+  - {x: 0.47270012, y: 1.0360905}
+  - {x: 0.82894206, y: 1.0246252}
+  - {x: 0.839839, y: 2.3890858}
+  - {x: -1.0328455, y: 2.4191103}
+  - {x: -1.0490155, y: 1.6987811}
+  - {x: -2.0325403, y: 1.7116598}
+  - {x: -2.0784273, y: 2.7436209}
+  - {x: -1.8232975, y: 2.7453237}
+  - {x: -1.7985086, y: 2.0661483}
+  - {x: -1.4663982, y: 2.0671506}
+  - {x: -1.4253893, y: 2.9396439}
+  - {x: -2.5169477, y: 2.8756928}
+  - {x: -2.4824343, y: 1.3709482}
+  - {x: -2.117682, y: 1.336728}
+--- !u!68 &9131475760752130784
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1903874228894806118}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -0.2759936, y: -2.510251}
+  - {x: 0.1068542, y: -2.5128474}
+  - {x: 0.09210825, y: -2.1416974}
+  - {x: -0.28853726, y: -2.1430235}
+  - {x: -0.2913382, y: -2.486936}
 --- !u!1 &1903874228921274445
 GameObject:
   m_ObjectHideFlags: 0
@@ -1435,7 +1539,7 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 1.05, y: -1.26}
+  m_Offset: {x: 1.08, y: 0.12}
   serializedVersion: 2
   m_Radius: 0.18
 --- !u!68 &1161925257
@@ -1451,7 +1555,7 @@ EdgeCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.06, y: 1.38}
   m_EdgeRadius: 0
   m_Points:
   - {x: 0.710732, y: -1.4087162}
@@ -1480,7 +1584,7 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -1.03, y: 0.35}
+  m_Offset: {x: -1.03, y: 1.81}
   serializedVersion: 2
   m_Radius: 0.56
 --- !u!1 &1903874229645584403
@@ -1503,7 +1607,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1903874229645584400
 Transform:
   m_ObjectHideFlags: 0
@@ -2013,6 +2117,133 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &6988600649040072554
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 6338120566126713658, guid: ab7c257c7fc5984409f9682c6b54cabd,
+    type: 3}
+  m_PrefabInstance: {fileID: 3965973976547431504}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2804574110948649827}
+  - component: {fileID: 1002971611066869873}
+  - component: {fileID: 7544857720354943456}
+  m_Layer: 0
+  m_Name: Maze outer walls DONOTUSE
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &2804574110948649827
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1288628842186178355, guid: ab7c257c7fc5984409f9682c6b54cabd,
+    type: 3}
+  m_PrefabInstance: {fileID: 3965973976547431504}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6988600649040072554}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1.29, y: -3.999, z: 65.30279}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1903874228786514346}
+  m_RootOrder: 44
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &1002971611066869873
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 4243161659951856673, guid: ab7c257c7fc5984409f9682c6b54cabd,
+    type: 3}
+  m_PrefabInstance: {fileID: 3965973976547431504}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6988600649040072554}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 1
+  m_Sprite: {fileID: 21300000, guid: 8303fc2785545774fbd04aac196c71ba, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 7.9375, y: 6.6313777}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 1
+--- !u!68 &7544857720354943456
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 6898740911746000304, guid: ab7c257c7fc5984409f9682c6b54cabd,
+    type: 3}
+  m_PrefabInstance: {fileID: 3965973976547431504}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6988600649040072554}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -0.481745, y: 5.81961}
+  - {x: -1.1426234, y: 5.723409}
+  - {x: -1.9074614, y: 5.766587}
+  - {x: -2.0026376, y: 2.9748335}
+  - {x: -1.9766403, y: 0.6281152}
+  - {x: -1.058111, y: 0.59304047}
+  - {x: -0.42708492, y: 0.62284493}
+  - {x: 0.59876823, y: 0.56257915}
+  - {x: 0.5927963, y: 0.26518345}
+  - {x: 0.51409554, y: 0.1421212}
+  - {x: -0.86763835, y: 0.14867854}
+  - {x: -1.0543933, y: -0.076603174}
+  - {x: -1.5199697, y: -0.022829413}
+  - {x: -1.6674354, y: 0.13383746}
+  - {x: -2.1980393, y: 0.1788392}
+  - {x: -2.6327536, y: 0.7725003}
+  - {x: -2.6921828, y: 1.4481733}
+  - {x: -2.8259761, y: 2.3814049}
+  - {x: -2.7048507, y: 2.9043732}
+  - {x: -2.9998581, y: 3.7106423}
+  - {x: -3.476702, y: 4.688072}
+  - {x: -3.5190003, y: 5.068219}
+  - {x: -2.757141, y: 5.834224}
+  - {x: -1.9241457, y: 6.2246037}
+  - {x: -0.44486713, y: 6.2004156}
+  - {x: -0.5028844, y: 5.7875867}
 --- !u!1001 &454435284195238139
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2480,11 +2711,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1903874228786514346}
     m_Modifications:
-    - target: {fileID: 4254417394296804414, guid: 80b7151035a584ed493f9037d670f0f4,
-        type: 3}
-      propertyPath: m_Name
-      value: Altar tree Foliage left
-      objectReference: {fileID: 0}
     - target: {fileID: 4254417394296804412, guid: 80b7151035a584ed493f9037d670f0f4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2539,6 +2765,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4254417394296804414, guid: 80b7151035a584ed493f9037d670f0f4,
+        type: 3}
+      propertyPath: m_Name
+      value: Altar tree Foliage left
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 80b7151035a584ed493f9037d670f0f4, type: 3}
@@ -2630,11 +2861,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1903874228786514346}
     m_Modifications:
-    - target: {fileID: 4359537277372141852, guid: a411143a20a6d45bbaeef77ce85f65c9,
-        type: 3}
-      propertyPath: m_Name
-      value: Upper Area Bush 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4359537277372141842, guid: a411143a20a6d45bbaeef77ce85f65c9,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2690,6 +2916,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4359537277372141852, guid: a411143a20a6d45bbaeef77ce85f65c9,
+        type: 3}
+      propertyPath: m_Name
+      value: Upper Area Bush 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a411143a20a6d45bbaeef77ce85f65c9, type: 3}
 --- !u!4 &1903874229278200271 stripped
@@ -2705,11 +2936,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1903874228786514346}
     m_Modifications:
-    - target: {fileID: 3687626646320016319, guid: 350410ac862ad46149e9dfab71dbe449,
-        type: 3}
-      propertyPath: m_Name
-      value: Altar tree Foliage right
-      objectReference: {fileID: 0}
     - target: {fileID: 3687626646320016305, guid: 350410ac862ad46149e9dfab71dbe449,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2765,6 +2991,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3687626646320016319, guid: 350410ac862ad46149e9dfab71dbe449,
+        type: 3}
+      propertyPath: m_Name
+      value: Altar tree Foliage right
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 350410ac862ad46149e9dfab71dbe449, type: 3}
 --- !u!4 &1903874229850378783 stripped
@@ -2780,11 +3011,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1903874228786514346}
     m_Modifications:
-    - target: {fileID: 840760656476326155, guid: fc7dbdbcc573e491082731d127892c79,
-        type: 3}
-      propertyPath: m_Name
-      value: Pointy Finger
-      objectReference: {fileID: 0}
     - target: {fileID: 3193951376496984945, guid: fc7dbdbcc573e491082731d127892c79,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2840,6 +3066,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 840760656476326155, guid: fc7dbdbcc573e491082731d127892c79,
+        type: 3}
+      propertyPath: m_Name
+      value: Pointy Finger
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fc7dbdbcc573e491082731d127892c79, type: 3}
 --- !u!4 &206965079783172104 stripped
@@ -2855,11 +3086,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1903874228786514346}
     m_Modifications:
-    - target: {fileID: 3805512391803105829, guid: 0f2ec499855d040e2a0002251fbff36c,
-        type: 3}
-      propertyPath: m_Name
-      value: Altar pillar B
-      objectReference: {fileID: 0}
     - target: {fileID: 3805512391803105827, guid: 0f2ec499855d040e2a0002251fbff36c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2915,6 +3141,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3805512391803105829, guid: 0f2ec499855d040e2a0002251fbff36c,
+        type: 3}
+      propertyPath: m_Name
+      value: Altar pillar B
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0f2ec499855d040e2a0002251fbff36c, type: 3}
 --- !u!4 &1903874228944319474 stripped
@@ -2930,11 +3161,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1903874228786514346}
     m_Modifications:
-    - target: {fileID: 3049344010140623503, guid: 6317bfa4530294044ab256add4ca5fa5,
-        type: 3}
-      propertyPath: m_Name
-      value: Altar pillar A
-      objectReference: {fileID: 0}
     - target: {fileID: 3049344010140623497, guid: 6317bfa4530294044ab256add4ca5fa5,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2990,6 +3216,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3049344010140623503, guid: 6317bfa4530294044ab256add4ca5fa5,
+        type: 3}
+      propertyPath: m_Name
+      value: Altar pillar A
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6317bfa4530294044ab256add4ca5fa5, type: 3}
 --- !u!4 &1903874230389523515 stripped
@@ -2998,6 +3229,80 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 3475259107635029682}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3965973976547431504
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1903874228786514346}
+    m_Modifications:
+    - target: {fileID: 6338120566126713658, guid: ab7c257c7fc5984409f9682c6b54cabd,
+        type: 3}
+      propertyPath: m_Name
+      value: Maze outer walls DONOTUSE
+      objectReference: {fileID: 0}
+    - target: {fileID: 6338120566126713658, guid: ab7c257c7fc5984409f9682c6b54cabd,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1288628842186178355, guid: ab7c257c7fc5984409f9682c6b54cabd,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.29
+      objectReference: {fileID: 0}
+    - target: {fileID: 1288628842186178355, guid: ab7c257c7fc5984409f9682c6b54cabd,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.999
+      objectReference: {fileID: 0}
+    - target: {fileID: 1288628842186178355, guid: ab7c257c7fc5984409f9682c6b54cabd,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 65.30279
+      objectReference: {fileID: 0}
+    - target: {fileID: 1288628842186178355, guid: ab7c257c7fc5984409f9682c6b54cabd,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1288628842186178355, guid: ab7c257c7fc5984409f9682c6b54cabd,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1288628842186178355, guid: ab7c257c7fc5984409f9682c6b54cabd,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1288628842186178355, guid: ab7c257c7fc5984409f9682c6b54cabd,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1288628842186178355, guid: ab7c257c7fc5984409f9682c6b54cabd,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 44
+      objectReference: {fileID: 0}
+    - target: {fileID: 1288628842186178355, guid: ab7c257c7fc5984409f9682c6b54cabd,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1288628842186178355, guid: ab7c257c7fc5984409f9682c6b54cabd,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1288628842186178355, guid: ab7c257c7fc5984409f9682c6b54cabd,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ab7c257c7fc5984409f9682c6b54cabd, type: 3}
 --- !u!1001 &4713736045808779904
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3005,11 +3310,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1903874228786514346}
     m_Modifications:
-    - target: {fileID: 6557635179154153969, guid: 9d20e2b696487485b840198b7d789c87,
-        type: 3}
-      propertyPath: m_Name
-      value: Upper Area rock2
-      objectReference: {fileID: 0}
     - target: {fileID: 6557635179154153983, guid: 9d20e2b696487485b840198b7d789c87,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3065,6 +3365,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6557635179154153969, guid: 9d20e2b696487485b840198b7d789c87,
+        type: 3}
+      propertyPath: m_Name
+      value: Upper Area rock2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9d20e2b696487485b840198b7d789c87, type: 3}
 --- !u!4 &1903874228578788223 stripped
@@ -3080,11 +3385,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1903874228786514346}
     m_Modifications:
-    - target: {fileID: 6779605742411657563, guid: 5349db0705e734adfa774b623b9b9892,
-        type: 3}
-      propertyPath: m_Name
-      value: Altar pillar D
-      objectReference: {fileID: 0}
     - target: {fileID: 6779605742411657561, guid: 5349db0705e734adfa774b623b9b9892,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3140,6 +3440,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6779605742411657563, guid: 5349db0705e734adfa774b623b9b9892,
+        type: 3}
+      propertyPath: m_Name
+      value: Altar pillar D
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5349db0705e734adfa774b623b9b9892, type: 3}
 --- !u!4 &1903874228637664260 stripped
@@ -3155,11 +3460,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1903874228786514346}
     m_Modifications:
-    - target: {fileID: 7610839159213635284, guid: 0df681b7a0ac94c0082a9666e0638bf0,
-        type: 3}
-      propertyPath: m_Name
-      value: Hand_thumb
-      objectReference: {fileID: 0}
     - target: {fileID: 6013794196710820085, guid: 0df681b7a0ac94c0082a9666e0638bf0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3215,6 +3515,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7610839159213635284, guid: 0df681b7a0ac94c0082a9666e0638bf0,
+        type: 3}
+      propertyPath: m_Name
+      value: Hand_thumb
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0df681b7a0ac94c0082a9666e0638bf0, type: 3}
 --- !u!4 &1473221268758787595 stripped
@@ -3230,11 +3535,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1903874228786514346}
     m_Modifications:
-    - target: {fileID: 6684965139378744968, guid: 756cfcd364e164f9f97ec15a2bda4197,
-        type: 3}
-      propertyPath: m_Name
-      value: Ring Finger
-      objectReference: {fileID: 0}
     - target: {fileID: 5541397407280386202, guid: 756cfcd364e164f9f97ec15a2bda4197,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3290,6 +3590,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6684965139378744968, guid: 756cfcd364e164f9f97ec15a2bda4197,
+        type: 3}
+      propertyPath: m_Name
+      value: Ring Finger
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 756cfcd364e164f9f97ec15a2bda4197, type: 3}
 --- !u!4 &1966879590367387347 stripped
@@ -3305,11 +3610,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1903874228786514346}
     m_Modifications:
-    - target: {fileID: 1540217842148597988, guid: aa1046035d086479581ebd70cc90c0cd,
-        type: 3}
-      propertyPath: m_Name
-      value: Big Tree to the Right
-      objectReference: {fileID: 0}
     - target: {fileID: 7279907303288421748, guid: aa1046035d086479581ebd70cc90c0cd,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3365,6 +3665,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1540217842148597988, guid: aa1046035d086479581ebd70cc90c0cd,
+        type: 3}
+      propertyPath: m_Name
+      value: Big Tree to the Right
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aa1046035d086479581ebd70cc90c0cd, type: 3}
 --- !u!4 &347045296769280498 stripped
@@ -3380,11 +3685,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1903874228786514346}
     m_Modifications:
-    - target: {fileID: 8196304049449981828, guid: 5e5a6464d20294ab5b27070a9f6e28c3,
-        type: 3}
-      propertyPath: m_Name
-      value: Upper Area mushroom2
-      objectReference: {fileID: 0}
     - target: {fileID: 8196304049449981826, guid: 5e5a6464d20294ab5b27070a9f6e28c3,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3440,6 +3740,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8196304049449981828, guid: 5e5a6464d20294ab5b27070a9f6e28c3,
+        type: 3}
+      propertyPath: m_Name
+      value: Upper Area mushroom2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5e5a6464d20294ab5b27070a9f6e28c3, type: 3}
 --- !u!4 &1903874230184839979 stripped
@@ -3455,11 +3760,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1903874228786514346}
     m_Modifications:
-    - target: {fileID: 8538169304134786912, guid: b8778ced04fe04feba4a36744b228c71,
-        type: 3}
-      propertyPath: m_Name
-      value: Altar pillar E
-      objectReference: {fileID: 0}
     - target: {fileID: 8538169304134786914, guid: b8778ced04fe04feba4a36744b228c71,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3515,6 +3815,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8538169304134786912, guid: b8778ced04fe04feba4a36744b228c71,
+        type: 3}
+      propertyPath: m_Name
+      value: Altar pillar E
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b8778ced04fe04feba4a36744b228c71, type: 3}
 --- !u!4 &1903874229641782596 stripped
@@ -3530,11 +3835,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1903874228786514346}
     m_Modifications:
-    - target: {fileID: 8632908380530146217, guid: 4436592786000431fb1fca3fb26c27c9,
-        type: 3}
-      propertyPath: m_Name
-      value: Upper Area Rock 5
-      objectReference: {fileID: 0}
     - target: {fileID: 8632908380530146219, guid: 4436592786000431fb1fca3fb26c27c9,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3590,6 +3890,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8632908380530146217, guid: 4436592786000431fb1fca3fb26c27c9,
+        type: 3}
+      propertyPath: m_Name
+      value: Upper Area Rock 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4436592786000431fb1fca3fb26c27c9, type: 3}
 --- !u!4 &1903874228920977357 stripped
@@ -3605,11 +3910,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1903874228786514346}
     m_Modifications:
-    - target: {fileID: 7693142221955873838, guid: 9cee991efd6014c8b8c7d248d1241a04,
-        type: 3}
-      propertyPath: m_Name
-      value: Upper Area Pillar 3
-      objectReference: {fileID: 0}
     - target: {fileID: 7693142221955873840, guid: 9cee991efd6014c8b8c7d248d1241a04,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3665,6 +3965,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7693142221955873838, guid: 9cee991efd6014c8b8c7d248d1241a04,
+        type: 3}
+      propertyPath: m_Name
+      value: Upper Area Pillar 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9cee991efd6014c8b8c7d248d1241a04, type: 3}
 --- !u!4 &1903874229078602695 stripped
@@ -3680,11 +3985,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1903874228786514346}
     m_Modifications:
-    - target: {fileID: 3066790583527495996, guid: 22fd28be928ca4d508f1a5fc43752109,
-        type: 3}
-      propertyPath: m_Name
-      value: Little Finger
-      objectReference: {fileID: 0}
     - target: {fileID: 3580415793542552009, guid: 22fd28be928ca4d508f1a5fc43752109,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3740,6 +4040,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3066790583527495996, guid: 22fd28be928ca4d508f1a5fc43752109,
+        type: 3}
+      propertyPath: m_Name
+      value: Little Finger
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 22fd28be928ca4d508f1a5fc43752109, type: 3}
 --- !u!4 &5323486576042189525 stripped
@@ -3755,16 +4060,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1903874228786514346}
     m_Modifications:
-    - target: {fileID: 4481771808099884485, guid: fb5832cb053f643ceac37d33c7b3d186,
-        type: 3}
-      propertyPath: m_Name
-      value: Altar
-      objectReference: {fileID: 0}
-    - target: {fileID: 4481771808099884485, guid: fb5832cb053f643ceac37d33c7b3d186,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4242906473768870650, guid: fb5832cb053f643ceac37d33c7b3d186,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3820,6 +4115,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4481771808099884485, guid: fb5832cb053f643ceac37d33c7b3d186,
+        type: 3}
+      propertyPath: m_Name
+      value: Altar
+      objectReference: {fileID: 0}
+    - target: {fileID: 4481771808099884485, guid: fb5832cb053f643ceac37d33c7b3d186,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fb5832cb053f643ceac37d33c7b3d186, type: 3}
 --- !u!4 &4959366013546110433 stripped
@@ -3835,11 +4140,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1903874228786514346}
     m_Modifications:
-    - target: {fileID: 5491970651112112933, guid: 1f175342bc1544718af73b64b605bdb0,
-        type: 3}
-      propertyPath: m_Name
-      value: Upper Area mushroom1
-      objectReference: {fileID: 0}
     - target: {fileID: 511780062400012433, guid: 1f175342bc1544718af73b64b605bdb0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3895,6 +4195,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5491970651112112933, guid: 1f175342bc1544718af73b64b605bdb0,
+        type: 3}
+      propertyPath: m_Name
+      value: Upper Area mushroom1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1f175342bc1544718af73b64b605bdb0, type: 3}
 --- !u!4 &8769325031576122113 stripped
@@ -3910,11 +4215,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1903874228786514346}
     m_Modifications:
-    - target: {fileID: 7336469564623513384, guid: d2915cf32687242f49d4540677b8f848,
-        type: 3}
-      propertyPath: m_Name
-      value: Upper Area Pillar 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7336469564623513390, guid: d2915cf32687242f49d4540677b8f848,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3969,6 +4269,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7336469564623513384, guid: d2915cf32687242f49d4540677b8f848,
+        type: 3}
+      propertyPath: m_Name
+      value: Upper Area Pillar 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d2915cf32687242f49d4540677b8f848, type: 3}
