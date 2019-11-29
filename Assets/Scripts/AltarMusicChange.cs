@@ -15,11 +15,9 @@ public class AltarMusicChange : Interactible
     [SerializeField] private GameObject _maze;
     [SerializeField] private GameObject _particleSystem;
     [SerializeField] private GameObject _particleSystemEffector;
-<<<<<<< HEAD
-=======
+
     [SerializeField] private float _camera_shake_trauma = 0.2f;
     [SerializeField] private float _camera_shake_trauma_after = 0.3f;
->>>>>>> 52b1635b508586ad75f7c7787f2898f3812bbb38
 
 
     private bool _lit = false;
