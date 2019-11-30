@@ -5069,7 +5069,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CollisionTag: 
-  Event: event:/TempHollowKnightUIOk
+  Event: event:/SFX_Take_Flame
   PlayEvent: 0
   StopEvent: 0
   AllowFadeout: 1

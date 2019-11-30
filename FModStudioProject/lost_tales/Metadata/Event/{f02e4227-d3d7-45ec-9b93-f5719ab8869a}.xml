@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.00.00">
 	<object class="Event" id="{f02e4227-d3d7-45ec-9b93-f5719ab8869a}">
 		<property name="name">
-			<value>Moonlit_Forest</value>
+			<value>Music_MoonlitForest</value>
 		</property>
 		<property name="outputFormat">
 			<value>1</value>

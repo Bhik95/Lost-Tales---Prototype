@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.00.00">
 	<object class="Event" id="{00dee057-5cfb-4376-b4cd-8a8935b31980}">
 		<property name="name">
-			<value>Track2</value>
+			<value>Music_LostTales</value>
 		</property>
 		<property name="outputFormat">
 			<value>1</value>
@@ -172,6 +172,7 @@
 		<relationship name="markers">
 			<destination>{1107a383-d665-4e9e-b29e-176d7fb9af74}</destination>
 			<destination>{7b096f92-80b4-49ad-bdd5-7aa5735c2978}</destination>
+			<destination>{e15323df-fce6-4403-9f5d-41a291143e33}</destination>
 		</relationship>
 	</object>
 	<object class="ParameterProxy" id="{b26cbd3b-45da-4bad-9b80-c74b4c6dfa2d}">
@@ -503,6 +504,20 @@
 		</relationship>
 		<relationship name="markerTrack">
 			<destination>{f342eae3-555d-41b8-9d61-2b99ec2fa5c8}</destination>
+		</relationship>
+	</object>
+	<object class="TransitionMarker" id="{e15323df-fce6-4403-9f5d-41a291143e33}">
+		<property name="position">
+			<value>27.428571428571427</value>
+		</property>
+		<relationship name="timeline">
+			<destination>{c1d725c3-cb68-4aaf-bcb4-8080e0130aa4}</destination>
+		</relationship>
+		<relationship name="markerTrack">
+			<destination>{f342eae3-555d-41b8-9d61-2b99ec2fa5c8}</destination>
+		</relationship>
+		<relationship name="destination">
+			<destination>{7b096f92-80b4-49ad-bdd5-7aa5735c2978}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusEffectChain" id="{b6de095a-dc03-4ddb-883a-606a9c9c8c87}">
