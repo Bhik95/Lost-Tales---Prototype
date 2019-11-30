@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -1424,31 +1424,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1146286876}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1480526326 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6700470441587571814, guid: 419dcdd1f46fc9d42bee220a7c079ddc,
-    type: 3}
-  m_PrefabInstance: {fileID: 1772957798}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1480526330
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1480526326}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 15600fb74a4056f4fbce8533d95b8da7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _trauma_level: 0
-  _max_angle: 15
-  _max_offset_x: 2
-  _max_offset_y: 1
-  _seed: 382746.34
-  _frequency: 10
-  _cooldown_amount: 1
 --- !u!4 &1534700089 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5649656906720765127, guid: ca6bb7431e2eaa849a29b47696e6abba,
