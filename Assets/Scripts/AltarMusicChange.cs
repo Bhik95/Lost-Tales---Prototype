@@ -5,17 +5,21 @@ using UnityEngine;
 
 public class AltarMusicChange : Interactible
 {
+    [Header("Music")]
     [SerializeField] private FMODUnity.StudioEventEmitter _music_emitter;
     [SerializeField] private FMODUnity.StudioEventEmitter _interact_sound_emitter;
     [SerializeField] private float _sound_distance_min;
     [SerializeField] private float _sound_distance_max;
     [SerializeField] private float _sound_transition_duration = 1f;
 
+    [Header("GameObjects")]
     [SerializeField] private GameObject _Light;
     [SerializeField] private GameObject _maze;
     [SerializeField] private GameObject _particleSystem;
     [SerializeField] private GameObject _particleSystemEffector;
+    [SerializeField] private GameObject _flameFXPlayer;
 
+    [Header("CameraShake")]
     [SerializeField] private float _camera_shake_trauma = 0.2f;
     [SerializeField] private float _camera_shake_trauma_after = 0.3f;
 
@@ -63,6 +67,8 @@ public class AltarMusicChange : Interactible
             yield return null;
         }
         Camera.main.GetComponent<CameraShaker>().AddTrauma(_camera_shake_trauma_after);
+
+        GameObject flameFXPlayerInstance = Instantiate(_flameFXPlayer, GameObject.FindWithTag(StaticVariables.Tags.Player).transform);
     }
 
     private void OnDrawGizmos()
