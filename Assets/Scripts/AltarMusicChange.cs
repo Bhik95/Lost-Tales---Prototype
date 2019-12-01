@@ -102,8 +102,8 @@ public class AltarMusicChange : Interactible
 
             _interact_sound_emitter.Play();
 
-            
 
+            PlayerStatus.Instance.HasBigFlame = true;
             if (_particleSystem)
             {
                 _particleSystem.SetActive(true);
