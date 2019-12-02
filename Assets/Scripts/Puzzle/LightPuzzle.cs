@@ -39,19 +39,24 @@ public class LightPuzzle : AbstractPuzzle
             return;
         }
 
-        int index = Conditions.IndexOf(pCondition);
-        int min = index - 1 >= 0 ? index - 1 : Conditions.Count - 1;
-        int max = index + 1 < Conditions.Count ? index + 1 : 0;
-        for (int i = 0; i < Conditions.Count; i++)
+        if (Conditions.Count > 3)
         {
-            if (i == min || i == max || index == i)
+            int index = Conditions.IndexOf(pCondition);
+            int min = index - 1 >= 0 ? index - 1 : Conditions.Count - 1;
+            int max = index + 1 < Conditions.Count ? index + 1 : 0;
+            for (int i = 0; i < Conditions.Count; i++)
             {
-                if (Conditions[i].GetComponent<LightDarkBrazier>())
+                if (i == min || i == max || index == i)
                 {
-                    Conditions[i].GetComponent<LightDarkBrazier>().Toggle();
+                    if (Conditions[i].GetComponent<LightDarkBrazier>())
+                    {
+                        Conditions[i].GetComponent<LightDarkBrazier>().Toggle();
 
+                    }
                 }
             }
         }
+
+       
     }
 }

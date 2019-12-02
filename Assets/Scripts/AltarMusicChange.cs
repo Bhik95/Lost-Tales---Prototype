@@ -15,6 +15,8 @@ public class AltarMusicChange : Interactible
     [Header("GameObjects")]
     [SerializeField] private GameObject _Light;
     [SerializeField] private GameObject _maze;
+    [SerializeField] private GameObject _disableGO;
+
     [SerializeField] private GameObject _particleSystem;
     [SerializeField] private GameObject _particleSystemEffector;
     [SerializeField] private GameObject _flameFXPlayer;
@@ -99,7 +101,11 @@ public class AltarMusicChange : Interactible
             StartCoroutine(ChangeMoodValue("GoalProximity", 1 - Mathf.Clamp01((Vector2.Distance(_player.transform.position, transform.position) - _sound_distance_min) / (_sound_distance_max - _sound_distance_min)), 0, _sound_transition_duration));
 
             _maze.SetActive(true);
-
+            if (_disableGO)
+            {
+                _disableGO.SetActive(false);
+            }
+            
             _interact_sound_emitter.Play();
 
 
