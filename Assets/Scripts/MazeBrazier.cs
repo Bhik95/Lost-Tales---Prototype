@@ -23,6 +23,7 @@ public class MazeBrazier : Interactible
             if (ParticleSystemEffector)
             {
                 ParticleSystemEffector.position = go.transform.position;
+                StartCoroutine(MoveCamera(go.transform));
             }
         }
         _on_lit_sound.Play();
@@ -30,6 +31,14 @@ public class MazeBrazier : Interactible
         if(ParticleSystem)
             ParticleSystem.Play();
         this.enabled = false;
+    }
+
+    IEnumerator MoveCamera(Transform trans)
+    {
+        Camera.main.GetComponent<CameraFollow>().TempTarget = trans;
+        yield return new WaitForSeconds(1f);
+        Camera.main.GetComponent<CameraFollow>().TempTarget = null;
+
     }
 
     protected override void OnPlayerFar()
