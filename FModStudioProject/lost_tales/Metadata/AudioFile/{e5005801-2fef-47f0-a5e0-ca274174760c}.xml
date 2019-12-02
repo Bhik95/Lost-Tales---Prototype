@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="AudioFile" id="{e5005801-2fef-47f0-a5e0-ca274174760c}">
+		<property name="assetPath">
+			<value>398698__bbrocer__slow-pebble-tumble.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>0.99929705215419506</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{263c0e0c-a7f8-4112-a81f-b13d693a77d1}</destination>
+		</relationship>
+	</object>
+</objects>
