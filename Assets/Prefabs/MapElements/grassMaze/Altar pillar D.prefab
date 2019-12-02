@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6779605742411657561}
   - component: {fileID: 6779605742411657562}
-  - component: {fileID: 4446474978253636303}
+  - component: {fileID: 4695438071473258686}
   m_Layer: 0
   m_Name: Altar pillar D
   m_TagString: Untagged
@@ -81,8 +81,8 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 1
---- !u!58 &4446474978253636303
-CircleCollider2D:
+--- !u!70 &4695438071473258686
+CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -94,6 +94,6 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.09}
-  serializedVersion: 2
-  m_Radius: 0.21
+  m_Offset: {x: -0.00000004651327, y: 0.10981848}
+  m_Size: {x: 0.25518462, y: 0.19880612}
+  m_Direction: 1

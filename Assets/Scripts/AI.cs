@@ -11,12 +11,29 @@ public class AI : Interactible
     [SerializeField] private float CoordinateScaleFactor = 0.7f;
     private Vector2 MoveDir;
     public Transform CurTarget;
-    
+    public GameObject PaintSprite;
+    public GameObject ParticleInteract;
+
+    protected override void Interact()
+    {
+        if (PlayerStatus.Instance.HasBigFlame && !ParticleInteract.activeInHierarchy)
+        {
+            ParticleInteract.SetActive(true);
+            base.Interact();
+        }
+    }
     // Update is called once per frame
     void LateUpdate()
     {
         if (CurTarget != null)
         {
+            if (PaintSprite)
+            {
+                PaintSprite.transform.localScale = 
+                    Vector3.MoveTowards(PaintSprite.transform.localScale, //current
+                    new Vector3(1.2f,1.2f,1), //target
+                    Time.deltaTime); //speed
+            }
             MoveDir = CurTarget.position - transform.position;
             if (MoveDir.sqrMagnitude < .2f)
             {
@@ -46,10 +63,14 @@ public class AI : Interactible
         Animator?.SetFloat("Vertical", MoveDir.y);
         Animator?.SetFloat("Magnitude", MoveDir.magnitude);
     }
-    
+    IEnumerator LateStart()
+    {
+        yield return new WaitForSeconds(.5f);
+        CurTarget = trail[0];
+    }
     protected override void OnActivate()
     {
-        CurTarget = trail[0];
+        StartCoroutine(LateStart());
     }
 
     protected override void OnPlayerFar()

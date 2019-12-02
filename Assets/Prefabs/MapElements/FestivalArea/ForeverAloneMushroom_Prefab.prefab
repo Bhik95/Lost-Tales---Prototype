@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6201485748382897788}
   - component: {fileID: 6201485748382897791}
-  - component: {fileID: 6331771632245820832}
+  - component: {fileID: 2360675113822833150}
   m_Layer: 0
   m_Name: ForeverAloneMushroom_Prefab
   m_TagString: Untagged
@@ -81,8 +81,8 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 1
---- !u!58 &6331771632245820832
-CircleCollider2D:
+--- !u!70 &2360675113822833150
+CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -94,6 +94,6 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.02, y: 0.06}
-  serializedVersion: 2
-  m_Radius: 0.25
+  m_Offset: {x: 0.012319286, y: 0.15300961}
+  m_Size: {x: 0.42922187, y: 0.2793261}
+  m_Direction: 1

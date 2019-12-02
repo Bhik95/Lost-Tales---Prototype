@@ -13,7 +13,7 @@ public abstract class Interactible : MonoBehaviour
     protected abstract void OnPlayerFar();
     protected abstract void OnActivate();
 
-    private void Interact()
+    protected virtual void Interact()
     {
         OnActivate();
         Activated?.Invoke(this);
@@ -36,6 +36,7 @@ public abstract class Interactible : MonoBehaviour
             OnPlayerNearby();
         }
     }
+
 
     private void OnTriggerExit2D(Collider2D collision)
     {
