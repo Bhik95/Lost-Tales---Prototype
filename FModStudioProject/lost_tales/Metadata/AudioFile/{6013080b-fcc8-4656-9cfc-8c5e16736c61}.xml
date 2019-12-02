@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="AudioFile" id="{6013080b-fcc8-4656-9cfc-8c5e16736c61}">
+		<property name="assetPath">
+			<value>before_after_OMG_THIS_IS_SO_GOOOD.flac</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>118.360125</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{263c0e0c-a7f8-4112-a81f-b13d693a77d1}</destination>
+		</relationship>
+	</object>
+</objects>
