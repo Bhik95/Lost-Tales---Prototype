@@ -1097,7 +1097,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 940368b0b99af2542b83aeefefea414e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _game_object_to_reactivate: {fileID: 0}
+  _game_object_to_reactivate: {fileID: 693408588}
 --- !u!1001 &717952249
 PrefabInstance:
   m_ObjectHideFlags: 0

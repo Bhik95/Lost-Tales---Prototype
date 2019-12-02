@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CrystalPuzzle3_2ClosePathOnTrigger : MonoBehaviour
+public class ClosePathOnTrigger : MonoBehaviour
 {
     [SerializeField] private GameObject _game_object_to_reactivate;
 
