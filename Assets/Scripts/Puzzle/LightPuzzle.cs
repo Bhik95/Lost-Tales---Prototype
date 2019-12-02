@@ -19,7 +19,7 @@ public class LightPuzzle : AbstractPuzzle
         {
             Effect.SetActive(true);
         }
-        Camera.main.GetComponent<CameraFollow>().TempTarget = null;
+        Camera.main.transform.parent.GetComponent<CameraFollow>().TempTarget = null;
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -27,9 +27,9 @@ public class LightPuzzle : AbstractPuzzle
         EnterWall.SetActive(true);
         if (Center)
         {
-            Camera.main.GetComponent<CameraFollow>().TempTarget = Center;
+            Camera.main.transform.parent.GetComponent<CameraFollow>().TempTarget = Center;
         }
-           }
+    }
 
     public override void SolveCondition(AbstractPuzzleCondition pCondition = null)
     {

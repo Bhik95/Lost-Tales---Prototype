@@ -7,6 +7,11 @@ public class CameraFollow : MonoBehaviour
     public Transform Target;
     public Transform TempTarget;
     private Vector3 FollowPos;
+
+    [SerializeField]bool drawGizmos;
+    [SerializeField]Vector2 center;
+    [SerializeField]float maxX, maxY;
+
     void Start()
     {
         
@@ -35,10 +40,29 @@ public class CameraFollow : MonoBehaviour
         else if (Target)
         {
             FollowPos = new Vector3(Target.position.x, Target.position.y, transform.position.z);
+            if (Mathf.Abs(FollowPos.x) >= Mathf.Abs(maxX + center.x))
+            {
+                FollowPos.x = FollowPos.x < 0 ? -maxX + center.x: maxX + center.x;
+            }
+            if (Mathf.Abs(FollowPos.y) >= Mathf.Abs(maxY + center.y))
+            {
+                FollowPos.y = FollowPos.y < 0 ? -maxY + center.y : maxY + center.y;
+            }
         }
 
         FollowPos.z = -10f;
         transform.position = Vector3.Lerp(transform.position, FollowPos, Time.deltaTime * 2);
 
+    }
+
+    void OnDrawGizmos()
+    {
+        if (drawGizmos)
+        {
+            Gizmos.color = Color.green;
+            Gizmos.DrawWireCube(center, new Vector3(maxX*2, maxY*2, 1));
+            Gizmos.DrawWireSphere(center, 1f);
+        }
+        
     }
 }

@@ -35,9 +35,9 @@ public class MazeBrazier : Interactible
 
     IEnumerator MoveCamera(Transform trans)
     {
-        Camera.main.GetComponent<CameraFollow>().TempTarget = trans;
+        Camera.main.transform.parent.GetComponent<CameraFollow>().TempTarget = trans;
         yield return new WaitForSeconds(1f);
-        Camera.main.GetComponent<CameraFollow>().TempTarget = null;
+        Camera.main.transform.parent.GetComponent<CameraFollow>().TempTarget = null;
 
     }
 
