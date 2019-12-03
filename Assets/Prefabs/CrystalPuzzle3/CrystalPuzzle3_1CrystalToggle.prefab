@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3307572597658453111}
   - component: {fileID: 6432180160621783605}
   - component: {fileID: 2225738393691345196}
+  - component: {fileID: 3728534845459282668}
   m_Layer: 0
   m_Name: CrystalPuzzle3_1CrystalToggle
   m_TagString: Untagged
@@ -52,7 +53,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b2514161a42bcc41a26a1de72c1269f, type: 2}
+  - {fileID: 2100000, guid: a8356d7acc18f634cac447e6c8dbe3b1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -131,6 +132,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.19797033, y: 0.16227153}
   m_EdgeRadius: 0
+--- !u!114 &3728534845459282668
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3307572597658453110}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c123548bf9043f6469e24a6773023ebb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Activated: {fileID: 0}
+  Deactivated: {fileID: 0}
 --- !u!1 &6752632370579010619
 GameObject:
   m_ObjectHideFlags: 0
@@ -218,7 +233,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _crystal_sound: {fileID: 8141105157873642417}
-  _brazier: {fileID: 8773849437410633069}
+  _sprite_handler: {fileID: 3728534845459282668}
 --- !u!1001 &2454122349948284690
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -293,12 +308,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ba0b9a7476bc1374a8d4863edf1c7e73, type: 3}
---- !u!1 &8773849437410633069 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6614717845485685375, guid: ba0b9a7476bc1374a8d4863edf1c7e73,
-    type: 3}
-  m_PrefabInstance: {fileID: 2454122349948284690}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1877092589547678620 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4035804182794617998, guid: ba0b9a7476bc1374a8d4863edf1c7e73,

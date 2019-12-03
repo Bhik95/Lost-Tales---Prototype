@@ -1,5 +1,21 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!70 &1219646141626393159
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3064004719425509819}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.027514415, y: 0.13634644}
+  m_Size: {x: 0.44878435, y: 0.19093612}
+  m_Direction: 1
 --- !u!1001 &532361325780000205
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10,7 +26,7 @@ PrefabInstance:
     - target: {fileID: 3307572597658453110, guid: 2c8c81b2c51cdf546835f98ef1399302,
         type: 3}
       propertyPath: m_Name
-      value: CrystalPuzzle3_1CrystalToggle (4)
+      value: CrystalPuzzle3_1CrystalToggle 4
       objectReference: {fileID: 0}
     - target: {fileID: 3307572597658453108, guid: 2c8c81b2c51cdf546835f98ef1399302,
         type: 3}
@@ -67,25 +83,65 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3307572597658453111, guid: 2c8c81b2c51cdf546835f98ef1399302,
+    - target: {fileID: 5522330598305584484, guid: 2c8c81b2c51cdf546835f98ef1399302,
         type: 3}
-      propertyPath: m_Color.r
-      value: 0
+      propertyPath: m_LocalPosition.y
+      value: 0.236
+      objectReference: {fileID: 0}
+    - target: {fileID: 5522330598305584484, guid: 2c8c81b2c51cdf546835f98ef1399302,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.005
       objectReference: {fileID: 0}
     - target: {fileID: 3307572597658453111, guid: 2c8c81b2c51cdf546835f98ef1399302,
         type: 3}
-      propertyPath: m_Color.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3307572597658453111, guid: 2c8c81b2c51cdf546835f98ef1399302,
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 37344609512675442b55db216025af48,
         type: 3}
-      propertyPath: m_Color.b
+    - target: {fileID: 2225738393691345196, guid: 2c8c81b2c51cdf546835f98ef1399302,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.pivot.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2225738393691345196, guid: 2c8c81b2c51cdf546835f98ef1399302,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 0.545
+      objectReference: {fileID: 0}
+    - target: {fileID: 2225738393691345196, guid: 2c8c81b2c51cdf546835f98ef1399302,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 0.595
       objectReference: {fileID: 0}
     - target: {fileID: 8141105157873642417, guid: 2c8c81b2c51cdf546835f98ef1399302,
         type: 3}
       propertyPath: Params.Array.data[0].Value
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 7000152870071211958, guid: 2c8c81b2c51cdf546835f98ef1399302,
+        type: 3}
+      propertyPath: m_Radius
+      value: 0.27
+      objectReference: {fileID: 0}
+    - target: {fileID: 3728534845459282668, guid: 2c8c81b2c51cdf546835f98ef1399302,
+        type: 3}
+      propertyPath: Activated
+      value: 
+      objectReference: {fileID: 21300000, guid: c414a04f636fd3644af848bda2d1dd8f,
+        type: 3}
+    - target: {fileID: 3728534845459282668, guid: 2c8c81b2c51cdf546835f98ef1399302,
+        type: 3}
+      propertyPath: Deactivated
+      value: 
+      objectReference: {fileID: 21300000, guid: 37344609512675442b55db216025af48,
+        type: 3}
+    m_RemovedComponents:
+    - {fileID: 2225738393691345196, guid: 2c8c81b2c51cdf546835f98ef1399302, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 2c8c81b2c51cdf546835f98ef1399302, type: 3}
+--- !u!1 &3064004719425509819 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3307572597658453110, guid: 2c8c81b2c51cdf546835f98ef1399302,
+    type: 3}
+  m_PrefabInstance: {fileID: 532361325780000205}
+  m_PrefabAsset: {fileID: 0}

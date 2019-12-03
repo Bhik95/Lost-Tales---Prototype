@@ -6,7 +6,7 @@ public class CrystalPuzzle3_1CrystalToggle : Interactible
 {
 
     [SerializeField] private FMODUnity.StudioEventEmitter _crystal_sound;
-    [SerializeField] private GameObject _brazier;
+    [SerializeField] private CrystalPuzzleSpriteHandler _sprite_handler;
 
     private bool _state;
 
@@ -18,7 +18,7 @@ public class CrystalPuzzle3_1CrystalToggle : Interactible
         set
         {
             _state = value;
-            _brazier.SetActive(State);
+            _sprite_handler.SetCrystalSprite(State);
         }
     
     }
