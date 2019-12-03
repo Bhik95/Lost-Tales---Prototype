@@ -826,22 +826,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57c008f954fe54a8bb972de1018a2cb8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_RootBone: {fileID: 1924955837}
-  m_BoneTransforms:
-  - {fileID: 1924955837}
-  - {fileID: 105818034}
-  - {fileID: 1500626848}
-  - {fileID: 1708039336}
-  - {fileID: 1460450523}
-  - {fileID: 2073822695}
-  - {fileID: 625896104}
-  - {fileID: 1700154303}
-  - {fileID: 436856448}
-  - {fileID: 61325508}
-  m_Bounds:
-    m_Center: {x: -0.70732796, y: 1.474905, z: 0}
-    m_Extent: {x: 1.302631, y: 2.8484378, z: 0}
-  m_UseBatching: 1
 --- !u!95 &862972823
 Animator:
   serializedVersion: 3
