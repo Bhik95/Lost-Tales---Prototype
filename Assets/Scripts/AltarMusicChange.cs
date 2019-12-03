@@ -87,7 +87,7 @@ public class AltarMusicChange : Interactible
         {
             _lit = !_lit;
 
-            _maze.SetActive(true);
+            _maze?.SetActive(true);
             if (_disableGO)
             {
                 _disableGO.SetActive(false);

@@ -5027,13 +5027,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7959ce29a9ad32409e822370aa145b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _music_emitter: {fileID: 0}
   _interact_sound_emitter: {fileID: 8667300754724046280}
   _sound_distance_min: 2
   _sound_distance_max: 5.2
   _sound_transition_duration: 1
   _Light: {fileID: 0}
   _maze: {fileID: 0}
+  _disableGO: {fileID: 0}
   _particleSystem: {fileID: 6113070321069192324}
   _particleSystemEffector: {fileID: 0}
   _flameFXPlayer: {fileID: 6607212847498108732, guid: 8e1c00e64dbaeed4b9ecf8566d7d54b4,
@@ -10097,11 +10097,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8428531684253536910}
     m_Modifications:
-    - target: {fileID: 5930399051238311683, guid: 510f667e3ec76304aaf71033cd818439,
-        type: 3}
-      propertyPath: m_Name
-      value: PaintSprite
-      objectReference: {fileID: 0}
     - target: {fileID: 5930399051238311681, guid: 510f667e3ec76304aaf71033cd818439,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -10156,6 +10151,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5930399051238311683, guid: 510f667e3ec76304aaf71033cd818439,
+        type: 3}
+      propertyPath: m_Name
+      value: PaintSprite
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 510f667e3ec76304aaf71033cd818439, type: 3}
