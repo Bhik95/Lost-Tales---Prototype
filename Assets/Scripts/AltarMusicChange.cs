@@ -6,8 +6,9 @@ using UnityEngine;
 public class AltarMusicChange : Interactible
 {
     [Header("Music")]
-    [SerializeField] private FMODUnity.StudioEventEmitter _music_emitter;
     [SerializeField] private FMODUnity.StudioEventEmitter _interact_sound_emitter;
+    public float SoundDistanceMin => _sound_distance_min;
+    public float SoundDistanceMax => _sound_distance_max;
     [SerializeField] private float _sound_distance_min;
     [SerializeField] private float _sound_distance_max;
     [SerializeField] private float _sound_transition_duration = 1f;
@@ -32,27 +33,16 @@ public class AltarMusicChange : Interactible
     private void Start()
     {
         _player = GameObject.FindGameObjectWithTag("Player");
+
+        MainMusic.Instance.AddAltar(this);
     }
 
     protected override void Update()
     {
         base.Update();
-        float goalProximity = Mathf.Clamp01((Vector2.Distance(_player.transform.position, transform.position) - _sound_distance_min) / (_sound_distance_max - _sound_distance_min));
-        _music_emitter.SetParameter("GoalProximity", 1 - goalProximity);
-        //Debug.Log(goalProximity);
     }
 
-    private IEnumerator ChangeMoodValue(string paramName, float startValue, float finalValue, float duration)
-    {
-        float timer = 0;
-        while(timer < duration)
-        {
-            timer += Time.deltaTime;
-            _music_emitter.SetParameter(paramName, Mathf.Lerp(startValue, finalValue, timer / duration));
-            yield return null;
-        }
-        _music_emitter.SetParameter(paramName, finalValue);
-    }
+    
 
     private IEnumerator TempFollowPlayer()
     {
@@ -96,9 +86,6 @@ public class AltarMusicChange : Interactible
         if (!_lit)
         {
             _lit = !_lit;
-
-            StartCoroutine(ChangeMoodValue("Mood", _lit ? 0 : 1, _lit ? 1 : 0, _sound_transition_duration));
-            StartCoroutine(ChangeMoodValue("GoalProximity", 1 - Mathf.Clamp01((Vector2.Distance(_player.transform.position, transform.position) - _sound_distance_min) / (_sound_distance_max - _sound_distance_min)), 0, _sound_transition_duration));
 
             _maze.SetActive(true);
             if (_disableGO)
