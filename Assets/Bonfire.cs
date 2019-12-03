@@ -36,11 +36,14 @@ public class Bonfire : Interactible
                             break;
 
                     }
+                    Camera.main.GetComponent<CameraShaker>().AddTrauma(.25f);
                     ParticleSystem ps = flamesDatas[i].GetComponent<ParticleSystem>();
                     ps.Stop();
                     Destroy(ps.gameObject, ps.main.duration);
                 }
             }
+
+            PlayerStatus.Instance.HasBigFlame = false;
         }
         else
         {
