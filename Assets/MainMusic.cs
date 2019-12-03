@@ -22,6 +22,8 @@ public class MainMusic : MonoBehaviour
     [SerializeField] private FMODUnity.StudioEventEmitter _music;
     private Transform _playerTransform;
 
+    private FMOD.Studio.Bus _music_bus;
+
 
     private void Awake()
     {
@@ -33,6 +35,8 @@ public class MainMusic : MonoBehaviour
         }
 
         _instance = this;
+
+        _music_bus = FMODUnity.RuntimeManager.GetBus("bus:/Music");
     }
 
     private void Start()
@@ -67,6 +71,29 @@ public class MainMusic : MonoBehaviour
             yield return null;
         }
         _music.SetParameter(paramName, finalValue);
+    }
+
+    public float GetMusicVolume()
+    {
+        _music_bus.getVolume(out float temp);
+        return temp;
+    }
+
+    public IEnumerator ChangeMusicVolume(float finalValue, float duration)
+    {
+        _music_bus.getVolume(out float startValue);
+
+        float timer = 0;
+        while (timer < duration)
+        {
+            timer += Time.deltaTime;
+            _music_bus.setVolume(Mathf.Lerp(startValue, finalValue, timer / duration));
+            yield return null;
+        }
+
+        Debug.Log(startValue);
+
+        _music_bus.setVolume(finalValue);
     }
 
     internal void AddAltar(AltarMusicChange altarMusicChange)

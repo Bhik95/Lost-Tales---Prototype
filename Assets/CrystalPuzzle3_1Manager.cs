@@ -7,7 +7,7 @@ public class CrystalPuzzle3_1Manager : MonoBehaviour
 {
     [SerializeField] private CrystalPuzzle3_1CrystalToggle[] _crystal_sequence;
 
-    [SerializeField] private GameObject _obstacle_to_remove;
+    [SerializeField] private GameObject[] _obstacles_to_remove;
     [SerializeField] private FMODUnity.StudioEventEmitter _success_sound;
     [SerializeField] private FMODUnity.StudioEventEmitter _fail_sound;
 
@@ -81,15 +81,18 @@ public class CrystalPuzzle3_1Manager : MonoBehaviour
 
             if (solved)
             {
-                _obstacle_to_remove.SetActive(false);
+                for(int i = 0; i < _obstacles_to_remove.Length; i++)
+                {
+                    _obstacles_to_remove[i].SetActive(false);
+                }
                 _success_sound.Play();
                 enabled = false;
             }
             else
             {
                 _fail_sound.Play();
-                ResetPuzzle();
             }
+            ResetPuzzle();
         }
     }
 
