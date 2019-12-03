@@ -92,6 +92,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Target: {fileID: 0}
   TempTarget: {fileID: 0}
+  drawGizmos: 0
+  center: {x: 0, y: 0}
+  maxX: 0
+  maxY: 0
 --- !u!114 &4674084625196561970
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -190,11 +194,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2850235219126345001, guid: 077d2f7ebc6616a41a854825a0b3b32e,
-        type: 3}
-      propertyPath: orthographic size
-      value: 2.38
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 077d2f7ebc6616a41a854825a0b3b32e, type: 3}
