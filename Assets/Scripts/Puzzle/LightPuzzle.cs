@@ -14,12 +14,28 @@ public class LightPuzzle : AbstractPuzzle
     protected override void SolvePuzzle()
     {
         base.SolvePuzzle();
-        Wall.SetActive(false);
+        var dtor = Wall.GetComponent<DelayedTurnOffRock>();
+        if (dtor)
+        {
+            dtor.TurnOff();
+        }
+        else
+        {
+            Wall.SetActive(false);
+
+        }
         if (Effect)
         {
             Effect.SetActive(true);
         }
-        Camera.main.transform.parent.GetComponent<CameraFollow>().TempTarget = null;
+        StartCoroutine(DelayedSolve());
+    }
+
+    IEnumerator DelayedSolve()
+    {
+        yield return new WaitForSeconds(.5f);
+
+        Camera.main.transform.parent.GetComponent<CameraFollow>().TempTarget = Wall.transform;
     }
 
     private void OnTriggerEnter2D(Collider2D other)
