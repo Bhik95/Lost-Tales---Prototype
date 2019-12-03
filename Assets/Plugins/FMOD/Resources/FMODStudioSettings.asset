@@ -81,6 +81,5 @@ MonoBehaviour:
   Banks:
   - Music
   - SFX
-  - TempSounds
   BanksToLoad: []
   LiveUpdatePort: 9264
