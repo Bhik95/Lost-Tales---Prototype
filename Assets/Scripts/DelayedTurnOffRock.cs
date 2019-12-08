@@ -20,6 +20,6 @@ public class DelayedTurnOffRock : MonoBehaviour
         Collider.SetActive(false);
         ParticleEffect.SetActive(true);
         yield return new WaitForSeconds(1f);
-        //gameObject.SetActive(false);
+        gameObject.SetActive(false);
     }
 }
