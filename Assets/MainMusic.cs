@@ -19,10 +19,11 @@ public class MainMusic : MonoBehaviour
     }
 
     private AltarMusicChange[] altars;
+    private QuietMusicArea[] quietMusicAreas;
     [SerializeField] private FMODUnity.StudioEventEmitter _music;
+    [SerializeField] private float _default_quiet_volume = 0.75f;
     private Transform _playerTransform;
-
-    private FMOD.Studio.Bus _music_bus;
+    
 
 
     private void Awake()
@@ -35,8 +36,6 @@ public class MainMusic : MonoBehaviour
         }
 
         _instance = this;
-
-        _music_bus = FMODUnity.RuntimeManager.GetBus("bus:/Music");
     }
 
     private void Start()
@@ -57,6 +56,18 @@ public class MainMusic : MonoBehaviour
 
             _music.SetParameter("GoalProximity", 1 - goalProximity);
         }
+
+        float quietZoneProximity = float.PositiveInfinity;
+        if (quietMusicAreas != null)
+        {
+            for (int i = 0; i < quietMusicAreas.Length; i++)
+            {
+                float quietZoneProximityTemp = Mathf.Clamp01((Vector2.Distance(_playerTransform.position, quietMusicAreas[i].transform.position) - quietMusicAreas[i].DistanceMin) / (quietMusicAreas[i].DistanceMax - quietMusicAreas[i].DistanceMin));
+                quietZoneProximity = Mathf.Min(quietZoneProximity, quietZoneProximityTemp);
+            }
+
+            _music.SetParameter("Volume", (1-quietZoneProximity) * _default_quiet_volume + quietZoneProximity);
+        }
     }
 
 
@@ -73,30 +84,7 @@ public class MainMusic : MonoBehaviour
         _music.SetParameter(paramName, finalValue);
     }
 
-    public float GetMusicVolume()
-    {
-        _music_bus.getVolume(out float temp);
-        return temp;
-    }
-
-    public IEnumerator ChangeMusicVolume(float finalValue, float duration)
-    {
-        _music_bus.getVolume(out float startValue);
-
-        float timer = 0;
-        while (timer < duration)
-        {
-            timer += Time.deltaTime;
-            _music_bus.setVolume(Mathf.Lerp(startValue, finalValue, timer / duration));
-            yield return null;
-        }
-
-        Debug.Log(startValue);
-
-        _music_bus.setVolume(finalValue);
-    }
-
-    internal void AddAltar(AltarMusicChange altarMusicChange)
+    public void AddAltar(AltarMusicChange altarMusicChange)
     {
         if(altars == null || altars.Length == 0)
         {
@@ -109,6 +97,22 @@ public class MainMusic : MonoBehaviour
             Array.Copy(altars, altarsN, altars.Length);
             altarsN[altars.Length] = altarMusicChange;
             altars = altarsN;
+        }
+    }
+
+    public void AddQuietZone(QuietMusicArea quietMusicArea)
+    {
+        if (quietMusicAreas == null || quietMusicAreas.Length == 0)
+        {
+            quietMusicAreas = new QuietMusicArea[1];
+            quietMusicAreas[0] = quietMusicArea;
+        }
+        else
+        {
+            var qmaN = new QuietMusicArea[quietMusicAreas.Length + 1];
+            Array.Copy(quietMusicAreas, qmaN, quietMusicAreas.Length);
+            qmaN[quietMusicAreas.Length] = quietMusicArea;
+            quietMusicAreas = qmaN;
         }
     }
 }
