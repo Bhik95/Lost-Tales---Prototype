@@ -7,10 +7,15 @@ public class Bonfire : Interactible
 
     [SerializeField] private FMODUnity.StudioEventEmitter _interact_success;
     [SerializeField] private FMODUnity.StudioEventEmitter _interact_fail;
+    [SerializeField] private FMODUnity.StudioEventEmitter _three_flames_sound;
 
     [SerializeField] private GameObject _flame_fx_green;
     [SerializeField] private GameObject _flame_fx_yellow;
     [SerializeField] private GameObject _flame_fx_purple;
+
+    [SerializeField] private Animator _paint_animator;
+
+    private int _n_flames = 0;
 
     protected override void OnActivate()
     {
@@ -36,6 +41,7 @@ public class Bonfire : Interactible
                             break;
 
                     }
+                    _n_flames++;
                     Camera.main.GetComponent<CameraShaker>().AddTrauma(.25f);
                     ParticleSystem ps = flamesDatas[i].GetComponent<ParticleSystem>();
                     ps.Stop();
@@ -48,6 +54,13 @@ public class Bonfire : Interactible
         else
         {
             _interact_fail.Play();
+        }
+
+        _paint_animator.SetInteger("FlamesLit", _n_flames);
+
+        if(_n_flames == 3)
+        {
+            _three_flames_sound.Play();
         }
     }
 

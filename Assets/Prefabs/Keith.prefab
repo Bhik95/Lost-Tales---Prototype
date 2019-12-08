@@ -102,7 +102,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Animator: {fileID: 17948201639532123}
-  MovementSpeed: 100
+  MovementSpeed: 90
   CoordinateScaleFactor: 0.7
   FootstepsEmitter: {fileID: 17948201639532124}
   FootstepDelay: 0.28
@@ -198,6 +198,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf797bebde70aab43a57e663efd7f1c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  HasBigFlame: 0
+  flameSize: {x: 0, y: 0, z: 0}
 --- !u!1 &17948202218994220
 GameObject:
   m_ObjectHideFlags: 0
@@ -9711,6 +9713,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 17948201639532198}
     m_Modifications:
+    - target: {fileID: 5930399051238311683, guid: 510f667e3ec76304aaf71033cd818439,
+        type: 3}
+      propertyPath: m_Name
+      value: PaintSprite
+      objectReference: {fileID: 0}
+    - target: {fileID: 5930399051238311683, guid: 510f667e3ec76304aaf71033cd818439,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5930399051238311681, guid: 510f667e3ec76304aaf71033cd818439,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9775,16 +9787,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5930399051238311683, guid: 510f667e3ec76304aaf71033cd818439,
-        type: 3}
-      propertyPath: m_Name
-      value: PaintSprite
-      objectReference: {fileID: 0}
-    - target: {fileID: 5930399051238311683, guid: 510f667e3ec76304aaf71033cd818439,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 510f667e3ec76304aaf71033cd818439, type: 3}
