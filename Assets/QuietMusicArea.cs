@@ -16,9 +16,9 @@ public class QuietMusicArea : MonoBehaviour
 
     private void OnDrawGizmos()
     {
-        Gizmos.color = Color.red;
+        Gizmos.color = Color.blue;
         Gizmos.DrawWireSphere(transform.position, _distance_min);
-        Gizmos.color = Color.green;
+        Gizmos.color = Color.cyan;
         Gizmos.DrawWireSphere(transform.position, _distance_max);
     }
 

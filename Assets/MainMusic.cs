@@ -68,6 +68,9 @@ public class MainMusic : MonoBehaviour
 
             _music.SetParameter("Volume", (1-quietZoneProximity) * _default_quiet_volume + quietZoneProximity);
         }
+
+        //Type of music: PIANO on right side of the map (x>-11.85), HARPIANO on left side
+        _music.SetParameter("Mood", Mathf.SmoothStep(0.1f, 0.9f, transform.position.x - _playerTransform.position.x));
     }
 
 

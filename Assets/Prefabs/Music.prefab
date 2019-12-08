@@ -68,4 +68,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _music: {fileID: 922203938000940068}
-  _default_quiet_volume: 0.75
+  _default_quiet_volume: 0.6
