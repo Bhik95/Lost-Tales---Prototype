@@ -4,28 +4,22 @@ using UnityEngine;
 
 public class QuietMusicArea : MonoBehaviour
 {
-    [SerializeField] private float _quiet_music_volume;
-    [SerializeField] private float _duration;
+    public float DistanceMin => _distance_min;
+    public float DistanceMax => _distance_max;
+    [SerializeField] private float _distance_min;
+    [SerializeField] private float _distance_max;
 
-    private float _default_music_volume;
-
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void Start()
     {
-        if (collision.CompareTag(StaticVariables.Tags.Player))
-        {
-            _default_music_volume = MainMusic.Instance.GetMusicVolume();
-
-            Debug.Log(_default_music_volume);
-
-            MainMusic.Instance.ChangeMusicVolume(_quiet_music_volume, _duration);
-        }
+        MainMusic.Instance.AddQuietZone(this);
     }
 
-    private void OnTriggerExit2D(Collider2D collision)
+    private void OnDrawGizmos()
     {
-        if (collision.CompareTag(StaticVariables.Tags.Player))
-        {
-            MainMusic.Instance.ChangeMusicVolume(_default_music_volume, 1f);
-        }
+        Gizmos.color = Color.blue;
+        Gizmos.DrawWireSphere(transform.position, _distance_min);
+        Gizmos.color = Color.cyan;
+        Gizmos.DrawWireSphere(transform.position, _distance_max);
     }
+
 }
