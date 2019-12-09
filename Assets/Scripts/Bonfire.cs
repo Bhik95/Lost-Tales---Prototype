@@ -12,6 +12,7 @@ public class Bonfire : Interactible
     [SerializeField] private GameObject _flame_fx_green;
     [SerializeField] private GameObject _flame_fx_yellow;
     [SerializeField] private GameObject _flame_fx_purple;
+    [SerializeField] private GameObject _flame_fx_final;
 
     [SerializeField] private Animator _paint_animator;
 
@@ -60,6 +61,7 @@ public class Bonfire : Interactible
 
         if(_n_flames == 3)
         {
+            _flame_fx_final.SetActive(true);
             _three_flames_sound.Play();
         }
     }

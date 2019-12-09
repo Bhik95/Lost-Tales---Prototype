@@ -144,16 +144,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: LabirynthFunctionality
       objectReference: {fileID: 0}
-    - target: {fileID: 4245967569884887046, guid: 4bbf0d1e9a033864897382d26fbc105a,
-        type: 3}
-      propertyPath: _music_emitter
-      value: 
-      objectReference: {fileID: 471593972}
-    - target: {fileID: 4245967569884887046, guid: 4bbf0d1e9a033864897382d26fbc105a,
-        type: 3}
-      propertyPath: _Light
-      value: 
-      objectReference: {fileID: 171513621}
     - target: {fileID: 8511269579657973873, guid: 4bbf0d1e9a033864897382d26fbc105a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -219,6 +209,16 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4245967569884887046, guid: 4bbf0d1e9a033864897382d26fbc105a,
+        type: 3}
+      propertyPath: _music_emitter
+      value: 
+      objectReference: {fileID: 471593972}
+    - target: {fileID: 4245967569884887046, guid: 4bbf0d1e9a033864897382d26fbc105a,
+        type: 3}
+      propertyPath: _Light
+      value: 
+      objectReference: {fileID: 171513621}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4bbf0d1e9a033864897382d26fbc105a, type: 3}
 --- !u!114 &471593972 stripped
@@ -617,32 +617,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5169788004025264700, guid: 9ba293751ed4b4416b61f09eafe0a80b,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5169788004025264698, guid: 9ba293751ed4b4416b61f09eafe0a80b,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: -10
-      objectReference: {fileID: 0}
-    - target: {fileID: 5169788005248936291, guid: 9ba293751ed4b4416b61f09eafe0a80b,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 7375413339490898347, guid: 9ba293751ed4b4416b61f09eafe0a80b,
         type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.96
       objectReference: {fileID: 0}
-    - target: {fileID: 5169788004783619316, guid: 9ba293751ed4b4416b61f09eafe0a80b,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5169788004875958893, guid: 9ba293751ed4b4416b61f09eafe0a80b,
+    - target: {fileID: 5169788004025264700, guid: 9ba293751ed4b4416b61f09eafe0a80b,
         type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -656,6 +636,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SortingOrder
       value: -10
+      objectReference: {fileID: 0}
+    - target: {fileID: 5169788004025264698, guid: 9ba293751ed4b4416b61f09eafe0a80b,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: -10
+      objectReference: {fileID: 0}
+    - target: {fileID: 5169788005248936291, guid: 9ba293751ed4b4416b61f09eafe0a80b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5169788004783619316, guid: 9ba293751ed4b4416b61f09eafe0a80b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5169788004875958893, guid: 9ba293751ed4b4416b61f09eafe0a80b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9ba293751ed4b4416b61f09eafe0a80b, type: 3}
@@ -811,6 +811,35 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1534563434, guid: ca6bb7431e2eaa849a29b47696e6abba, type: 3}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 284821247, guid: ca6bb7431e2eaa849a29b47696e6abba, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1776578488371705536, guid: ca6bb7431e2eaa849a29b47696e6abba,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1455596705, guid: ca6bb7431e2eaa849a29b47696e6abba, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1268604335, guid: ca6bb7431e2eaa849a29b47696e6abba, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1087034762, guid: ca6bb7431e2eaa849a29b47696e6abba, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 844406681, guid: ca6bb7431e2eaa849a29b47696e6abba, type: 3}
+      propertyPath: Animator
+      value: 
+      objectReference: {fileID: 1455596707}
     - target: {fileID: 2663001383642804042, guid: ca6bb7431e2eaa849a29b47696e6abba,
         type: 3}
       propertyPath: _music_emitter
@@ -826,33 +855,6 @@ PrefabInstance:
       propertyPath: _particleSystemEffector
       value: 
       objectReference: {fileID: 1940349407}
-    - target: {fileID: 284821247, guid: ca6bb7431e2eaa849a29b47696e6abba, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1776578488371705536, guid: ca6bb7431e2eaa849a29b47696e6abba,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1268604335, guid: ca6bb7431e2eaa849a29b47696e6abba, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3154635082468494575, guid: ca6bb7431e2eaa849a29b47696e6abba,
-        type: 3}
-      propertyPath: m_Offset.x
-      value: 0.35
-      objectReference: {fileID: 0}
-    - target: {fileID: 3154635082468494575, guid: ca6bb7431e2eaa849a29b47696e6abba,
-        type: 3}
-      propertyPath: m_Offset.y
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 844406681, guid: ca6bb7431e2eaa849a29b47696e6abba, type: 3}
-      propertyPath: Animator
-      value: 
-      objectReference: {fileID: 1455596707}
     - target: {fileID: 5740817463666159596, guid: ca6bb7431e2eaa849a29b47696e6abba,
         type: 3}
       propertyPath: m_Offset.y
@@ -868,17 +870,15 @@ PrefabInstance:
       propertyPath: m_Radius
       value: 0.35
       objectReference: {fileID: 0}
-    - target: {fileID: 1534563434, guid: ca6bb7431e2eaa849a29b47696e6abba, type: 3}
-      propertyPath: m_RootOrder
-      value: 9
+    - target: {fileID: 3154635082468494575, guid: ca6bb7431e2eaa849a29b47696e6abba,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: 0.35
       objectReference: {fileID: 0}
-    - target: {fileID: 1455596705, guid: ca6bb7431e2eaa849a29b47696e6abba, type: 3}
-      propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1087034762, guid: ca6bb7431e2eaa849a29b47696e6abba, type: 3}
-      propertyPath: m_RootOrder
-      value: 4
+    - target: {fileID: 3154635082468494575, guid: ca6bb7431e2eaa849a29b47696e6abba,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: 0.1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 583769341922530471, guid: ca6bb7431e2eaa849a29b47696e6abba, type: 3}
@@ -1747,26 +1747,6 @@ PrefabInstance:
       propertyPath: _particleSystemEffector
       value: 
       objectReference: {fileID: 1940349407}
-    - target: {fileID: 4472554616459132123, guid: 086c9a4be882a6c42b8c8ee599eaf847,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 6.11
-      objectReference: {fileID: 0}
-    - target: {fileID: 4472554616459132123, guid: 086c9a4be882a6c42b8c8ee599eaf847,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -4.52
-      objectReference: {fileID: 0}
-    - target: {fileID: 5595948322017707183, guid: 086c9a4be882a6c42b8c8ee599eaf847,
-        type: 3}
-      propertyPath: _quiet_music_volume
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1815951823634673146, guid: 086c9a4be882a6c42b8c8ee599eaf847,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 086c9a4be882a6c42b8c8ee599eaf847, type: 3}
 --- !u!1001 &5957540063433745269
