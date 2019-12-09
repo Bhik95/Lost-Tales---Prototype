@@ -1,36 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &157751118500518617
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 1292902552768420481}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1519055818022245136}
-  m_Layer: 0
-  m_Name: Missing Prefab (Dummy)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1519055818022245136
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 352852189171009937, guid: f37e554149675f047a5c50788830b04e,
-    type: 3}
-  m_PrefabInstance: {fileID: 1292902552768420481}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 157751118500518617}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 5836105819173093529}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1299275303030617839
 GameObject:
   m_ObjectHideFlags: 0
@@ -131,37 +100,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!1 &1513392817128619066
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 356337125276329659, guid: f37e554149675f047a5c50788830b04e,
-    type: 3}
-  m_PrefabInstance: {fileID: 1292902552768420481}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 7718862581543469649}
-  m_Layer: 0
-  m_Name: Missing Prefab (Dummy)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &7718862581543469649
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 1292902552768420481}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1513392817128619066}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 5836105819173093529}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6367386487813426285
 GameObject:
   m_ObjectHideFlags: 0
@@ -194,8 +132,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1345587824555392391}
-  - {fileID: 5836105819173093529}
   - {fileID: 4662603747087820874}
+  - {fileID: 7103517936738654572}
   - {fileID: 7510298647157733085}
   - {fileID: 8814292636461703471}
   - {fileID: 6730022525560067063}
@@ -4988,38 +4926,6 @@ ParticleSystemRenderer:
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
   m_MaskInteraction: 0
---- !u!1 &6647045140303318249
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 1292902552768420481}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 5836105819173093529}
-  m_Layer: 0
-  m_Name: Sacred Flame Purple (Missing Prefab)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &5836105819173093529
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 1292902552768420481}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6647045140303318249}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 7718862581543469649}
-  - {fileID: 1519055818022245136}
-  m_Father: {fileID: 6367386487813426291}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7735559289659612316
 GameObject:
   m_ObjectHideFlags: 0
@@ -5088,7 +4994,7 @@ MonoBehaviour:
   _three_flames_sound: {fileID: 3226267774972029435}
   _flame_fx_green: {fileID: 1348862684981236397}
   _flame_fx_yellow: {fileID: 4656870379584997216}
-  _flame_fx_purple: {fileID: 1513392817128619066}
+  _flame_fx_purple: {fileID: 7097849368510510662}
   _paint_animator: {fileID: 3506753196355183533}
 --- !u!114 &7048618032770724592
 MonoBehaviour:
@@ -5250,80 +5156,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1041231256511715919}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &1292902552768420481
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 6367386487813426291}
-    m_Modifications:
-    - target: {fileID: 352852189171009937, guid: f37e554149675f047a5c50788830b04e,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.225
-      objectReference: {fileID: 0}
-    - target: {fileID: 352852189171009937, guid: f37e554149675f047a5c50788830b04e,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 352852189171009937, guid: f37e554149675f047a5c50788830b04e,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 352852189171009937, guid: f37e554149675f047a5c50788830b04e,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 352852189171009937, guid: f37e554149675f047a5c50788830b04e,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 352852189171009937, guid: f37e554149675f047a5c50788830b04e,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 352852189171009937, guid: f37e554149675f047a5c50788830b04e,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 352852189171009937, guid: f37e554149675f047a5c50788830b04e,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 352852189171009937, guid: f37e554149675f047a5c50788830b04e,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: -90.00001
-      objectReference: {fileID: 0}
-    - target: {fileID: 352852189171009937, guid: f37e554149675f047a5c50788830b04e,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 352852189171009937, guid: f37e554149675f047a5c50788830b04e,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 356337125276329659, guid: f37e554149675f047a5c50788830b04e,
-        type: 3}
-      propertyPath: m_Name
-      value: Sacred Flame Purple
-      objectReference: {fileID: 0}
-    - target: {fileID: 356337125276329659, guid: f37e554149675f047a5c50788830b04e,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: f37e554149675f047a5c50788830b04e, type: 3}
 --- !u!1001 &1556089697446456677
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5379,7 +5211,7 @@ PrefabInstance:
     - target: {fileID: 6137476321617626415, guid: c52ac41b665e7a64d8cd433876f24f4a,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6137476321617626415, guid: c52ac41b665e7a64d8cd433876f24f4a,
         type: 3}
@@ -5489,4 +5321,90 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3659008152969709468, guid: f8f723c8ec6393c448b17c8e7841f076,
     type: 3}
   m_PrefabInstance: {fileID: 5230298698656818867}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7381776781007491325
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6367386487813426291}
+    m_Modifications:
+    - target: {fileID: 356337125276329659, guid: 9da0be3332cb0534c9f0d31ac5a65233,
+        type: 3}
+      propertyPath: m_Name
+      value: Sacred Flame Purple
+      objectReference: {fileID: 0}
+    - target: {fileID: 356337125276329659, guid: 9da0be3332cb0534c9f0d31ac5a65233,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 352852189171009937, guid: 9da0be3332cb0534c9f0d31ac5a65233,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.299
+      objectReference: {fileID: 0}
+    - target: {fileID: 352852189171009937, guid: 9da0be3332cb0534c9f0d31ac5a65233,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 352852189171009937, guid: 9da0be3332cb0534c9f0d31ac5a65233,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 352852189171009937, guid: 9da0be3332cb0534c9f0d31ac5a65233,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 352852189171009937, guid: 9da0be3332cb0534c9f0d31ac5a65233,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 352852189171009937, guid: 9da0be3332cb0534c9f0d31ac5a65233,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 352852189171009937, guid: 9da0be3332cb0534c9f0d31ac5a65233,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 352852189171009937, guid: 9da0be3332cb0534c9f0d31ac5a65233,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 352852189171009937, guid: 9da0be3332cb0534c9f0d31ac5a65233,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90.00001
+      objectReference: {fileID: 0}
+    - target: {fileID: 352852189171009937, guid: 9da0be3332cb0534c9f0d31ac5a65233,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 352852189171009937, guid: 9da0be3332cb0534c9f0d31ac5a65233,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9da0be3332cb0534c9f0d31ac5a65233, type: 3}
+--- !u!1 &7097849368510510662 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 356337125276329659, guid: 9da0be3332cb0534c9f0d31ac5a65233,
+    type: 3}
+  m_PrefabInstance: {fileID: 7381776781007491325}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &7103517936738654572 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 352852189171009937, guid: 9da0be3332cb0534c9f0d31ac5a65233,
+    type: 3}
+  m_PrefabInstance: {fileID: 7381776781007491325}
   m_PrefabAsset: {fileID: 0}
