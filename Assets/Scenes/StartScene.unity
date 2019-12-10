@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -1164,6 +1164,86 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!1001 &544771312
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 922203938000940069, guid: 815b25d50eaa30e43a3551826084e156,
+        type: 3}
+      propertyPath: m_Name
+      value: Music
+      objectReference: {fileID: 0}
+    - target: {fileID: 922203938000940069, guid: 815b25d50eaa30e43a3551826084e156,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 922203938000940071, guid: 815b25d50eaa30e43a3551826084e156,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -11.85
+      objectReference: {fileID: 0}
+    - target: {fileID: 922203938000940071, guid: 815b25d50eaa30e43a3551826084e156,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 922203938000940071, guid: 815b25d50eaa30e43a3551826084e156,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 922203938000940071, guid: 815b25d50eaa30e43a3551826084e156,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 922203938000940071, guid: 815b25d50eaa30e43a3551826084e156,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 922203938000940071, guid: 815b25d50eaa30e43a3551826084e156,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 922203938000940071, guid: 815b25d50eaa30e43a3551826084e156,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 922203938000940071, guid: 815b25d50eaa30e43a3551826084e156,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 922203938000940071, guid: 815b25d50eaa30e43a3551826084e156,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 922203938000940071, guid: 815b25d50eaa30e43a3551826084e156,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 922203938000940071, guid: 815b25d50eaa30e43a3551826084e156,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 815b25d50eaa30e43a3551826084e156, type: 3}
+--- !u!1 &544771313 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 922203938000940069, guid: 815b25d50eaa30e43a3551826084e156,
+    type: 3}
+  m_PrefabInstance: {fileID: 544771312}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &546409222
 GameObject:
   m_ObjectHideFlags: 0
@@ -2812,7 +2892,7 @@ GameObject:
   - component: {fileID: 1191233734}
   - component: {fileID: 1191233733}
   m_Layer: 0
-  m_Name: SoundOfDrums (5i)
+  m_Name: EvilBoomSound
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2831,7 +2911,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CollisionTag: 
-  Event: event:/SFX_Drum
+  Event: event:/SFX_BoomEvil
   PlayEvent: 0
   StopEvent: 0
   AllowFadeout: 1
@@ -5219,6 +5299,8 @@ PlayableDirector:
     value: {fileID: 1253404748}
   - key: {fileID: -6157753474495330988, guid: 910d02a0560f98e4b9d784e0a211e0e1, type: 2}
     value: {fileID: 1253404750}
+  - key: {fileID: 7097227781525594984, guid: 910d02a0560f98e4b9d784e0a211e0e1, type: 2}
+    value: {fileID: 544771313}
   m_ExposedReferences:
     m_References:
     - b4f80a4bcb1e28c44b84cea9e263200b: {fileID: 1994546343}

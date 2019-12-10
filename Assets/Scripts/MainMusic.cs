@@ -21,9 +21,7 @@ public class MainMusic : MonoBehaviour
     private AltarMusicChange[] altars;
     private QuietMusicArea[] quietMusicAreas;
     [SerializeField] private FMODUnity.StudioEventEmitter _music;
-    [SerializeField] private float _default_quiet_volume = 0.75f;
-    private Transform _playerTransform;
-    
+    [SerializeField] private float _default_quiet_volume = 0.75f;  
 
 
     private void Awake()
@@ -36,41 +34,43 @@ public class MainMusic : MonoBehaviour
         }
 
         _instance = this;
-    }
-
-    private void Start()
-    {
-        _playerTransform = PlayerStatus.Instance.transform;
+        DontDestroyOnLoad(this.gameObject);
     }
 
     void Update()
     {
-        float goalProximity = float.PositiveInfinity;
-        if(altars != null)
+        if (PlayerStatus.Instance)
         {
-            for (int i = 0; i < altars.Length; i++)
+            Transform playerTransform = PlayerStatus.Instance.transform;
+
+            float goalProximity = float.PositiveInfinity;
+            if (altars != null)
             {
-                float goalProximityTemp = Mathf.Clamp01((Vector2.Distance(_playerTransform.position, altars[i].transform.position) - altars[i].SoundDistanceMin) / (altars[i].SoundDistanceMax - altars[i].SoundDistanceMin));
-                goalProximity = Mathf.Min(goalProximity, goalProximityTemp);
+                for (int i = 0; i < altars.Length; i++)
+                {
+                    float goalProximityTemp = Mathf.Clamp01((Vector2.Distance(playerTransform.position, altars[i].transform.position) - altars[i].SoundDistanceMin) / (altars[i].SoundDistanceMax - altars[i].SoundDistanceMin));
+                    goalProximity = Mathf.Min(goalProximity, goalProximityTemp);
+                }
+
+                _music.SetParameter("GoalProximity", 1 - goalProximity);
             }
 
-            _music.SetParameter("GoalProximity", 1 - goalProximity);
-        }
-
-        float quietZoneProximity = float.PositiveInfinity;
-        if (quietMusicAreas != null)
-        {
-            for (int i = 0; i < quietMusicAreas.Length; i++)
+            float quietZoneProximity = float.PositiveInfinity;
+            if (quietMusicAreas != null)
             {
-                float quietZoneProximityTemp = Mathf.Clamp01((Vector2.Distance(_playerTransform.position, quietMusicAreas[i].transform.position) - quietMusicAreas[i].DistanceMin) / (quietMusicAreas[i].DistanceMax - quietMusicAreas[i].DistanceMin));
-                quietZoneProximity = Mathf.Min(quietZoneProximity, quietZoneProximityTemp);
+                for (int i = 0; i < quietMusicAreas.Length; i++)
+                {
+                    float quietZoneProximityTemp = Mathf.Clamp01((Vector2.Distance(playerTransform.position, quietMusicAreas[i].transform.position) - quietMusicAreas[i].DistanceMin) / (quietMusicAreas[i].DistanceMax - quietMusicAreas[i].DistanceMin));
+                    quietZoneProximity = Mathf.Min(quietZoneProximity, quietZoneProximityTemp);
+                }
+
+                _music.SetParameter("Volume", (1 - quietZoneProximity) * _default_quiet_volume + quietZoneProximity);
             }
 
-            _music.SetParameter("Volume", (1-quietZoneProximity) * _default_quiet_volume + quietZoneProximity);
-        }
+            //Type of music: PIANO on right side of the map (x>-11.85), HARPIANO on left side
+            _music.SetParameter("Mood", Mathf.SmoothStep(0.1f, 0.9f, transform.position.x - playerTransform.position.x));
 
-        //Type of music: PIANO on right side of the map (x>-11.85), HARPIANO on left side
-        _music.SetParameter("Mood", Mathf.SmoothStep(0.1f, 0.9f, transform.position.x - _playerTransform.position.x));
+        } 
     }
 
 
