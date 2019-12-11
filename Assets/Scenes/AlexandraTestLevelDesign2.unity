@@ -482,6 +482,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Festival Area
       objectReference: {fileID: 0}
+    - target: {fileID: 2150405533367449792, guid: a51d5ae4ad9464336af0eecba4895392,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2150405533367449793, guid: a51d5ae4ad9464336af0eecba4895392,
         type: 3}
       propertyPath: m_LocalPosition.x
