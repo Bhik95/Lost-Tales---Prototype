@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class LightPuzzle : AbstractPuzzle
 {
+    [SerializeField] private FMODUnity.StudioEventEmitter SoundFinish;
+    [SerializeField] private FMODUnity.StudioEventEmitter RockSound;
+    [SerializeField] private FMODUnity.StudioEventEmitter DissapearSound;
+
     [SerializeField] private Transform Center;
 
     [SerializeField] private GameObject Wall;
@@ -28,6 +32,8 @@ public class LightPuzzle : AbstractPuzzle
         {
             Effect.SetActive(true);
         }
+        SoundFinish.Play();
+        DissapearSound.Play();
         StartCoroutine(DelayedSolve());
     }
 
@@ -40,11 +46,16 @@ public class LightPuzzle : AbstractPuzzle
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        EnterWall.SetActive(true);
-        if (Center)
+        if (!puzzleSolved)
         {
-            Camera.main.transform.parent.GetComponent<CameraFollow>().TempTarget = Center;
+            RockSound.Play();
+            EnterWall.SetActive(true);
+            if (Center)
+            {
+                Camera.main.transform.parent.GetComponent<CameraFollow>().TempTarget = Center;
+            }
         }
+       
     }
 
     public override void SolveCondition(AbstractPuzzleCondition pCondition = null)
