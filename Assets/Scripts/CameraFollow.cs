@@ -31,7 +31,7 @@ public class CameraFollow : MonoBehaviour
         {
             FollowPos = TempTarget.position;
             var dirToTarget = (Target.position - TempTarget.position);
-            if (dirToTarget.magnitude >= 5)
+            if (dirToTarget.magnitude >= 10)
             {
                 TempTarget = null;
             }
@@ -40,14 +40,26 @@ public class CameraFollow : MonoBehaviour
         else if (Target)
         {
             FollowPos = new Vector3(Target.position.x, Target.position.y, transform.position.z);
-            if (Mathf.Abs(FollowPos.x) >= maxX + Mathf.Abs( center.x))
+            var t = FollowPos;
+            if (t.x >= center.x + maxX)
             {
-                FollowPos.x = FollowPos.x < 0 ? -maxX + center.x: maxX + center.x;
+                t.x = center.x + maxX;
             }
-            if (Mathf.Abs(FollowPos.y) >= maxY + Mathf.Abs( center.y))
+
+            if (t.x < center.x - maxX)
             {
-                FollowPos.y = FollowPos.y < 0 ? -maxY + center.y : maxY + center.y;
+                t.x = center.x - maxX;
             }
+            if (t.y >= center.y + maxY)
+            {
+                t.y = center.y + maxY;
+            }
+
+            if (t.y < center.y - maxY)
+            {
+                t.y = center.y - maxY;
+            }
+            FollowPos = t;
         }
 
         FollowPos.z = -10f;
