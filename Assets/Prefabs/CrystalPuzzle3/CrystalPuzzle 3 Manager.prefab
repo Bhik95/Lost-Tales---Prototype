@@ -69,7 +69,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CollisionTag: 
-  Event: event:/SFX_Wrong
+  Event: event:/SFX_Interact_Fail
   PlayEvent: 0
   StopEvent: 0
   AllowFadeout: 1
@@ -92,6 +92,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _crystal_sequence: []
-  _obstacle_to_remove: {fileID: 0}
+  _obstacles_to_remove: []
   _success_sound: {fileID: 3377281094298120236}
   _fail_sound: {fileID: 3377281094298120243}

@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -17,6 +18,8 @@ public class Bonfire : Interactible
     [SerializeField] private Animator _paint_animator;
 
     private int _n_flames = 0;
+
+    public event Action OnThreeFlamesCollected;
 
     protected override void OnActivate()
     {
@@ -47,6 +50,13 @@ public class Bonfire : Interactible
                     ParticleSystem ps = flamesDatas[i].GetComponent<ParticleSystem>();
                     ps.Stop();
                     Destroy(ps.gameObject, ps.main.duration);
+
+                    if (_n_flames == 3)
+                    {
+                        OnThreeFlamesCollected?.Invoke();
+                        _flame_fx_final.SetActive(true);
+                        _three_flames_sound.Play();
+                    }
                 }
             }
 
@@ -58,12 +68,6 @@ public class Bonfire : Interactible
         }
 
         _paint_animator.SetInteger("FlamesLit", _n_flames);
-
-        if(_n_flames == 3)
-        {
-            _flame_fx_final.SetActive(true);
-            _three_flames_sound.Play();
-        }
     }
 
     protected override void OnPlayerFar()

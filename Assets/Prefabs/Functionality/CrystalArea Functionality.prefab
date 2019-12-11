@@ -792,7 +792,7 @@ PrefabInstance:
     - target: {fileID: 2382471901543364798, guid: 9086ce7f490f913478a8959faca927ec,
         type: 3}
       propertyPath: m_Name
-      value: Finall Crystal Exit
+      value: Final Crystal Exit
       objectReference: {fileID: 0}
     - target: {fileID: 2382471901543364798, guid: 9086ce7f490f913478a8959faca927ec,
         type: 3}
@@ -802,12 +802,12 @@ PrefabInstance:
     - target: {fileID: 3772680610988766265, guid: 9086ce7f490f913478a8959faca927ec,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.133
+      value: -1.937
       objectReference: {fileID: 0}
     - target: {fileID: 3772680610988766265, guid: 9086ce7f490f913478a8959faca927ec,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.896
+      value: 4.863
       objectReference: {fileID: 0}
     - target: {fileID: 3772680610988766265, guid: 9086ce7f490f913478a8959faca927ec,
         type: 3}

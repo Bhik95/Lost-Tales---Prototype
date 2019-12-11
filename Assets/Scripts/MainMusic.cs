@@ -28,7 +28,7 @@ public class MainMusic : MonoBehaviour
     {
         if (_instance && _instance != this)
         {
-            Debug.LogError("Singleton Broken", this);
+            Debug.LogWarning("Music was already found on the scene, I will self-destruct, bye!", this);
             Destroy(gameObject);
             return;
         }
