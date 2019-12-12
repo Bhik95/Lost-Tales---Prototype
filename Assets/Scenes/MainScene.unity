@@ -195,6 +195,12 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1964404898}
   m_PrefabAsset: {fileID: 0}
+--- !u!198 &245844681 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 198748979371217952, guid: 1a365141225c22e49a7bb976869b22a8,
+    type: 3}
+  m_PrefabInstance: {fileID: 1669085903}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &316018426
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -676,10 +682,27 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 1b83c3b4afd29e14ab0b10282ad5d8d3, type: 2}
+    - target: {fileID: 8729116622394111972, guid: a51d5ae4ad9464336af0eecba4895392,
+        type: 3}
+      propertyPath: Preload
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2025811063, guid: a51d5ae4ad9464336af0eecba4895392, type: 3}
+      propertyPath: _myst_particle_systems.Array.size
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 2025811063, guid: a51d5ae4ad9464336af0eecba4895392, type: 3}
       propertyPath: _myst
       value: 
       objectReference: {fileID: 710759228}
+    - target: {fileID: 2025811063, guid: a51d5ae4ad9464336af0eecba4895392, type: 3}
+      propertyPath: _myst_particle_systems.Array.data[0]
+      value: 
+      objectReference: {fileID: 710759228}
+    - target: {fileID: 2025811063, guid: a51d5ae4ad9464336af0eecba4895392, type: 3}
+      propertyPath: _myst_particle_systems.Array.data[1]
+      value: 
+      objectReference: {fileID: 245844681}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a51d5ae4ad9464336af0eecba4895392, type: 3}
 --- !u!1001 &878659581

@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class StopMystAfterFlameCollection : MonoBehaviour
 {
-    [SerializeField] private ParticleSystem _myst;
+    [SerializeField] private ParticleSystem[] _myst_particle_systems;
     private Bonfire _bonfire;
 
     private void Awake()
@@ -24,6 +24,9 @@ public class StopMystAfterFlameCollection : MonoBehaviour
 
     private void OnThreeFlamesCollectedHandler()
     {
-        _myst.Stop();
+        for(int i = 0; i < _myst_particle_systems.Length; i++)
+        {
+            _myst_particle_systems[i].Stop();
+        }
     }
 }
