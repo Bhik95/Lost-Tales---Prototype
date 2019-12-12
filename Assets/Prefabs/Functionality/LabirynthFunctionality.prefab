@@ -2357,7 +2357,7 @@ PrefabInstance:
     - target: {fileID: 1506762382421868327, guid: ac143ea16a5202e41b88d77a5f9349ba,
         type: 3}
       propertyPath: _objects_to_deactivate.Array.size
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1506762382421868327, guid: ac143ea16a5202e41b88d77a5f9349ba,
         type: 3}
