@@ -40,9 +40,11 @@ Material:
     - Vector1_53C5DF06: 0
     - Vector1_85196858: 0
     - Vector1_EE2573A: 1
-    - _Amplitude: 0.04
-    - _Frequency: 1
+    - _AlphaOff: 1
+    - _AlphaOn: 1
+    - _Amplitude: 0.03
+    - _Frequency: 2
     - _NoiseN: 36
-    - _Offset: 0.2
-    - _VerticalDelay: 2
+    - _Offset: 0.1
+    - _VerticalDelay: 20
     m_Colors: []
