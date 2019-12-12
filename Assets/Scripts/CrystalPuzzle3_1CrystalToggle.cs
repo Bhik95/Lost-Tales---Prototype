@@ -8,6 +8,13 @@ public class CrystalPuzzle3_1CrystalToggle : Interactible
     [SerializeField] private FMODUnity.StudioEventEmitter _crystal_sound;
     [SerializeField] private CrystalPuzzleSpriteHandler _sprite_handler;
 
+    private CrystalToggleFXData _crystal_animation;
+
+    private void Awake()
+    {
+        _crystal_animation = gameObject.GetComponentInParent<CrystalToggleFXData>();
+    }
+
     private bool _state;
 
     public bool State {
@@ -29,6 +36,7 @@ public class CrystalPuzzle3_1CrystalToggle : Interactible
 
         if (_state)
         {
+            _crystal_animation.StartCrystalAnimation();
             _crystal_sound.Play();
         }
     }
