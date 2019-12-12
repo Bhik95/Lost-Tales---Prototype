@@ -9,8 +9,10 @@ public class CrystalPuzzle3_1Manager : MonoBehaviour
     [SerializeField] private CrystalPuzzle3_1CrystalToggle[] _crystals_not_involved;
 
     [SerializeField] private Transform _focus_target;
+    [SerializeField] private float _camera_focus_duration = 1f;
 
     [SerializeField] private GameObject[] _obstacles_to_remove;
+    [SerializeField] private CrystalObstacle[] _crystal_obstacles_to_animate_and_remove;
     [SerializeField] private FMODUnity.StudioEventEmitter _success_sound;
     [SerializeField] private FMODUnity.StudioEventEmitter _fail_sound;
 
@@ -84,13 +86,17 @@ public class CrystalPuzzle3_1Manager : MonoBehaviour
 
             if (solved)
             {
-                for(int i = 0; i < _obstacles_to_remove.Length; i++)
+                if (_focus_target)
+                {
+                    Camera.main.transform.parent.GetComponent<CameraFollow>().SetTempTargetAndResetAfterTimeout(_focus_target, _camera_focus_duration);
+                }
+                for (int i = 0; i < _obstacles_to_remove.Length; i++)
                 {
                     _obstacles_to_remove[i].SetActive(false);
                 }
-                if (_focus_target)
+                for (int i = 0; i < _crystal_obstacles_to_animate_and_remove.Length; i++)
                 {
-                    Camera.main.transform.parent.GetComponent<CameraFollow>().SetTempTargetAndResetAfterTimeout(_focus_target, 2f);
+                    _crystal_obstacles_to_animate_and_remove[i].AnimateThenDeactivate(0.5f);
                 }
                 _success_sound.Play();
                 enabled = false;

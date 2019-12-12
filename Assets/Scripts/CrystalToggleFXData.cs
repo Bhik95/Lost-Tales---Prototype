@@ -14,6 +14,8 @@ public class CrystalToggleFXData : MonoBehaviour
     [SerializeField] private float _intensity_end = 0.0f;
     [SerializeField] private AnimationCurve _tweening_intensity;
 
+    public float Duration => _duration;
+
     private SpriteRenderer _renderer;
     private bool _running = false;
 

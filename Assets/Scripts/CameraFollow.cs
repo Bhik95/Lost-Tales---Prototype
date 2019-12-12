@@ -12,6 +12,8 @@ public class CameraFollow : MonoBehaviour
     [SerializeField]Vector2 center;
     [SerializeField]float maxX, maxY;
 
+    public bool IgnoreDistanceCheck { get; private set; }
+
     void Start()
     {
         
@@ -31,7 +33,7 @@ public class CameraFollow : MonoBehaviour
         {
             FollowPos = TempTarget.position;
             var dirToTarget = (Target.position - TempTarget.position);
-            if (dirToTarget.magnitude >= 10)
+            if (!IgnoreDistanceCheck && dirToTarget.magnitude >= 10)
             {
                 TempTarget = null;
             }
@@ -74,6 +76,7 @@ public class CameraFollow : MonoBehaviour
 
     private IEnumerator ResetAfterTimeoutCoroutine(float duration)
     {
+        IgnoreDistanceCheck = true;
         float timer = duration;
         while(timer > 0)
         {
@@ -81,6 +84,7 @@ public class CameraFollow : MonoBehaviour
             yield return null;
         }
         TempTarget = null;
+        IgnoreDistanceCheck = false;
     }
 
     public void SetTempTargetAndResetAfterTimeout(Transform tempTarget, float duration)
