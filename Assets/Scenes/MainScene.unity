@@ -742,7 +742,9 @@ PrefabInstance:
       propertyPath: _particleSystemEffector
       value: 
       objectReference: {fileID: 1940349407}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1800524617, guid: ca6bb7431e2eaa849a29b47696e6abba, type: 3}
+    - {fileID: 1800524618, guid: ca6bb7431e2eaa849a29b47696e6abba, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ca6bb7431e2eaa849a29b47696e6abba, type: 3}
 --- !u!1 &1168576447
 GameObject:
@@ -1592,6 +1594,11 @@ PrefabInstance:
       propertyPath: _particleSystemEffector
       value: 
       objectReference: {fileID: 1940349407}
+    - target: {fileID: 9109768427675336883, guid: 086c9a4be882a6c42b8c8ee599eaf847,
+        type: 3}
+      propertyPath: _Light
+      value: 
+      objectReference: {fileID: 171513621}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 086c9a4be882a6c42b8c8ee599eaf847, type: 3}
 --- !u!1001 &5957540063433745269

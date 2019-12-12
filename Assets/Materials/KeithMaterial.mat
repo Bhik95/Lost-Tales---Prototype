@@ -37,6 +37,9 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
+    - _AlphaOff: 1
+    - _AlphaOn: 1
+    - _DefaultSaturation: 1
     - _NoiseN: 36
     - _Offset: 0.4
     m_Colors: []
