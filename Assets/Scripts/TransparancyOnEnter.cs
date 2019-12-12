@@ -13,7 +13,7 @@ public class TransparancyOnEnter : MonoBehaviour
     private void Update()
     {
         Color c = GetComponent<SpriteRenderer>().color;
-        GetComponent<SpriteRenderer>().color = Color.Lerp(c, new Color(c.r, c.g, c.b, curT), Time.deltaTime);
+        GetComponent<SpriteRenderer>().color = Color.Lerp(c, new Color(c.r, c.g, c.b, curT), Time.deltaTime*2);
     }
     private void OnTriggerEnter2D(Collider2D col)
     {
