@@ -67,6 +67,28 @@ public class CameraFollow : MonoBehaviour
 
     }
 
+    public void ResetAfterTimeout(float duration)
+    {
+        StartCoroutine(ResetAfterTimeoutCoroutine(duration));
+    }
+
+    private IEnumerator ResetAfterTimeoutCoroutine(float duration)
+    {
+        float timer = duration;
+        while(timer > 0)
+        {
+            timer -= Time.deltaTime;
+            yield return null;
+        }
+        TempTarget = null;
+    }
+
+    public void SetTempTargetAndResetAfterTimeout(Transform tempTarget, float duration)
+    {
+        this.TempTarget = tempTarget;
+        ResetAfterTimeout(duration);
+    }
+
     void OnDrawGizmos()
     {
         if (drawGizmos)

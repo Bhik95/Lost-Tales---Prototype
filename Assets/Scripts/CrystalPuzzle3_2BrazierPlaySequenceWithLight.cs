@@ -10,6 +10,7 @@ public class CrystalPuzzle3_2BrazierPlaySequenceWithLight : Interactible
 
     [SerializeField] private GameObject _brazier;
     [SerializeField] private CrystalPuzzle3_1CrystalToggle[] _crystals;
+    [SerializeField] private CrystalPuzzle3_1CrystalToggle[] _crystals_not_involved;
     [SerializeField] private float delay = 0.5f;//Time between each note
 
     protected override void OnActivate()
@@ -34,6 +35,14 @@ public class CrystalPuzzle3_2BrazierPlaySequenceWithLight : Interactible
             }
             _crystals[i].State = false;
         }
+        if (_crystals_not_involved != null)
+        {
+            for (int i = 0; i < _crystals_not_involved.Length; i++)
+            {
+                _crystals_not_involved[i].State = false;
+            }
+        }
+        
         enabled = true;
         _brazier.SetActive(false);
     }

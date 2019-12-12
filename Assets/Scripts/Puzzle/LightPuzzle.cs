@@ -48,8 +48,11 @@ public class LightPuzzle : AbstractPuzzle
     {
         if (!puzzleSolved)
         {
-            RockSound.Play();
-            EnterWall.SetActive(true);
+            if (!EnterWall.activeSelf)
+            {
+                RockSound.Play();
+                EnterWall.SetActive(true);
+            }
             if (Center)
             {
                 Camera.main.transform.parent.GetComponent<CameraFollow>().TempTarget = Center;

@@ -6,6 +6,9 @@ using UnityEngine;
 public class CrystalPuzzle3_1Manager : MonoBehaviour
 {
     [SerializeField] private CrystalPuzzle3_1CrystalToggle[] _crystal_sequence;
+    [SerializeField] private CrystalPuzzle3_1CrystalToggle[] _crystals_not_involved;
+
+    [SerializeField] private Transform _focus_target;
 
     [SerializeField] private GameObject[] _obstacles_to_remove;
     [SerializeField] private FMODUnity.StudioEventEmitter _success_sound;
@@ -85,6 +88,10 @@ public class CrystalPuzzle3_1Manager : MonoBehaviour
                 {
                     _obstacles_to_remove[i].SetActive(false);
                 }
+                if (_focus_target)
+                {
+                    Camera.main.transform.parent.GetComponent<CameraFollow>().SetTempTargetAndResetAfterTimeout(_focus_target, 2f);
+                }
                 _success_sound.Play();
                 enabled = false;
             }
@@ -103,6 +110,13 @@ public class CrystalPuzzle3_1Manager : MonoBehaviour
         {
             _current_order[i] = 0;
             _crystal_sequence[i].State = false;
+        }
+        if(_crystals_not_involved != null)
+        {
+            for(int i=0; i < _crystals_not_involved.Length; i++)
+            {
+                _crystals_not_involved[i].State = false;
+            }
         }
     }
 }
