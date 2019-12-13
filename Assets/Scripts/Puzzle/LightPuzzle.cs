@@ -47,7 +47,7 @@ public class LightPuzzle : AbstractPuzzle
     {
         yield return new WaitForSeconds(.5f);
 
-        Camera.main.transform.parent.GetComponent<CameraFollow>().SetTempTargetAndResetAfterTimeout(Wall.transform, 2.0f);
+        Camera.main.transform.parent.GetComponent<CameraFollow>().SetTempTargetAndResetAfterTimeout(Wall.transform, 2.0f, true);
     }
 
     private void OnTriggerEnter2D(Collider2D other)

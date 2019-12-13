@@ -69,14 +69,16 @@ public class CameraFollow : MonoBehaviour
 
     }
 
-    public void ResetAfterTimeout(float duration)
+    public void ResetAfterTimeout(float duration, bool disablePlayerControls)
     {
-        StartCoroutine(ResetAfterTimeoutCoroutine(duration));
+        StartCoroutine(ResetAfterTimeoutCoroutine(duration, disablePlayerControls));
     }
 
-    private IEnumerator ResetAfterTimeoutCoroutine(float duration)
+    private IEnumerator ResetAfterTimeoutCoroutine(float duration, bool disablePlayerControls)
     {
         IgnoreDistanceCheck = true;
+        if(disablePlayerControls)
+            PlayerStatus.Instance.GetComponent<Movement>().ControlsEnabled = false;
         float timer = duration;
         while(timer > 0)
         {
@@ -85,12 +87,14 @@ public class CameraFollow : MonoBehaviour
         }
         TempTarget = null;
         IgnoreDistanceCheck = false;
+        if(disablePlayerControls)
+            PlayerStatus.Instance.GetComponent<Movement>().ControlsEnabled = true;
     }
 
-    public void SetTempTargetAndResetAfterTimeout(Transform tempTarget, float duration)
+    public void SetTempTargetAndResetAfterTimeout(Transform tempTarget, float duration, bool disablePlayerControls)
     {
         this.TempTarget = tempTarget;
-        ResetAfterTimeout(duration);
+        ResetAfterTimeout(duration, disablePlayerControls);
     }
 
     void OnDrawGizmos()

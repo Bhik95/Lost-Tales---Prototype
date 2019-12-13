@@ -88,7 +88,7 @@ public class CrystalPuzzle3_1Manager : MonoBehaviour
             {
                 if (_focus_target)
                 {
-                    Camera.main.transform.parent.GetComponent<CameraFollow>().SetTempTargetAndResetAfterTimeout(_focus_target, _camera_focus_duration);
+                    Camera.main.transform.parent.GetComponent<CameraFollow>().SetTempTargetAndResetAfterTimeout(_focus_target, _camera_focus_duration, true);
                 }
                 for (int i = 0; i < _obstacles_to_remove.Length; i++)
                 {

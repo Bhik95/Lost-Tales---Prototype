@@ -4994,6 +4994,7 @@ GameObject:
   - component: {fileID: 2663001383198678195}
   - component: {fileID: 1561296547570034322}
   - component: {fileID: 8667300754724046280}
+  - component: {fileID: 8100823517212435573}
   m_Layer: 0
   m_Name: FlameMusicFX
   m_TagString: Untagged
@@ -5028,9 +5029,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _interact_sound_emitter: {fileID: 8667300754724046280}
+  _interact_fail: {fileID: 8100823517212435573}
   _sound_distance_min: 2
   _sound_distance_max: 5.2
   _sound_transition_duration: 1
+  _set_has_big_flame: 1
   _Light: {fileID: 0}
   _maze: {fileID: 0}
   _disableGO: {fileID: 0}
@@ -5070,6 +5073,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CollisionTag: 
   Event: event:/SFX_Take_Flame
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0
+--- !u!114 &8100823517212435573
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5370729664098186187}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/SFX_Interact_Fail
   PlayEvent: 0
   StopEvent: 0
   AllowFadeout: 1
@@ -10097,6 +10123,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8428531684253536910}
     m_Modifications:
+    - target: {fileID: 5930399051238311683, guid: 510f667e3ec76304aaf71033cd818439,
+        type: 3}
+      propertyPath: m_Name
+      value: PaintSprite
+      objectReference: {fileID: 0}
     - target: {fileID: 5930399051238311681, guid: 510f667e3ec76304aaf71033cd818439,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -10151,11 +10182,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5930399051238311683, guid: 510f667e3ec76304aaf71033cd818439,
-        type: 3}
-      propertyPath: m_Name
-      value: PaintSprite
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 510f667e3ec76304aaf71033cd818439, type: 3}

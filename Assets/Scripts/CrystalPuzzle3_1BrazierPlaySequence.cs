@@ -21,6 +21,7 @@ public class CrystalPuzzle3_1BrazierPlaySequence : Interactible
     private IEnumerator PlaySequence()
     {
         enabled = false;
+        PlayerStatus.Instance.GetComponent<Movement>().ControlsEnabled = false;
         float timer;
         if (ParticleSystem)
             ParticleSystem.Play();
@@ -36,6 +37,7 @@ public class CrystalPuzzle3_1BrazierPlaySequence : Interactible
             }
         }
         enabled = true;
+        PlayerStatus.Instance.GetComponent<Movement>().ControlsEnabled = true;
         if (ParticleSystem)
             ParticleSystem.Stop();
         _fire_sound.Stop();

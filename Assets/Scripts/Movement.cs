@@ -16,12 +16,14 @@ public class Movement : MonoBehaviour
     private float _footstep_delay_timer = 0f;
     public Vector2 GetInput;
 
+    public bool ControlsEnabled = true;
+
     // Update is called once per frame
     void FixedUpdate()
     {
         GetInput = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
         SetAnimatorData();
-        Vector2 move = Vector2.ClampMagnitude(GetInput, 1);
+        Vector2 move = ControlsEnabled ? Vector2.ClampMagnitude(GetInput, 1) : Vector2.zero;
 
         if(move.magnitude > 0.01)
         {
@@ -42,9 +44,9 @@ public class Movement : MonoBehaviour
 
     void SetAnimatorData()
     {
-        Animator?.SetFloat("Horizontal", GetInput.x);
-        Animator?.SetFloat("Vertical", GetInput.y);
-        Animator?.SetFloat("Magnitude", GetInput.magnitude);
+        Animator?.SetFloat("Horizontal", ControlsEnabled ? GetInput.x : 0);
+        Animator?.SetFloat("Vertical", ControlsEnabled ? GetInput.y : 0);
+        Animator?.SetFloat("Magnitude", ControlsEnabled ? GetInput.magnitude : 0);
         Animator?.SetFloat("LastHorizontal", _last_direction.x);
         Animator?.SetFloat("LastVertical", _last_direction.y);
     }

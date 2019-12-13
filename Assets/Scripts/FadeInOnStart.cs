@@ -10,6 +10,6 @@ public class FadeInOnStart : MonoBehaviour
     void Start()
     {
         _fade_in.AnimateThenSetActive(0.0f, true);
-        Camera.main.transform.parent.GetComponent<CameraFollow>().SetTempTargetAndResetAfterTimeout(transform, _camera_focus_duration);
+        Camera.main.transform.parent.GetComponent<CameraFollow>().SetTempTargetAndResetAfterTimeout(transform, _camera_focus_duration, true);
     }
 }

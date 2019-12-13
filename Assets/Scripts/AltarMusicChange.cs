@@ -7,6 +7,7 @@ public class AltarMusicChange : Interactible
 {
     [Header("Music")]
     [SerializeField] private FMODUnity.StudioEventEmitter _interact_sound_emitter;
+    [SerializeField] private FMODUnity.StudioEventEmitter _interact_fail;
     public float SoundDistanceMin => _sound_distance_min;
     public float SoundDistanceMax => _sound_distance_max;
     [SerializeField] private float _sound_distance_min;
@@ -105,6 +106,11 @@ public class AltarMusicChange : Interactible
                 _particleSystem.SetActive(true);
                 StartCoroutine(TempFollowPlayer());
             }
+        }
+        else
+        {
+            if(_interact_fail)
+                _interact_fail.Play();
         }
     }
 }
