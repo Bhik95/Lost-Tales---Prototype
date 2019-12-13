@@ -28,7 +28,7 @@ Material:
     - Vector1_FC2B33A2: 0
     - _AlphaOff: 1
     - _AlphaOn: 1
-    - _C: 5
+    - _C: 100
     - _DefaultSaturation: 0.6
     - _FadeFalloff: 1
     - _Intensity: 0.5

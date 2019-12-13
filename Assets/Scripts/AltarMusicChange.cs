@@ -12,6 +12,7 @@ public class AltarMusicChange : Interactible
     [SerializeField] private float _sound_distance_min;
     [SerializeField] private float _sound_distance_max;
     [SerializeField] private float _sound_transition_duration = 1f;
+    [SerializeField] private bool _set_has_big_flame = true;
 
     [Header("GameObjects")]
     [SerializeField] private GameObject _Light;
@@ -87,16 +88,18 @@ public class AltarMusicChange : Interactible
         {
             _lit = !_lit;
 
-            _maze?.SetActive(true);
+            if(_maze)
+                _maze.SetActive(true);
             if (_disableGO)
             {
                 _disableGO.SetActive(false);
             }
             
-            _interact_sound_emitter.Play();
+            if(_interact_sound_emitter)
+                _interact_sound_emitter.Play();
 
 
-            PlayerStatus.Instance.HasBigFlame = true;
+            PlayerStatus.Instance.HasBigFlame = _set_has_big_flame;
             if (_particleSystem)
             {
                 _particleSystem.SetActive(true);

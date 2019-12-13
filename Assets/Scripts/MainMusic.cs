@@ -48,6 +48,8 @@ public class MainMusic : MonoBehaviour
             {
                 for (int i = 0; i < altars.Length; i++)
                 {
+                    if (!altars[i].enabled)
+                        continue;
                     float goalProximityTemp = Mathf.Clamp01((Vector2.Distance(playerTransform.position, altars[i].transform.position) - altars[i].SoundDistanceMin) / (altars[i].SoundDistanceMax - altars[i].SoundDistanceMin));
                     goalProximity = Mathf.Min(goalProximity, goalProximityTemp);
                 }

@@ -135,9 +135,9 @@ Transform:
   - {fileID: 8814292636461703471}
   - {fileID: 6730022525560067063}
   - {fileID: 693263647685313038}
-  - {fileID: 8755934573594553023}
-  - {fileID: 5651187611067545041}
-  - {fileID: 3021935020258570987}
+  - {fileID: 8755934573594552998}
+  - {fileID: 508085846109332609}
+  - {fileID: 5814946406698542840}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4941,6 +4941,8 @@ GameObject:
   - component: {fileID: 7048618032770724592}
   - component: {fileID: 8175015562754412233}
   - component: {fileID: 3226267774972029435}
+  - component: {fileID: 8542212418904836115}
+  - component: {fileID: 3177614490146492087}
   m_Layer: 0
   m_Name: TriggerArea
   m_TagString: Untagged
@@ -4993,11 +4995,12 @@ MonoBehaviour:
   _interact_success: {fileID: 7048618032770724592}
   _interact_fail: {fileID: 8175015562754412233}
   _three_flames_sound: {fileID: 3226267774972029435}
-  _flame_fx_green: {fileID: 8755934573594552907}
-  _flame_fx_yellow: {fileID: 3021935020258570778}
-  _flame_fx_purple: {fileID: 5651187611067545030}
+  _flame_fx_green: {fileID: 8755934573594553010}
+  _flame_fx_yellow: {fileID: 5811531908023290322}
+  _flame_fx_purple: {fileID: 511570784261557163}
   _flame_fx_final: {fileID: 687524711618932004}
   _paint_animator: {fileID: 3506753196355183533}
+  _music_animator: {fileID: 3177614490146492087}
 --- !u!114 &7048618032770724592
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5067,6 +5070,50 @@ MonoBehaviour:
   OverrideAttenuation: 0
   OverrideMinDistance: 0
   OverrideMaxDistance: 0
+--- !u!114 &8542212418904836115
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7735559289659612316}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7959ce29a9ad32409e822370aa145b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interact_sound_emitter: {fileID: 0}
+  _sound_distance_min: 0
+  _sound_distance_max: 0
+  _sound_transition_duration: 1
+  _set_has_big_flame: 0
+  _Light: {fileID: 0}
+  _maze: {fileID: 0}
+  _disableGO: {fileID: 0}
+  _particleSystem: {fileID: 0}
+  _particleSystemEffector: {fileID: 0}
+  _flameFXPlayer: {fileID: 0}
+  _camera_shake_trauma: 0.2
+  _camera_shake_trauma_after: 0.3
+--- !u!95 &3177614490146492087
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7735559289659612316}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c88c3a836c0ec11499e243238e582f74, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &3021935020258570339
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5074,16 +5121,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6367386487813426291}
     m_Modifications:
-    - target: {fileID: 8743356704063797681, guid: 61cf0223507c77c408b8c41983b08fb4,
-        type: 3}
-      propertyPath: m_Name
-      value: Sacred Flame Yellow On PLayer
-      objectReference: {fileID: 0}
-    - target: {fileID: 8743356704063797681, guid: 61cf0223507c77c408b8c41983b08fb4,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 8737765104891745947, guid: 61cf0223507c77c408b8c41983b08fb4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5139,15 +5176,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8743356704063797681, guid: 61cf0223507c77c408b8c41983b08fb4,
+        type: 3}
+      propertyPath: m_Name
+      value: Sacred Flame Yellow On PLayer
+      objectReference: {fileID: 0}
+    - target: {fileID: 8743356704063797681, guid: 61cf0223507c77c408b8c41983b08fb4,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 61cf0223507c77c408b8c41983b08fb4, type: 3}
---- !u!1 &3021935020258570778 stripped
+--- !u!1 &5811531908023290322 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8743356704063797681, guid: 61cf0223507c77c408b8c41983b08fb4,
     type: 3}
   m_PrefabInstance: {fileID: 3021935020258570339}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &3021935020258570987 stripped
+--- !u!4 &5814946406698542840 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8737765104891745947, guid: 61cf0223507c77c408b8c41983b08fb4,
     type: 3}
@@ -5160,16 +5207,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6367386487813426291}
     m_Modifications:
-    - target: {fileID: 4306047485281185313, guid: f94ae30f9f8736d40a54af98413e5aa7,
-        type: 3}
-      propertyPath: m_Name
-      value: Sacred Flame Final
-      objectReference: {fileID: 0}
-    - target: {fileID: 4306047485281185313, guid: f94ae30f9f8736d40a54af98413e5aa7,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4311709387615289611, guid: f94ae30f9f8736d40a54af98413e5aa7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5223,6 +5260,16 @@ PrefabInstance:
     - target: {fileID: 4311709387615289611, guid: f94ae30f9f8736d40a54af98413e5aa7,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4306047485281185313, guid: f94ae30f9f8736d40a54af98413e5aa7,
+        type: 3}
+      propertyPath: m_Name
+      value: Sacred Flame Final
+      objectReference: {fileID: 0}
+    - target: {fileID: 4306047485281185313, guid: f94ae30f9f8736d40a54af98413e5aa7,
+        type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -5326,16 +5373,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6367386487813426291}
     m_Modifications:
-    - target: {fileID: 5292991638797564932, guid: 00756397a86102a45ab306fbe390ff56,
-        type: 3}
-      propertyPath: m_Name
-      value: Sacred Flame Purple on Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 5292991638797564932, guid: 00756397a86102a45ab306fbe390ff56,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5287252704878711598, guid: 00756397a86102a45ab306fbe390ff56,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5391,15 +5428,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5292991638797564932, guid: 00756397a86102a45ab306fbe390ff56,
+        type: 3}
+      propertyPath: m_Name
+      value: Sacred Flame Purple on Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 5292991638797564932, guid: 00756397a86102a45ab306fbe390ff56,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 00756397a86102a45ab306fbe390ff56, type: 3}
---- !u!1 &5651187611067545030 stripped
+--- !u!1 &511570784261557163 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5292991638797564932, guid: 00756397a86102a45ab306fbe390ff56,
     type: 3}
   m_PrefabInstance: {fileID: 5651187611067545519}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &5651187611067545041 stripped
+--- !u!4 &508085846109332609 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5287252704878711598, guid: 00756397a86102a45ab306fbe390ff56,
     type: 3}
@@ -5479,13 +5526,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e1c00e64dbaeed4b9ecf8566d7d54b4, type: 3}
---- !u!1 &8755934573594552907 stripped
+--- !u!1 &8755934573594553010 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6607212847498108732, guid: 8e1c00e64dbaeed4b9ecf8566d7d54b4,
     type: 3}
   m_PrefabInstance: {fileID: 8755934573594552378}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &8755934573594553023 stripped
+--- !u!4 &8755934573594552998 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6603942386075004950, guid: 8e1c00e64dbaeed4b9ecf8566d7d54b4,
     type: 3}

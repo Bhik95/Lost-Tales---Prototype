@@ -111,7 +111,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 940b9392fa28cbe47a2bd75a343f1a3b, type: 2}
+  - {fileID: 2100000, guid: 1b83c3b4afd29e14ab0b10282ad5d8d3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -443,7 +443,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 940b9392fa28cbe47a2bd75a343f1a3b, type: 2}
+  - {fileID: 2100000, guid: 1b83c3b4afd29e14ab0b10282ad5d8d3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -904,7 +904,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 940b9392fa28cbe47a2bd75a343f1a3b, type: 2}
+  - {fileID: 2100000, guid: 1b83c3b4afd29e14ab0b10282ad5d8d3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1473,7 +1473,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a89363227209d3458a89095774e25d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _myst: {fileID: 0}
+  _myst_particle_systems:
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!1 &4935486910609780036
 GameObject:
   m_ObjectHideFlags: 0
@@ -7943,6 +7945,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: a8356d7acc18f634cac447e6c8dbe3b1, type: 2}
+    - target: {fileID: 3177614490146492087, guid: 2e19e133c5011eb4083e37bb760b2294,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: c88c3a836c0ec11499e243238e582f74, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2e19e133c5011eb4083e37bb760b2294, type: 3}
 --- !u!1 &4519421683221594755 stripped

@@ -26,6 +26,10 @@ public class CrystalPuzzle3_1CrystalToggle : Interactible
         {
             _state = value;
             _sprite_handler.SetCrystalSprite(State);
+            if (_state)
+            {
+                _crystal_animation.StartCrystalAnimation();
+            }
         }
     
     }
@@ -36,7 +40,6 @@ public class CrystalPuzzle3_1CrystalToggle : Interactible
 
         if (_state)
         {
-            _crystal_animation.StartCrystalAnimation();
             _crystal_sound.Play();
         }
     }

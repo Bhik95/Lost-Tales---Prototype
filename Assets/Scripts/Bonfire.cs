@@ -16,6 +16,7 @@ public class Bonfire : Interactible
     [SerializeField] private GameObject _flame_fx_final;
 
     [SerializeField] private Animator _paint_animator;
+    [SerializeField] private Animator _music_animator;
 
     private int _n_flames = 0;
 
@@ -68,6 +69,8 @@ public class Bonfire : Interactible
         }
 
         _paint_animator.SetInteger("FlamesLit", _n_flames);
+        if(_music_animator)
+            _music_animator.SetInteger("FlamesLit", _n_flames);
     }
 
     protected override void OnPlayerFar()
