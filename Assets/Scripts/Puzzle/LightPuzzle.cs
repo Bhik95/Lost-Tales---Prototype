@@ -22,13 +22,23 @@ public class LightPuzzle : AbstractPuzzle
         if (dtor)
         {
             //PK's effect
-            DissapearSound.Play();
-            dtor.TurnOff();
+            if (Wall.activeInHierarchy)
+            {
+                DissapearSound.Play();
+                dtor.TurnOff();
+                SoundFinish.Play();
+                StartCoroutine(DelayedSolve());
+            }
         }
         else if (WallCrystalObstacle)
         {
             //Fra's effect (FadeOut like crystals)
-            WallCrystalObstacle.AnimateThenSetActive(0.5f, false);
+            if (WallCrystalObstacle.gameObject.activeInHierarchy)
+            {
+                WallCrystalObstacle.AnimateThenSetActive(0.5f, false);
+                SoundFinish.Play();
+                StartCoroutine(DelayedSolve());
+            }
         }
         else
         {
@@ -39,8 +49,6 @@ public class LightPuzzle : AbstractPuzzle
         {
             Effect.SetActive(true);
         }
-        SoundFinish.Play();
-        StartCoroutine(DelayedSolve());
     }
 
     IEnumerator DelayedSolve()
