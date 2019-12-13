@@ -17,7 +17,7 @@ public class StartStoryBoard : MonoBehaviour
 
     void Update()
     {
-        if (Input.anyKeyDown && !started)
+        if (Input.GetKeyDown(KeyCode.Space) && !started)
         {
             _toTurnOff.SetActive(false);
             playableDirector.gameObject.SetActive(true);
