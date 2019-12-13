@@ -1746,6 +1746,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2040803634770680794}
     m_Modifications:
+    - target: {fileID: 6757549504201225162, guid: ac143ea16a5202e41b88d77a5f9349ba,
+        type: 3}
+      propertyPath: m_Name
+      value: LabirynthBrazier 3
+      objectReference: {fileID: 0}
     - target: {fileID: 6757549504201225160, guid: ac143ea16a5202e41b88d77a5f9349ba,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1800,11 +1805,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 180
-      objectReference: {fileID: 0}
-    - target: {fileID: 6757549504201225162, guid: ac143ea16a5202e41b88d77a5f9349ba,
-        type: 3}
-      propertyPath: m_Name
-      value: LabirynthBrazier 3
       objectReference: {fileID: 0}
     - target: {fileID: 9056332147531321832, guid: ac143ea16a5202e41b88d77a5f9349ba,
         type: 3}
@@ -1967,6 +1967,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8511269579657973873}
     m_Modifications:
+    - target: {fileID: 4813110645709210054, guid: 264a69ebaa1753942b15cffcfabeb89f,
+        type: 3}
+      propertyPath: m_Name
+      value: AmbientSFX
+      objectReference: {fileID: 0}
     - target: {fileID: 4813110645709210055, guid: 264a69ebaa1753942b15cffcfabeb89f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2021,11 +2026,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4813110645709210054, guid: 264a69ebaa1753942b15cffcfabeb89f,
-        type: 3}
-      propertyPath: m_Name
-      value: AmbientSFX
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 264a69ebaa1753942b15cffcfabeb89f, type: 3}
@@ -2128,6 +2128,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2040803634770680794}
     m_Modifications:
+    - target: {fileID: 6757549504201225162, guid: ac143ea16a5202e41b88d77a5f9349ba,
+        type: 3}
+      propertyPath: m_Name
+      value: LabirynthBrazier 5
+      objectReference: {fileID: 0}
     - target: {fileID: 6757549504201225160, guid: ac143ea16a5202e41b88d77a5f9349ba,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2182,11 +2187,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 180
-      objectReference: {fileID: 0}
-    - target: {fileID: 6757549504201225162, guid: ac143ea16a5202e41b88d77a5f9349ba,
-        type: 3}
-      propertyPath: m_Name
-      value: LabirynthBrazier 5
       objectReference: {fileID: 0}
     - target: {fileID: 9056332147531321832, guid: ac143ea16a5202e41b88d77a5f9349ba,
         type: 3}
@@ -2259,6 +2259,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2040803634770680794}
     m_Modifications:
+    - target: {fileID: 6757549504201225162, guid: ac143ea16a5202e41b88d77a5f9349ba,
+        type: 3}
+      propertyPath: m_Name
+      value: LabirynthBrazier 4
+      objectReference: {fileID: 0}
     - target: {fileID: 6757549504201225160, guid: ac143ea16a5202e41b88d77a5f9349ba,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2313,11 +2318,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 180
-      objectReference: {fileID: 0}
-    - target: {fileID: 6757549504201225162, guid: ac143ea16a5202e41b88d77a5f9349ba,
-        type: 3}
-      propertyPath: m_Name
-      value: LabirynthBrazier 4
       objectReference: {fileID: 0}
     - target: {fileID: 9056332147531321832, guid: ac143ea16a5202e41b88d77a5f9349ba,
         type: 3}
@@ -2574,7 +2574,7 @@ PrefabInstance:
     - target: {fileID: 5712053168751917695, guid: ceb92e11e29cbc34cb4703ecc43b562f,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.701
+      value: -2.854
       objectReference: {fileID: 0}
     - target: {fileID: 5712053168751917695, guid: ceb92e11e29cbc34cb4703ecc43b562f,
         type: 3}
@@ -2652,6 +2652,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2040803634770680794}
     m_Modifications:
+    - target: {fileID: 6757549504201225162, guid: ac143ea16a5202e41b88d77a5f9349ba,
+        type: 3}
+      propertyPath: m_Name
+      value: LabirynthBrazier 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6757549504201225160, guid: ac143ea16a5202e41b88d77a5f9349ba,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2706,11 +2711,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 180
-      objectReference: {fileID: 0}
-    - target: {fileID: 6757549504201225162, guid: ac143ea16a5202e41b88d77a5f9349ba,
-        type: 3}
-      propertyPath: m_Name
-      value: LabirynthBrazier 1
       objectReference: {fileID: 0}
     - target: {fileID: 9056332147531321832, guid: ac143ea16a5202e41b88d77a5f9349ba,
         type: 3}
@@ -2838,6 +2838,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2040803634770680794}
     m_Modifications:
+    - target: {fileID: 6757549504201225162, guid: ac143ea16a5202e41b88d77a5f9349ba,
+        type: 3}
+      propertyPath: m_Name
+      value: LabirynthBrazier 2
+      objectReference: {fileID: 0}
     - target: {fileID: 6757549504201225160, guid: ac143ea16a5202e41b88d77a5f9349ba,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2892,11 +2897,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 180
-      objectReference: {fileID: 0}
-    - target: {fileID: 6757549504201225162, guid: ac143ea16a5202e41b88d77a5f9349ba,
-        type: 3}
-      propertyPath: m_Name
-      value: LabirynthBrazier 2
       objectReference: {fileID: 0}
     - target: {fileID: 9056332147531321832, guid: ac143ea16a5202e41b88d77a5f9349ba,
         type: 3}

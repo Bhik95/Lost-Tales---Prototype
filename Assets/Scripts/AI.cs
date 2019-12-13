@@ -9,6 +9,7 @@ public class AI : Interactible
     [SerializeField] private Animator Animator;
     [SerializeField] private float MovementSpeed = 100;
     [SerializeField] private float CoordinateScaleFactor = 0.7f;
+    [SerializeField] private FMODUnity.StudioEventEmitter _success_sound;
     [SerializeField] private FMODUnity.StudioEventEmitter _fail_sound;
     private Vector2 MoveDir;
     public Transform CurTarget;
@@ -19,6 +20,7 @@ public class AI : Interactible
     {
         if (PlayerStatus.Instance.HasBigFlame && !ParticleInteract.activeInHierarchy)
         {
+            _success_sound.Play();
             ParticleInteract.SetActive(true);
             base.Interact();
         }
