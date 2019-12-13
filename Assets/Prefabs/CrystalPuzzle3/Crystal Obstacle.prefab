@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 8212194007648199294}
   - component: {fileID: 8143864715174028390}
   - component: {fileID: 3191097745797398065}
-  - component: {fileID: 2489625338867312361}
   - component: {fileID: 2607313751965318395}
+  - component: {fileID: 2489625338867312361}
   - component: {fileID: 4051134599686688081}
   m_Layer: 0
   m_Name: Crystal Obstacle
@@ -100,6 +100,20 @@ CapsuleCollider2D:
   m_Offset: {x: -0.024572592, y: 0.17492032}
   m_Size: {x: 1.758688, y: 0.81724423}
   m_Direction: 1
+--- !u!114 &2607313751965318395
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6081899091963933112}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a5cd5be9e47aed4ca7df0a3d116248a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _vanishing_sound: {fileID: 4051134599686688081}
+  _fx: {fileID: 2489625338867312361}
 --- !u!114 &2489625338867312361
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -165,19 +179,6 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &2607313751965318395
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6081899091963933112}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3a5cd5be9e47aed4ca7df0a3d116248a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _vanishing_sound: {fileID: 4051134599686688081}
 --- !u!114 &4051134599686688081
 MonoBehaviour:
   m_ObjectHideFlags: 0

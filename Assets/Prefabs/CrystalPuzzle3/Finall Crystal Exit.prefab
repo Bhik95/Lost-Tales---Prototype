@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 3772680610988766265}
   - component: {fileID: 8454202936447947159}
   - component: {fileID: 703789145765864526}
-  - component: {fileID: 7316052551252208464}
   - component: {fileID: 8522820338100484538}
+  - component: {fileID: 7316052551252208464}
   - component: {fileID: 3812851491792547290}
   m_Layer: 0
   m_Name: Finall Crystal Exit
@@ -100,6 +100,20 @@ CapsuleCollider2D:
   m_Offset: {x: 0.05898464, y: 0.5465389}
   m_Size: {x: 0.57352465, y: 0.43946892}
   m_Direction: 1
+--- !u!114 &8522820338100484538
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2382471901543364798}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a5cd5be9e47aed4ca7df0a3d116248a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _vanishing_sound: {fileID: 3812851491792547290}
+  _fx: {fileID: 7316052551252208464}
 --- !u!114 &7316052551252208464
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -165,19 +179,6 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &8522820338100484538
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2382471901543364798}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3a5cd5be9e47aed4ca7df0a3d116248a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _vanishing_sound: {fileID: 3812851491792547290}
 --- !u!114 &3812851491792547290
 MonoBehaviour:
   m_ObjectHideFlags: 0

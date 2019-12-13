@@ -567,5 +567,25 @@ PrefabInstance:
       propertyPath: NoiseModule.strength.scalar
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2164602382680996848, guid: c882ba8f99ab55644a33294b2dd86ceb,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2165224252137713394, guid: c882ba8f99ab55644a33294b2dd86ceb,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2165348658124827150, guid: c882ba8f99ab55644a33294b2dd86ceb,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2165254341906416996, guid: c882ba8f99ab55644a33294b2dd86ceb,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c882ba8f99ab55644a33294b2dd86ceb, type: 3}

@@ -103,6 +103,7 @@ public class CrystalPuzzle3_1Manager : MonoBehaviour
             }
             else
             {
+                Camera.main.GetComponent<CameraShaker>().AddTrauma(0.3f);
                 _fail_sound.Play();
             }
             ResetPuzzle();

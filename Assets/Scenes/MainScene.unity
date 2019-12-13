@@ -1289,11 +1289,6 @@ PrefabInstance:
       objectReference: {fileID: 1604213615}
     - target: {fileID: 3259952782338261788, guid: 419dcdd1f46fc9d42bee220a7c079ddc,
         type: 3}
-      propertyPath: drawGizmos
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3259952782338261788, guid: 419dcdd1f46fc9d42bee220a7c079ddc,
-        type: 3}
       propertyPath: maxX
       value: 14
       objectReference: {fileID: 0}
@@ -1502,7 +1497,7 @@ MonoBehaviour:
   volumeTrigger: {fileID: 1987770666}
   volumeLayer:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 6677
   stopNaNPropagation: 1
   finalBlitToCameraTarget: 1
   antialiasingMode: 0

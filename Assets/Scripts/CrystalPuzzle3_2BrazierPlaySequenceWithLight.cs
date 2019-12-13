@@ -8,7 +8,8 @@ using System;
 public class CrystalPuzzle3_2BrazierPlaySequenceWithLight : Interactible
 {
 
-    [SerializeField] private GameObject _brazier;
+    [SerializeField] private ParticleSystem _particle_system;
+    [SerializeField] private FMODUnity.StudioEventEmitter _fire_sound;
     [SerializeField] private CrystalPuzzle3_1CrystalToggle[] _crystals;
     [SerializeField] private CrystalPuzzle3_1CrystalToggle[] _crystals_not_involved;
     [SerializeField] private float delay = 0.5f;//Time between each note
@@ -21,7 +22,9 @@ public class CrystalPuzzle3_2BrazierPlaySequenceWithLight : Interactible
     private IEnumerator PlaySequence()
     {
         enabled = false;
-        _brazier.SetActive(true);
+        if (_particle_system)
+            _particle_system.Play();
+        _fire_sound.Play();
         float timer;
         for (int i = 0; i < _crystals.Length; i++)
         {
@@ -44,7 +47,9 @@ public class CrystalPuzzle3_2BrazierPlaySequenceWithLight : Interactible
         }
         
         enabled = true;
-        _brazier.SetActive(false);
+        if (_particle_system)
+            _particle_system.Stop();
+        _fire_sound.Stop();
     }
 
 

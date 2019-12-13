@@ -46,6 +46,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Target: {fileID: 0}
   TempTarget: {fileID: 0}
+  drawGizmos: 1
+  center: {x: 0, y: 0}
+  maxX: 0
+  maxY: 0
 --- !u!1001 &2027030424548559442
 PrefabInstance:
   m_ObjectHideFlags: 0
