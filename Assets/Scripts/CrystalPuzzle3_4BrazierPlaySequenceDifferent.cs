@@ -12,6 +12,7 @@ public class CrystalPuzzle3_4BrazierPlaySequenceDifferent : Interactible
     [SerializeField] private FMODUnity.StudioEventEmitter _fire_sound;
     [SerializeField] private CrystalPuzzle3_1CrystalToggle[] _crystals;
     [SerializeField] private FMODUnity.StudioEventEmitter[] _music_sequence;
+    [SerializeField] private CrystalPuzzle3_1Manager _puzzle_manager;
     [SerializeField] private float delay = 0.5f;//Time between each note
 
     protected override void OnActivate()
@@ -43,6 +44,7 @@ public class CrystalPuzzle3_4BrazierPlaySequenceDifferent : Interactible
         PlayerStatus.Instance.GetComponent<Movement>().ControlsEnabled = true;
         if (_particle_system)
             _particle_system.Stop();
+        _puzzle_manager.ResetPuzzle();
         _fire_sound.Stop();
     }
 

@@ -110,7 +110,7 @@ public class CrystalPuzzle3_1Manager : MonoBehaviour
         }
     }
 
-    private void ResetPuzzle()
+    public void ResetPuzzle()
     {
         _counter = 1;
         for(int i = 0; i < _current_order.Length; i++)
