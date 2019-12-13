@@ -5,12 +5,12 @@ using UnityEngine;
 public class LightPuzzle : AbstractPuzzle
 {
     [SerializeField] private FMODUnity.StudioEventEmitter SoundFinish;
-    [SerializeField] private FMODUnity.StudioEventEmitter RockSound;
     [SerializeField] private FMODUnity.StudioEventEmitter DissapearSound;
 
     [SerializeField] private Transform Center;
 
     [SerializeField] private GameObject Wall;
+    [SerializeField] private CrystalObstacle WallCrystalObstacle;
     [SerializeField] private GameObject EnterWall;
 
     [SerializeField] private GameObject Effect;
@@ -21,7 +21,14 @@ public class LightPuzzle : AbstractPuzzle
         var dtor = Wall.GetComponent<DelayedTurnOffRock>();
         if (dtor)
         {
+            //PK's effect
+            DissapearSound.Play();
             dtor.TurnOff();
+        }
+        else if (WallCrystalObstacle)
+        {
+            //Fra's effect (FadeOut like crystals)
+            WallCrystalObstacle.AnimateThenSetActive(0.5f, false);
         }
         else
         {
@@ -33,7 +40,6 @@ public class LightPuzzle : AbstractPuzzle
             Effect.SetActive(true);
         }
         SoundFinish.Play();
-        DissapearSound.Play();
         StartCoroutine(DelayedSolve());
     }
 
@@ -41,7 +47,7 @@ public class LightPuzzle : AbstractPuzzle
     {
         yield return new WaitForSeconds(.5f);
 
-        Camera.main.transform.parent.GetComponent<CameraFollow>().TempTarget = Wall.transform;
+        Camera.main.transform.parent.GetComponent<CameraFollow>().SetTempTargetAndResetAfterTimeout(Wall.transform, 0.5f);
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -50,7 +56,6 @@ public class LightPuzzle : AbstractPuzzle
         {
             if (!EnterWall.activeSelf)
             {
-                RockSound.Play();
                 EnterWall.SetActive(true);
             }
             if (Center)

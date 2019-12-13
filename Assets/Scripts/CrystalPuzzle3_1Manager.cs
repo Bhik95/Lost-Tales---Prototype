@@ -96,7 +96,7 @@ public class CrystalPuzzle3_1Manager : MonoBehaviour
                 }
                 for (int i = 0; i < _crystal_obstacles_to_animate_and_remove.Length; i++)
                 {
-                    _crystal_obstacles_to_animate_and_remove[i].AnimateThenDeactivate(0.5f);
+                    _crystal_obstacles_to_animate_and_remove[i].AnimateThenSetActive(0.5f, false);
                 }
                 _success_sound.Play();
                 enabled = false;

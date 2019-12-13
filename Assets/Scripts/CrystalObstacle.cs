@@ -6,27 +6,27 @@ using UnityEngine;
 public class CrystalObstacle : MonoBehaviour
 {
     [SerializeField] FMODUnity.StudioEventEmitter _vanishing_sound;
-    private CrystalToggleFXData _fx;
+    [SerializeField] private CrystalToggleFXData _fx;
     private Collider2D _collider;
 
     private void Awake()
     {
-        _fx = GetComponent<CrystalToggleFXData>();
         _collider = GetComponent<Collider2D>();
     }
     
-    public void AnimateThenDeactivate(float delay)
+    public void AnimateThenSetActive(float delay, bool active)
     {
-        StartCoroutine(AnimateThenDeactivateCoroutine(delay));
+        StartCoroutine(AnimateThenSetActiveCoroutine(delay, active));
     }
 
-    private IEnumerator AnimateThenDeactivateCoroutine(float delay)
+    private IEnumerator AnimateThenSetActiveCoroutine(float delay, bool active)
     {
         yield return new WaitForSeconds(delay);
         _vanishing_sound.Play();
-        _collider.enabled = false;
+        if(_collider)
+            _collider.enabled = active;
         _fx.StartCrystalAnimation();
         yield return new WaitForSeconds(_fx.Duration);
-        gameObject.SetActive(false);
+        gameObject.SetActive(active);
     }
 }
