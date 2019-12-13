@@ -1606,16 +1606,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: CrystalArea Functionality
       objectReference: {fileID: 0}
-    - target: {fileID: 5676283999317983772, guid: 086c9a4be882a6c42b8c8ee599eaf847,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 8.68
-      objectReference: {fileID: 0}
-    - target: {fileID: 5676283999317983772, guid: 086c9a4be882a6c42b8c8ee599eaf847,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -5.07
-      objectReference: {fileID: 0}
     - target: {fileID: 5462625699302744590, guid: 086c9a4be882a6c42b8c8ee599eaf847,
         type: 3}
       propertyPath: m_LocalPosition.x
