@@ -11,7 +11,7 @@ public class Torch : Interactible
     {
         _brazier.SetActive(true);
         _on_lit_sound.Play();
-        if (PlayerStatus.Instance.HasBigFlame)
+        if (PlayerStatus.Instance.HadBigFlame)
         {
             _paintSprite.transform.localScale = new Vector3(1.2f,1.2f,1);
         }
