@@ -9,6 +9,7 @@ public class AI : Interactible
     [SerializeField] private Animator Animator;
     [SerializeField] private float MovementSpeed = 100;
     [SerializeField] private float CoordinateScaleFactor = 0.7f;
+    [SerializeField] private FMODUnity.StudioEventEmitter _fail_sound;
     private Vector2 MoveDir;
     public Transform CurTarget;
     public GameObject PaintSprite;
@@ -20,6 +21,10 @@ public class AI : Interactible
         {
             ParticleInteract.SetActive(true);
             base.Interact();
+        }
+        else
+        {
+            _fail_sound.Play();
         }
     }
     // Update is called once per frame
