@@ -21,7 +21,16 @@ public class MainMusic : MonoBehaviour
     private AltarMusicChange[] altars;
     private QuietMusicArea[] quietMusicAreas;
     [SerializeField] private FMODUnity.StudioEventEmitter _music;
-    [SerializeField] private float _default_quiet_volume = 0.75f;  
+    [SerializeField] private float _default_quiet_volume = 0.75f;
+    [SerializeField] private bool _force_choir = false;
+
+    public bool ForceChoir {
+        get { return _force_choir; }
+        set
+        {
+            _force_choir = value;
+        }
+    }
 
 
     private void Awake()
@@ -39,23 +48,31 @@ public class MainMusic : MonoBehaviour
 
     void Update()
     {
+        if (_force_choir)
+        {
+            _music.SetParameter("GoalProximity", 1);
+        }
         if (PlayerStatus.Instance)
         {
             Transform playerTransform = PlayerStatus.Instance.transform;
 
             float goalProximity = float.PositiveInfinity;
-            if (altars != null)
+            
+            if(!_force_choir)
             {
-                for (int i = 0; i < altars.Length; i++)
+                if (altars != null)
                 {
-                    if (!altars[i].enabled)
-                        continue;
-                    float goalProximityTemp = Mathf.Clamp01((Vector2.Distance(playerTransform.position, altars[i].transform.position) - altars[i].SoundDistanceMin) / (altars[i].SoundDistanceMax - altars[i].SoundDistanceMin));
-                    goalProximity = Mathf.Min(goalProximity, goalProximityTemp);
-                }
+                    for (int i = 0; i < altars.Length; i++)
+                    {
+                        if (!altars[i].enabled)
+                            continue;
+                        float goalProximityTemp = Mathf.Clamp01((Vector2.Distance(playerTransform.position, altars[i].transform.position) - altars[i].SoundDistanceMin) / (altars[i].SoundDistanceMax - altars[i].SoundDistanceMin));
+                        goalProximity = Mathf.Min(goalProximity, goalProximityTemp);
+                    }
 
-                _music.SetParameter("GoalProximity", 1 - goalProximity);
-            }
+                    _music.SetParameter("GoalProximity", 1 - goalProximity);
+                }
+            } 
 
             float quietZoneProximity = float.PositiveInfinity;
             if (quietMusicAreas != null)
