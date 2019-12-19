@@ -791,6 +791,11 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -10.75
       objectReference: {fileID: 0}
+    - target: {fileID: 4486279515549553766, guid: a51d5ae4ad9464336af0eecba4895392,
+        type: 3}
+      propertyPath: _black_screen
+      value: 
+      objectReference: {fileID: 1168576449}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a51d5ae4ad9464336af0eecba4895392, type: 3}
 --- !u!1001 &878659581
@@ -1490,10 +1495,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1168576447}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6cd2072990c06f945bfe4b68fc4041a5, type: 3}
+  m_Script: {fileID: 11500000, guid: 6470657f9360a0240b92a86eae01fcaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _timeout: 1
 --- !u!95 &1168576450
 Animator:
   serializedVersion: 3

@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Bonfire : Interactible
 {
@@ -17,6 +18,9 @@ public class Bonfire : Interactible
 
     [SerializeField] private Animator _paint_animator;
     [SerializeField] private Animator _music_animator;
+
+    [SerializeField] private BlackScreen _black_screen;
+    [SerializeField] private string _final_scene_name = "FinalScene";
 
     private int _n_flames = 0;
 
@@ -57,6 +61,8 @@ public class Bonfire : Interactible
                         OnThreeFlamesCollected?.Invoke();
                         _flame_fx_final.SetActive(true);
                         _three_flames_sound.Play();
+
+                        StartCoroutine(TransitionToFinalScene(3f, 3f));
                     }
                 }
             }
@@ -71,6 +77,24 @@ public class Bonfire : Interactible
         _paint_animator.SetInteger("FlamesLit", _n_flames);
         if(_music_animator)
             _music_animator.SetInteger("FlamesLit", _n_flames);
+    }
+
+    private IEnumerator TransitionToFinalScene(float delayBlackScr, float delaySceneLoading)
+    {
+        float timer = delayBlackScr;
+        while(timer >= 0)
+        {
+            timer -= Time.deltaTime;
+            yield return null;
+        }
+        _black_screen.SetVisible(true);
+        timer = delaySceneLoading;
+        while (timer >= 0)
+        {
+            timer -= Time.deltaTime;
+            yield return null;
+        }
+        SceneManager.LoadScene(_final_scene_name);
     }
 
     protected override void OnPlayerFar()

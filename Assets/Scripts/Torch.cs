@@ -13,7 +13,7 @@ public class Torch : Interactible
         _on_lit_sound.Play();
         if (PlayerStatus.Instance.HadBigFlame)
         {
-            _paintSprite.transform.localScale = new Vector3(1.2f,1.2f,1);
+            _paintSprite.transform.localScale = new Vector3(0.7f,0.7f,1);
         }
         else
         {
